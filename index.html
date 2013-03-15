@@ -5,150 +5,71 @@
     <title>FT Velcro</title>
     <meta name="description" content="The Financial Times branded web code library." />
     <meta name="author" content="The Financial Times" />
-
-    <style>
-
-/* Velcro GitHub pages styles - not part of Velcro itself */
-.v-title {
-    font-family: Arial, sans-serif;
-}
-.v-title-large {
-    font-size: 28px;
-}
-.v-title-medium {
-    font-size: 20px;
-}
-
-/*
- * Not yet cross-browser tested.
- * The colours should probably be replaced with variables.
- */
-
-.ft-button {
-    display: inline-block;
-    margin: 0;
-    padding: 0 8px !important;
-    border-width: 0 !important;
-    border-radius: 0.3em;
-    width: auto !important;
-    background: #4e8fbd;
-    background: -webkit-gradient(linear, left top, left bottom, from(#549ccf), to(#4782ab));
-    background: -moz-linear-gradient(#549ccf, #4782ab);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#549ccf, endColorstr=#4782ab);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#549ccf,  endColorstr=#4782ab)";
-    zoom: 1;
-    box-shadow: inset 0 1px 0 #90bfe0;
-    -moz-box-shadow: inset 0 1px 0 #90bfe0;
-    -webkit-box-shadow: inset 0 1px 0 #90bfe0;
-    font-family: $ftFont-Arial;
-    color: #fff;
-    text-shadow: 0 0 0 #FFF;
-    text-decoration: none;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-.ft-button:hover {
-    color: #dddddd;
-}
-
-.ft-button-large {
-    min-height: 30px;
-    line-height: 30px;
-    font-size: 16px;
-}
-
-.ft-button-medium {
-    min-height: 24px;
-    line-height: 24px;
-    font-size: 14px;
-}
-
-.ft-button-small {
-    min-height: 16px;
-    line-height: 16px;
-    font-size: 12px;
-}
-
-.ft-button-negative {
-    background: #b7315c;
-    background: -webkit-gradient(linear, left top, left bottom, from(#cc3366), to(#9f2f50));
-    background: -moz-linear-gradient(#cc3366,  #9f2f50);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc3366, endColorstr=#9f2f50);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc3366,  endColorstr=#9f2f50)";
-    box-shadow: inset 0 1px 0 #D89AAD;
-    -moz-box-shadow: inset 0 1px 0 #D89AAD;
-    -webkit-box-shadow: inset 0 1px 0 #D89AAD;
-}
-
-.ft-button.ft-state-disabled, .ft-button[disabled] {
-    background: #acacac;
-    background: -webkit-gradient(linear, left top, left bottom, from(#b5b5b5), to(#a5a5a5));
-    background: -moz-linear-gradient(#b5b5b5, #a5a5a5);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b5b5b5, endColorstr=#a5a5a5);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#b5b5b5,  endColorstr=#a5a5a5)";
-    box-shadow: inset 0 1px 0 #a5a5a5;
-    -moz-box-shadow: inset 0 1px 0 #a5a5a5;
-    -webkit-box-shadow: inset 0 1px 0 #a5a5a5;
-    cursor: default;
-    color: #fff;
-}
-    </style>
-
+    <link rel="stylesheet" href="page/css/reset.css" />
+    <link rel="stylesheet" href="page/css/style.css" />
+    <link rel="stylesheet" href="velcro/css/buttons.css" />
 </head>
 <body>
-    <h1 class="v-title v-title-large">FT Velcro</h1>
 
-    <h2 class="v-title v-title-medium">Buttons</h2>
+    <div class="v-pagecontainer">
 
-    <dl>
-        <dt>30px</dt>
-        <dd><button class="ft-button ft-button-large"><span><span>Sign in</span></span></button></dd>
-        <dt>24px</dt>
-        <dd><button class="ft-button ft-button-medium"><span><span>Sign in</span></span></button></dd>
-        <dt>16px</dt>
-        <dd><button class="ft-button ft-button-small"><span><span>Sign in</span></span></button></dd>
-        <dt>30px</dt>
-        <dd><button class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></button></dd>
-        <dt>24px</dt>
-        <dd><button class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></button></dd>
-        <dt>16px</dt>
-        <dd><button class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></button></dd>
-        <dt>30px</dt>
-        <dd><button class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></button></dd>
-        <dt>24px</dt>
-        <dd><button class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></button></dd>
-        <dt>16px</dt>
-        <dd><button class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></button></dd>
-        <dt>30px</dt>
-        <dd><button class="ft-button ft-button-large" disabled="disabled"><span><span>Disabled</span></span></button></dd>
-        <dt>24px</dt>
-        <dd><button class="ft-button ft-button-medium" disabled="disabled"><span><span>Disabled</span></span></button></dd>
-        <dt>16px</dt>
-        <dd><button class="ft-button ft-button-small" disabled="disabled"><span><span>Disabled</span></span></button></dd>
-    </dl>
+        <h1 class="v-title v-title-large">FT Velcro</h1>
 
-    <h2>&lt;a&gt;</h2>
-    <dl>
-        <dt>30px</dt>
-        <dd><div><a href="#" class="ft-button ft-button-large"><span><span>Submit</span></span></a></div></dd>
-        <dt>24px</dt>
-        <dd><div><a href="#" class="ft-button ft-button-medium"><span><span>Submit</span></span></a></div></dd>
-        <dt>16px</dt>
-        <dd><div><a href="#" class="ft-button ft-button-small"><span><span>Submit</span></span></a></div></dd>
-        <dt>30px</dt>
-        <dd><div><a href="#" class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></a></div></dd>
-        <dt>24px</dt>
-        <dd><div><a href="#" class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></a></div></dd>
-        <dt>16px</dt>
-        <dd><div><a href="#" class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></a></div></dd>
-        <dt>30px</dt>
-        <dd><div><a href="#" class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></a></div></dd>
-        <dt>24px</dt>
-        <dd><div><a href="#" class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></a></div></dd>
-        <dt>16px</dt>
-        <dd><div><a href="#" class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></a></div></dd>
-    </dl>
+        <p class="v-paragraph">HTML and CSS class usage examples for FT branded page elements.</p>
+
+        <h2 class="v-title v-title-medium">Buttons</h2>
+
+        <h3 class="v-title v-title-small">&lt;button&gt;</h3>
+        <dl>
+            <dt>30px</dt>
+            <dd><button class="ft-button ft-button-large"><span><span>Sign in</span></span></button></dd>
+            <dt>24px</dt>
+            <dd><button class="ft-button ft-button-medium"><span><span>Sign in</span></span></button></dd>
+            <dt>16px</dt>
+            <dd><button class="ft-button ft-button-small"><span><span>Sign in</span></span></button></dd>
+            <dt>30px</dt>
+            <dd><button class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></button></dd>
+            <dt>24px</dt>
+            <dd><button class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></button></dd>
+            <dt>16px</dt>
+            <dd><button class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></button></dd>
+            <dt>30px</dt>
+            <dd><button class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></button></dd>
+            <dt>24px</dt>
+            <dd><button class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></button></dd>
+            <dt>16px</dt>
+            <dd><button class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></button></dd>
+            <dt>30px</dt>
+            <dd><button class="ft-button ft-button-large" disabled="disabled"><span><span>Disabled</span></span></button></dd>
+            <dt>24px</dt>
+            <dd><button class="ft-button ft-button-medium" disabled="disabled"><span><span>Disabled</span></span></button></dd>
+            <dt>16px</dt>
+            <dd><button class="ft-button ft-button-small" disabled="disabled"><span><span>Disabled</span></span></button></dd>
+        </dl>
+
+        <h3 class="v-title v-title-small">&lt;a&gt;</h3>
+        <dl>
+            <dt>30px</dt>
+            <dd><div><a href="#" class="ft-button ft-button-large"><span><span>Submit</span></span></a></div></dd>
+            <dt>24px</dt>
+            <dd><div><a href="#" class="ft-button ft-button-medium"><span><span>Submit</span></span></a></div></dd>
+            <dt>16px</dt>
+            <dd><div><a href="#" class="ft-button ft-button-small"><span><span>Submit</span></span></a></div></dd>
+            <dt>30px</dt>
+            <dd><div><a href="#" class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></a></div></dd>
+            <dt>24px</dt>
+            <dd><div><a href="#" class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></a></div></dd>
+            <dt>16px</dt>
+            <dd><div><a href="#" class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></a></div></dd>
+            <dt>30px</dt>
+            <dd><div><a href="#" class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></a></div></dd>
+            <dt>24px</dt>
+            <dd><div><a href="#" class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></a></div></dd>
+            <dt>16px</dt>
+            <dd><div><a href="#" class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></a></div></dd>
+        </dl>
+
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,24 @@
+/* Velcro GitHub pages styles - not part of Velcro itself */
+
+.v-pagecontainer {
+    margin: 0 auto;
+    width: 990px;
+}
+
+.v-title {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.v-title-large {
+    font-size: 28px;
+}
+.v-title-medium {
+    font-size: 20px;
+}
+.v-title-small {
+    font-size: 16px;
+}
+.v-paragraph {
+    font-size: 14px;
+    line-height: 18px;
+}

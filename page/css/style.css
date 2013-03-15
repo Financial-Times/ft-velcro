@@ -63,6 +63,13 @@
     color: #666;
 }
 
+.v-sample {
+    margin: 0 0 15px 0;
+    border: 1px solid #eedddd;
+    padding: 15px;
+    background-color: #fff1e0;
+}
+
 .v-note {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 12px;

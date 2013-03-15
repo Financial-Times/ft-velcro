@@ -7,69 +7,133 @@
     <meta name="author" content="The Financial Times" />
     <link rel="stylesheet" href="page/css/reset.css" />
     <link rel="stylesheet" href="page/css/style.css" />
+    <link rel="stylesheet" href="velcro/css/fonts.css" />
+    <link rel="stylesheet" href="velcro/css/titles.css" />
+    <link rel="stylesheet" href="velcro/css/article-header.css" />
     <link rel="stylesheet" href="velcro/css/buttons.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
 
     <div class="v-pagecontainer">
 
-        <h1 class="v-title v-title-large">FT Velcro</h1>
+        <header class="v-header">
+            <h1 class="v-title v-title-large">FT Velcro</h1>
+        </header>
 
-        <p class="v-paragraph">HTML and CSS class usage examples for FT branded page elements.</p>
+        <p class="v-paragraph">HTML snippets and CSS class usage examples for FT branded page elements.</p>
 
-        <h2 class="v-title v-title-medium">Buttons</h2>
+        <nav id="nav-primary" class="v-nav">
+            <ul>
+                <li><a href="#titles" class="v-link">Titles</a></li>
+                <li><a href="#articleHeader" class="v-link">Article header</a></li>
+                <li><a href="#buttons" class="v-link">Buttons</a></li>
+            </ul>
+        </nav>
 
-        <h3 class="v-title v-title-small">&lt;button&gt;</h3>
-        <dl>
-            <dt>30px</dt>
-            <dd><button class="ft-button ft-button-large"><span><span>Sign in</span></span></button></dd>
-            <dt>24px</dt>
-            <dd><button class="ft-button ft-button-medium"><span><span>Sign in</span></span></button></dd>
-            <dt>16px</dt>
-            <dd><button class="ft-button ft-button-small"><span><span>Sign in</span></span></button></dd>
-            <dt>30px</dt>
-            <dd><button class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></button></dd>
-            <dt>24px</dt>
-            <dd><button class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></button></dd>
-            <dt>16px</dt>
-            <dd><button class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></button></dd>
-            <dt>30px</dt>
-            <dd><button class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></button></dd>
-            <dt>24px</dt>
-            <dd><button class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></button></dd>
-            <dt>16px</dt>
-            <dd><button class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></button></dd>
-            <dt>30px</dt>
-            <dd><button class="ft-button ft-button-large" disabled="disabled"><span><span>Disabled</span></span></button></dd>
-            <dt>24px</dt>
-            <dd><button class="ft-button ft-button-medium" disabled="disabled"><span><span>Disabled</span></span></button></dd>
-            <dt>16px</dt>
-            <dd><button class="ft-button ft-button-small" disabled="disabled"><span><span>Disabled</span></span></button></dd>
-        </dl>
+        <section id="titles" class="v-section">
 
-        <h3 class="v-title v-title-small">&lt;a&gt;</h3>
-        <dl>
-            <dt>30px</dt>
-            <dd><div><a href="#" class="ft-button ft-button-large"><span><span>Submit</span></span></a></div></dd>
-            <dt>24px</dt>
-            <dd><div><a href="#" class="ft-button ft-button-medium"><span><span>Submit</span></span></a></div></dd>
-            <dt>16px</dt>
-            <dd><div><a href="#" class="ft-button ft-button-small"><span><span>Submit</span></span></a></div></dd>
-            <dt>30px</dt>
-            <dd><div><a href="#" class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></a></div></dd>
-            <dt>24px</dt>
-            <dd><div><a href="#" class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></a></div></dd>
-            <dt>16px</dt>
-            <dd><div><a href="#" class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></a></div></dd>
-            <dt>30px</dt>
-            <dd><div><a href="#" class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></a></div></dd>
-            <dt>24px</dt>
-            <dd><div><a href="#" class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></a></div></dd>
-            <dt>16px</dt>
-            <dd><div><a href="#" class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></a></div></dd>
-        </dl>
+            <h2 class="v-title v-title-medium">Titles</h2>
+
+            <p class="ft-label-article">Article label</p>
+
+            <p class="ft-article-timestamp">12:34pm Article timestamp</p>
+
+
+            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+
+        </section>
+
+        <section id="articleHeader" class="v-section">
+
+            <h2 class="v-title v-title-medium">Article header</h2>
+
+            <p class="ft-title ft-title-large">Large title</p>
+
+            <p class="ft-title ft-title-medium">Medium title</p>
+
+            <p class="ft-title ft-title-small">Small title</p>
+
+            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+
+        </section>
+
+        <section id="buttons" class="v-section">
+
+            <h2 class="v-title v-title-medium">Buttons</h2>
+
+            <p class="v-paragraph">Things that look like buttons.</p>
+
+            <h3 class="v-title v-title-small">Using &lt;button&gt;</h3>
+
+            <table class="v-table">
+            <tr>
+                <th>Size</th>
+                <th>Default</th>
+                <th>Negative</th>
+                <th>Disabled</th>
+            </tr>
+            <tr>
+                <td>Large (30px)</td>
+                <td><button class="ft-button ft-button-large"><span><span>Sign in</span></span></button></td>
+                <td><button class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></button></td>
+                <td><button class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></button></td>
+            </tr>
+            <tr>
+                <td>Medium (24px)</td>
+                <td><button class="ft-button ft-button-medium"><span><span>Sign in</span></span></button></td>
+                <td><button class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></button></td>
+                <td><button class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></button></td>
+            </tr>
+            <tr>
+                <td>Small (16px)</td>
+                <td><button class="ft-button ft-button-small"><span><span>Sign in</span></span></button></td>
+                <td><button class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></button></td>
+                <td><button class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></button></td>
+            </tr>
+            </table>
+
+            <p class="v-note">The disabled style can be applied by either the ft-state-disabled class, or by the disabled HTML attribute.</p>
+
+            <h3 class="v-title v-title-small">Using  &lt;a&gt;</h3>
+
+            <table class="v-table">
+            <tr>
+                <th>Size</th>
+                <th>Default</th>
+                <th>Negative</th>
+                <th>Disabled</th>
+            </tr>
+            <tr>
+                <td>Large (30px)</td>
+                <td><a href="#" class="ft-button ft-button-large"><span><span>Submit</span></span></a></td>
+                <td><a href="#" class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></a></td>
+                <td><a href="#" class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></a></td>
+            </tr>
+            <tr>
+                <td>Medium (24px)</td>
+                <td><a href="#" class="ft-button ft-button-medium"><span><span>Submit</span></span></a></td>
+                <td><a href="#" class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></a></td>
+                <td><a href="#" class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></a></td>
+            </tr>
+            <tr>
+                <td>Small (16px)</td>
+                <td><a href="#" class="ft-button ft-button-small"><span><span>Submit</span></span></a></td>
+                <td><a href="#" class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></a></td>
+                <td><a href="#" class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></a></td>
+            </tr>
+            </table>
+
+            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+
+        </section>
 
     </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="page/js/init.js"></script>
 
 </body>
 </html>

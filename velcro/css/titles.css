@@ -1,0 +1,39 @@
+.ft-title {
+    margin: 0 0 5px 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #333;
+}
+
+.ft-title-large {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.ft-title-small {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.ft-lead {
+    color: #505050;
+}
+
+.ft-lead-large {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.ft-lead-small {
+    font-family: BentonSans, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.ft-byline {
+    font-family: BentonSans, Helvetica, Arial, sans-serif;
+    clear: left;
+    margin-top:15px ;
+    color: #666;
+}

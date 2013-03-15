@@ -63,6 +63,10 @@
     color: #666;
 }
 
+.v-warning {
+    color: #a66;
+}
+
 .v-sample {
     margin: 0 0 15px 0;
     border: 1px solid #eedddd;

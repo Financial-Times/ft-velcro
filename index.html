@@ -32,14 +32,11 @@
 
         <p class="v-paragraph v-warning">WARNING: This is currently just a prototype and is not yet production-ready code.</p>
 
-        <p class="v-paragraph"><strong>General graceful degradation: </strong></p>
-
-        <ul class="v-list">
-            <li>Benton font may be replaced with Helvetica or Arial</li>
-        </ul>
-
         <nav id="nav-primary" class="v-nav">
+            <h2 class="v-title v-title-small">Velcro Navigation</h2>
             <ul>
+                <li><a href="#browserSupport" class="v-link">Browser support</a></li>
+                <li><a href="#interactionStates" class="v-link">Interaction states</a></li>
                 <li><a href="#palette" class="v-link">Palette</a></li>
                 <li><a href="#titles" class="v-link">Titles</a></li>
                 <li><a href="#articleHeader" class="v-link">Article header</a></li>
@@ -47,6 +44,45 @@
                 <li><a href="#moduleHeaders" class="v-link">Module headers</a></li>
             </ul>
         </nav>
+
+        <section id="browserSupport" class="v-section">
+
+            <h2 class="v-title v-title-medium">Browser support</h2>
+
+            <p class="v-paragraph">Specific details about the level of support for different browsers will be available elsewhere.</p>
+
+            <h2 class="v-title v-title-small">Graceful degradation</h2>
+
+            <p class="v-paragraph">To ensure maximum performance and low maintenance, native CSS is used as much as possible. This means
+                that in older browsers there may be minor differences in appearance. These differences should be listed in this document alongside
+                the examples.</p>
+
+            <p class="v-paragraph">General examples of degradation:</p>
+
+            <ul class="v-list">
+                <li>The Benton font may be replaced with Helvetica or Arial</li>
+            </ul>
+
+            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+
+        </section>
+
+        <section id="interactionStates" class="v-section">
+
+            <h2 class="v-title v-title-medium">Interaction states</h2>
+
+            <p class="v-paragraph">Standard class names will be used to mark the interaction states of page elements.
+                These classes are not styled on their own, but instead used in combination with other classes.</p>
+
+            <ul class="v-list">
+                <li><code>:hover</code> - when mouse pointer is positioned over the element, or when it has focus using keyboard navigation</li>
+                <li><code>ft-state-selected</code> e.g. for a tab when its contents are currently shown</li>
+                <li><code>ft-state-disabled</code> for when something is currently not functional</li>
+            </ul>
+
+            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+
+        </section>
 
         <section id="palette" class="v-section">
 
@@ -59,27 +95,27 @@
             <div class="v-swatches">
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Pink"></div>
-                    <div class="v-swatch-label">Pink #fff1e0</div>
+                    <div class="v-swatch-label">Pink <code>#fff1e0</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Blue"></div>
-                    <div class="v-swatch-label">Blue #2e6e9e</div>
+                    <div class="v-swatch-label">Blue <code>#2e6e9e</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Claret"></div>
-                    <div class="v-swatch-label">Claret #9b164f</div>
+                    <div class="v-swatch-label">Claret <code>#9b164f</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Skyline"></div>
-                    <div class="v-swatch-label">Skyline #e3dfca</div>
+                    <div class="v-swatch-label">Skyline <code>#e3dfca</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Orange"></div>
-                    <div class="v-swatch-label">Orange #d66d06</div>
+                    <div class="v-swatch-label">Orange <code>#d66d06</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Fills"></div>
-                    <div class="v-swatch-label">Fills #9e2f50</div>
+                    <div class="v-swatch-label">Fills <code>#9e2f50</code></div>
                 </div>
             </div>
 
@@ -88,23 +124,23 @@
             <div class="v-swatches">
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-WarmGrey1"></div>
-                    <div class="v-swatch-label">WarmGrey1 #a7a59b</div>
+                    <div class="v-swatch-label">WarmGrey1 <code>#a7a59b</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-WarmGrey2"></div>
-                    <div class="v-swatch-label">WarmGrey2 #74736c</div>
+                    <div class="v-swatch-label">WarmGrey2 <code>#74736c</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-CoolGrey1"></div>
-                    <div class="v-swatch-label">CoolGrey1 #777</div>
+                    <div class="v-swatch-label">CoolGrey1 <code>#777</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-CoolGrey2"></div>
-                    <div class="v-swatch-label">CoolGrey2 #dfded8</div>
+                    <div class="v-swatch-label">CoolGrey2 <code>#dfded8</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-DarkGrey"></div>
-                    <div class="v-swatch-label">DarkGrey #505050</div>
+                    <div class="v-swatch-label">DarkGrey <code>#505050</code></div>
                 </div>
             </div>
 
@@ -113,15 +149,15 @@
             <div class="v-swatches">
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Tint1"></div>
-                    <div class="v-swatch-label">Tint1 #f6e9d8</div>
+                    <div class="v-swatch-label">Tint1 <code>#f6e9d8</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Tint2"></div>
-                    <div class="v-swatch-label">Tint2 #e9decf</div>
+                    <div class="v-swatch-label">Tint2 <code>#e9decf</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Tint3"></div>
-                    <div class="v-swatch-label">Tint3 #cec6b9</div>
+                    <div class="v-swatch-label">Tint3 <code>#cec6b9</code></div>
                 </div>
             </div>
 
@@ -130,11 +166,11 @@
             <div class="v-swatches">
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Red"></div>
-                    <div class="v-swatch-label">Red #c00</div>
+                    <div class="v-swatch-label">Red <code>#c00</code></div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Green"></div>
-                    <div class="v-swatch-label">Green #458b00</div>
+                    <div class="v-swatch-label">Green <code>#458b00</code></div>
                 </div>
             </div>
 
@@ -193,7 +229,7 @@
                 <li>Background colour gradients may render as flat colour</li>
             </ul>
 
-            <h3 class="v-title v-title-small">Using &lt;button&gt;</h3>
+            <h3 class="v-title v-title-small">Using <code>&lt;button&gt;</code></h3>
 
             <div class="v-sample">
 
@@ -201,8 +237,8 @@
                 <tr>
                     <th class="v-table-column-title">Size</th>
                     <th class="v-table-column-title">Default</th>
-                    <th class="v-table-column-title">Negative</th>
-                    <th class="v-table-column-title">Disabled</th>
+                    <th class="v-table-column-title"><code>ft-button-negative</code></th>
+                    <th class="v-table-column-title"><code>ft-state-disabled</code></th>
                 </tr>
                 <tr>
                     <td class="v-table-row-title">Large (30px)</td>
@@ -228,7 +264,7 @@
 
             <p class="v-note">The disabled style can be applied by either the ft-state-disabled class, or by the disabled HTML attribute.</p>
 
-            <h3 class="v-title v-title-small">Using  &lt;a&gt;</h3>
+            <h3 class="v-title v-title-small">Using  <code>&lt;a&gt;</code></h3>
 
             <div class="v-sample">
 
@@ -236,8 +272,8 @@
                 <tr>
                     <th class="v-table-column-title">Size</th>
                     <th class="v-table-column-title">Default</th>
-                    <th class="v-table-column-title">Negative</th>
-                    <th class="v-table-column-title">Disabled</th>
+                    <th class="v-table-column-title"><code>ft-button-negative</code></th>
+                    <th class="v-table-column-title"><code>ft-state-disabled</code></th>
                 </tr>
                 <tr>
                     <td class="v-table-row-title">Large (30px)</td>

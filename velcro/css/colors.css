@@ -1,9 +1,10 @@
 /* Primary Palette */
-.ft-color-PrimaryPink { background-color: #fff1e0; }
-.ft-color-LinkBlue { background-color: #2e6e9e; }
+.ft-color-Pink { background-color: #fff1e0; }
+.ft-color-Blue { background-color: #2e6e9e; }
 .ft-color-Claret { background-color: #9b164f; }
 .ft-color-Skyline { background-color: #e3dfca; }
 .ft-color-Orange { background-color: #d66d06; }
+.ft-color-Fills { background-color: #9e2f50; }
 
 /* Greys */
 .ft-color-WarmGrey1 { background-color: #a7a59b; }
@@ -15,6 +16,7 @@
 /* Tints */
 .ft-color-Tint1 { background-color: #f6e9d8; }
 .ft-color-Tint2 { background-color: #e9decf; }
+.ft-color-Tint3 { background-color: #cec6b9; }
 
 /* Colours */
 .ft-color-Red { background-color: #c00; }

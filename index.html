@@ -32,6 +32,12 @@
 
         <p class="v-paragraph v-warning">WARNING: This is currently just a prototype and is not yet production-ready code.</p>
 
+        <p class="v-paragraph"><strong>General graceful degradation: </strong></p>
+
+        <ul class="v-list">
+            <li>Benton font may be replaced with Helvetica or Arial</li>
+        </ul>
+
         <nav id="nav-primary" class="v-nav">
             <ul>
                 <li><a href="#palette" class="v-link">Palette</a></li>
@@ -52,12 +58,12 @@
 
             <div class="v-swatches">
                 <div class="v-swatch">
-                    <div class="v-swatch-color ft-color-PrimaryPink"></div>
-                    <div class="v-swatch-label">Primary Pink #fff1e0</div>
+                    <div class="v-swatch-color ft-color-Pink"></div>
+                    <div class="v-swatch-label">Pink #fff1e0</div>
                 </div>
                 <div class="v-swatch">
-                    <div class="v-swatch-color ft-color-LinkBlue"></div>
-                    <div class="v-swatch-label">Link Blue #2e6e9e</div>
+                    <div class="v-swatch-color ft-color-Blue"></div>
+                    <div class="v-swatch-label">Blue #2e6e9e</div>
                 </div>
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Claret"></div>
@@ -70,6 +76,10 @@
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Orange"></div>
                     <div class="v-swatch-label">Orange #d66d06</div>
+                </div>
+                <div class="v-swatch">
+                    <div class="v-swatch-color ft-color-Fills"></div>
+                    <div class="v-swatch-label">Fills #9e2f50</div>
                 </div>
             </div>
 
@@ -108,6 +118,10 @@
                 <div class="v-swatch">
                     <div class="v-swatch-color ft-color-Tint2"></div>
                     <div class="v-swatch-label">Tint2 #e9decf</div>
+                </div>
+                <div class="v-swatch">
+                    <div class="v-swatch-color ft-color-Tint3"></div>
+                    <div class="v-swatch-label">Tint3 #cec6b9</div>
                 </div>
             </div>
 
@@ -172,31 +186,38 @@
 
             <p class="v-paragraph">Things that look like buttons.</p>
 
+            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+
+            <ul class="v-list">
+                <li>Rounded corners may render as square corners</li>
+                <li>Background colour gradients may render as flat colour</li>
+            </ul>
+
             <h3 class="v-title v-title-small">Using &lt;button&gt;</h3>
 
             <div class="v-sample">
 
                 <table class="v-table">
                 <tr>
-                    <th>Size</th>
-                    <th>Default</th>
-                    <th>Negative</th>
-                    <th>Disabled</th>
+                    <th class="v-table-column-title">Size</th>
+                    <th class="v-table-column-title">Default</th>
+                    <th class="v-table-column-title">Negative</th>
+                    <th class="v-table-column-title">Disabled</th>
                 </tr>
                 <tr>
-                    <td>Large (30px)</td>
+                    <td class="v-table-row-title">Large (30px)</td>
                     <td><button class="ft-button ft-button-large"><span><span>Sign in</span></span></button></td>
                     <td><button class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></button></td>
                     <td><button class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></button></td>
                 </tr>
                 <tr>
-                    <td>Medium (24px)</td>
+                    <td class="v-table-row-title">Medium (24px)</td>
                     <td><button class="ft-button ft-button-medium"><span><span>Sign in</span></span></button></td>
                     <td><button class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></button></td>
                     <td><button class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></button></td>
                 </tr>
                 <tr>
-                    <td>Small (16px)</td>
+                    <td class="v-table-row-title">Small (16px)</td>
                     <td><button class="ft-button ft-button-small"><span><span>Sign in</span></span></button></td>
                     <td><button class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></button></td>
                     <td><button class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></button></td>
@@ -213,25 +234,25 @@
 
                 <table class="v-table">
                 <tr>
-                    <th>Size</th>
-                    <th>Default</th>
-                    <th>Negative</th>
-                    <th>Disabled</th>
+                    <th class="v-table-column-title">Size</th>
+                    <th class="v-table-column-title">Default</th>
+                    <th class="v-table-column-title">Negative</th>
+                    <th class="v-table-column-title">Disabled</th>
                 </tr>
                 <tr>
-                    <td>Large (30px)</td>
+                    <td class="v-table-row-title">Large (30px)</td>
                     <td><a href="#" class="ft-button ft-button-large"><span><span>Submit</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></a></td>
                 </tr>
                 <tr>
-                    <td>Medium (24px)</td>
+                    <td class="v-table-row-title">Medium (24px)</td>
                     <td><a href="#" class="ft-button ft-button-medium"><span><span>Submit</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></a></td>
                 </tr>
                 <tr>
-                    <td>Small (16px)</td>
+                    <td class="v-table-row-title">Small (16px)</td>
                     <td><a href="#" class="ft-button ft-button-small"><span><span>Submit</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></a></td>

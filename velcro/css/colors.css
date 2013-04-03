@@ -1,0 +1,21 @@
+/* Primary Palette */
+.ft-color-PrimaryPink { background-color: #fff1e0; }
+.ft-color-LinkBlue { background-color: #2e6e9e; }
+.ft-color-Claret { background-color: #9b164f; }
+.ft-color-Skyline { background-color: #e3dfca; }
+.ft-color-Orange { background-color: #d66d06; }
+
+/* Greys */
+.ft-color-WarmGrey1 { background-color: #a7a59b; }
+.ft-color-WarmGrey2 { background-color: #74736c; }
+.ft-color-CoolGrey1 { background-color: #777; }
+.ft-color-CoolGrey2 { background-color: #dfded8; }
+.ft-color-DarkGrey { background-color: #505050; }
+
+/* Tints */
+.ft-color-Tint1 { background-color: #f6e9d8; }
+.ft-color-Tint2 { background-color: #e9decf; }
+
+/* Colours */
+.ft-color-Red { background-color: #c00; }
+.ft-color-Green { background-color: #458b00; }

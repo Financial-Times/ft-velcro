@@ -42,3 +42,7 @@ abbr, acronym
 	border-bottom: .1em dotted;
 	cursor: help;
 }
+
+a {
+    text-decoration: none;
+}

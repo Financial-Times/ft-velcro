@@ -46,6 +46,7 @@
 .v-link {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #66a;
+    text-decoration: underline;
 }
 
 .v-link:hover {
@@ -59,7 +60,7 @@
 .v-paragraph {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 19px;
     color: #666;
 }
 
@@ -72,6 +73,10 @@
     border: 1px solid #eedddd;
     padding: 15px;
     background-color: #fff1e0;
+}
+
+.v-sample-rail {
+    width: 352px;
 }
 
 .v-note {
@@ -95,6 +100,9 @@
 }
 
 .v-swatches {
+    margin: 0 0 20px 0;
+    border: 1px solid #eedddd;
+    padding: 15px 15px 0 15px;
     overflow: hidden;
 }
 

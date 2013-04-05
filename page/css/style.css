@@ -1,7 +1,7 @@
 /* Velcro GitHub pages styles - not part of Velcro itself */
 
 .v-pagecontainer {
-    margin: 0 auto;
+    margin: 0 auto 200px auto;
     width: 990px;
 }
 
@@ -144,4 +144,12 @@
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 12px;
     line-height: 30px;
+}
+
+.v-grid-col {
+    float: left;
+}
+
+.v-grid-col-50 {
+    width: 50%;
 }

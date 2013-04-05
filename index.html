@@ -241,19 +241,19 @@
                     <th class="v-table-column-title"><code>ft-state-disabled</code></th>
                 </tr>
                 <tr>
-                    <td class="v-table-row-title">Large (30px)</td>
+                    <td class="v-table-row-title">Large</td>
                     <td><button class="ft-button ft-button-large"><span><span>Sign in</span></span></button></td>
                     <td><button class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></button></td>
                     <td><button class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></button></td>
                 </tr>
                 <tr>
-                    <td class="v-table-row-title">Medium (24px)</td>
+                    <td class="v-table-row-title">Medium</td>
                     <td><button class="ft-button ft-button-medium"><span><span>Sign in</span></span></button></td>
                     <td><button class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></button></td>
                     <td><button class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></button></td>
                 </tr>
                 <tr>
-                    <td class="v-table-row-title">Small (16px)</td>
+                    <td class="v-table-row-title">Small</td>
                     <td><button class="ft-button ft-button-small"><span><span>Sign in</span></span></button></td>
                     <td><button class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></button></td>
                     <td><button class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></button></td>
@@ -276,19 +276,19 @@
                     <th class="v-table-column-title"><code>ft-state-disabled</code></th>
                 </tr>
                 <tr>
-                    <td class="v-table-row-title">Large (30px)</td>
+                    <td class="v-table-row-title">Large</td>
                     <td><a href="#" class="ft-button ft-button-large"><span><span>Submit</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></a></td>
                 </tr>
                 <tr>
-                    <td class="v-table-row-title">Medium (24px)</td>
+                    <td class="v-table-row-title">Medium</td>
                     <td><a href="#" class="ft-button ft-button-medium"><span><span>Submit</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></a></td>
                 </tr>
                 <tr>
-                    <td class="v-table-row-title">Small (16px)</td>
+                    <td class="v-table-row-title">Small</td>
                     <td><a href="#" class="ft-button ft-button-small"><span><span>Submit</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></a></td>
                     <td><a href="#" class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></a></td>
@@ -309,23 +309,54 @@
 
             <p class="v-paragraph">A virtually identical style is currently used in the site (in freestyles and components), but does not follow the Velcro coding rules, so these new classes should be used instead.</p>
 
-            <h3 class="v-title v-title-small">Untabbed</h3>
+            <h3 class="v-title v-title-small">Module Header with Title</h3>
 
-            <div class="v-sample v-sample-rail">
+            <div class="v-grid-col v-grid-col-50">
 
-                <div class="ft-mod-header ft-mod-header-border">
-                    <h3 class="ft-mod-header-title">Header title</h3>
+                <div class="v-sample v-sample-rail">
+
+                    <div class="ft-mod-header ft-mod-header-border">
+                        <h3 class="ft-mod-header-title">Default</h3>
+                    </div>
+
                 </div>
 
             </div>
 
-            <h3 class="v-title v-title-small">Tabs style 1 [name TBC]</h3>
+            <div class="v-grid-col v-grid-col-50">
+
+                <div class="v-sample v-sample-rail v-sample-alongside">
+
+                    <div class="ft-mod-header ft-mod-header-border ft-mod-header-tint">
+                        <h3 class="ft-mod-header-title">With tint</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h3 class="v-title v-title-small">Module Header with Tabs</h3>
 
             <div class="v-sample v-sample-rail">
 
-                <div class="ft-mod-header ft-mod-header-border">
+                <div class="ft-mod-header">
+                    <ul class="ft-tabs ft-tabs-notitle">
+                        <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">TAB 1</a></li>
+                        <li class="ft-tab"><a href="#" class="ft-tab-title">TAB 2</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="v-note">Need to show all states: selected, unselected, disabled, hover etc.</p>
+
+            <h3 class="v-title v-title-small">Module Header with Title and Tabs</h3>
+
+            <div class="v-sample v-sample-rail">
+
+                <div class="ft-mod-header ft-mod-header-border ft-mod-header-tint">
                     <h3 class="ft-mod-header-title">Header title</h3>
-                    <ul class="ft-tabs-style1">
+                    <ul class="ft-tabs ft-tabs-withtitle">
                         <li class="ft-tab"><a href="#" class="ft-tab-title">Tab 1</a></li>
                         <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">Tab 2</a></li>
                         <li class="ft-tab"><a href="#" class="ft-tab-title">Tab 3</a></li>
@@ -335,18 +366,7 @@
 
             </div>
 
-            <h3 class="v-title v-title-small">Tabs style 2 [name TBC]</h3>
-
-            <div class="v-sample v-sample-rail">
-
-                <div class="ft-mod-header">
-                    <ul class="ft-tabs-style2">
-                        <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">TAB 1</a></li>
-                        <li class="ft-tab"><a href="#" class="ft-tab-title">TAB 2</a></li>
-                    </ul>
-                </div>
-
-            </div>
+            <p class="v-note">Need to show all states: selected, unselected, disabled, hover etc.</p>
 
             <p class="v-note">This style of tabs should use uppercase in the titles, but this is not enforced via CSS. Content editors should follow this convention.</p>
 

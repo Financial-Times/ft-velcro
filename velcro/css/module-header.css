@@ -42,6 +42,9 @@ a.ft-mod-header-title:hover {
 
 .ft-mod-header-border {
     border-top: 4px solid #a7a59b;
+}
+
+.ft-mod-header-tint {
     background-color: #e9decf;
 }
 
@@ -69,27 +72,27 @@ a.ft-tab-title:hover {
  * Module header tabs variants
  */
 
-.ft-tabs-style1 {
+.ft-tabs-withtitle {
     float: right;
 }
 
-.ft-tabs-style1 .ft-tab {
+.ft-tabs-withtitle .ft-tab {
     margin-right: 10px;
 }
 
-.ft-tabs-style1 .ft-state-selected {
+.ft-tabs-withtitle .ft-state-selected {
     background: url('../img/mod-tab-selected.gif') bottom center no-repeat;
 }
 
-.ft-tabs-style1 .ft-tab-title {
+.ft-tabs-withtitle .ft-tab-title {
     font-size: 11px;
     line-height: 34px;
 }
-.ft-tabs-style1 .ft-state-selected .ft-tab-title {
+.ft-tabs-withtitle .ft-state-selected .ft-tab-title {
     color: #000;
 }
 
-.ft-tabs-style2 .ft-tab {
+.ft-tabs-notitle .ft-tab {
     margin-left: 2px;
     border-top: 4px solid #ede2d2;
     width: 175px;
@@ -97,22 +100,22 @@ a.ft-tab-title:hover {
     background: #fbeddd url('../img/mod-header-border.png') bottom left repeat-x;
 }
 
-.ft-tabs-style2 .ft-tab:first-child {
+.ft-tabs-notitle .ft-tab:first-child {
     margin-left: 0;
 }
 
-.ft-tabs-style2 .ft-tab-title {
+.ft-tabs-notitle .ft-tab-title {
     font-size: 12px;
     line-height: 34px;
     font-weight: bold;
     color: #979088;
 }
 
-.ft-tabs-style2 .ft-state-selected .ft-tab-title {
+.ft-tabs-notitle .ft-state-selected .ft-tab-title {
     color: #333;
 }
 
-.ft-tabs-style2 .ft-state-selected {
+.ft-tabs-notitle .ft-state-selected {
     border-top-color: #a7a59b;
     background-color: #e9decf;
 }

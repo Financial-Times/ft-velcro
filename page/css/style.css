@@ -138,6 +138,10 @@
     width: 300px;
 }
 
+.v-swatch code {
+    color: #aaa;
+}
+
 .v-swatch-color {
     float: left ;
     margin-right: 10px;

@@ -13,3 +13,9 @@
   src: url($fontPath + '76e393a7-edbd-4283-91db-93b1a40fe465-2.eot?#iefix') format("embedded-opentype"), url($fontPath + '76e393a7-edbd-4283-91db-93b1a40fe465-3.woff') format("woff");
   font-style: normal;
   font-weight: bold; }
+
+/* These variables should probably be renamed to generic "ftFont-Serif" & "ftFont-SansSerif" once we have fully switched
+   page components over to use the brand web fonts. Currently for example, there is a mix of Benton & Arial */
+$ftFont-Arial: Arial, Helvetica, sans-serif;
+$ftFont-Benton: BentonSans, Helvetica, Arial, sans-serif;
+$ftFont-Georgia: Georgia, 'Times New Roman', serif;

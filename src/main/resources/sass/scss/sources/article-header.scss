@@ -1,0 +1,19 @@
+.ft-label-article {
+    font-family: BentonSans, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+}
+
+.ft-article-timestamp {
+    font-family: BentonSans, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    color: #000;
+}
+
+.ft-lead-small .ft-article-timestamp {
+    font-size: 11px;
+}

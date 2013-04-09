@@ -1,0 +1,118 @@
+/**
+ * Module header - general
+ */
+
+.ft-mod-header {
+    clear: left;
+    font-family: BentonSans, Helvetica, Arial, sans-serif;
+    background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+    overflow: hidden;
+}
+
+.ft-mod-header-title {
+    float: left;
+    margin: 8px 0 8px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #434343;
+}
+
+a.ft-mod-header-title:hover {
+    color: #2e6e9e;
+}
+
+.msie6 .ft-mod-header {
+    height: 34px;
+    overflow: visible;
+}
+
+.msie6 .ft-mod-header-title {
+    display: inline;
+}
+
+.msie7 .ft-mod-header {
+    min-height: 34px;
+}
+
+/**
+ * Module header variants
+ */
+
+.ft-mod-header-border {
+    border-top: 4px solid #a7a59b;
+    background-color: #e9decf;
+}
+
+/**
+ * Module header tabs general
+ */
+.ft-tabs {}
+
+.ft-tab {
+    float: left;
+}
+
+.ft-tab-title {
+    white-space: nowrap;
+    color: #434343;
+    text-overflow: ellipsis;
+}
+
+a.ft-tab-title:hover {
+    color: #2e6e9e;
+}
+
+
+/**
+ * Module header tabs variants
+ */
+
+.ft-tabs-style1 {
+    float: right;
+}
+
+.ft-tabs-style1 .ft-tab {
+    margin-right: 10px;
+}
+
+.ft-tabs-style1 .ft-state-selected {
+    background: url($imagePath + 'mod-tab-selected.gif') bottom center no-repeat;
+}
+
+.ft-tabs-style1 .ft-tab-title {
+    font-size: 11px;
+    line-height: 34px;
+}
+.ft-tabs-style1 .ft-state-selected .ft-tab-title {
+    color: #000;
+}
+
+.ft-tabs-style2 .ft-tab {
+    margin-left: 2px;
+    border-top: 4px solid #ede2d2;
+    width: 175px;
+    text-align: center;
+    background: #fbeddd url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+}
+
+.ft-tabs-style2 .ft-tab:first-child {
+    margin-left: 0;
+}
+
+.ft-tabs-style2 .ft-tab-title {
+    font-size: 12px;
+    line-height: 34px;
+    font-weight: bold;
+    color: #979088;
+}
+
+.ft-tabs-style2 .ft-state-selected .ft-tab-title {
+    color: #333;
+}
+
+.ft-tabs-style2 .ft-state-selected {
+    border-top-color: #a7a59b;
+    background-color: #e9decf;
+}

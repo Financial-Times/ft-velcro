@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+  Build FT brightcove API and run the QUnit tests on local selenium
+  mvn clean install -P local-selenium
+
+  Run the Jetty server and access the test files at http://yourhostname.ft.com:8080
+  mvn jetty:run
+
+  target/dist contains the final JavaScript library and API docs
+  target/surefire-reports/html contains the QUnit test results
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ft.velcro</groupId>
+    <artifactId>ft-velcro</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0</version>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <projectVersion>${project.version}</projectVersion>
+
+        <!-- default build profile is for ft tracking -->
+        <group.name>ft-velcro</group.name>
+    </properties>
+
+    <name>FTVelcro</name>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/*</exclude>
+                    </excludes>
+                    <skipIfEmpty>true</skipIfEmpty>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+            </plugin>
+            
+            <plugin>
+                <groupId>ro.isdc.wro4j</groupId>
+                <artifactId>wro4j-maven-plugin</artifactId>
+                <version>1.6.2</version>
+                <executions>
+                    <execution>
+                        <id>bundleCss</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <cssDestinationFolder>${project.build.directory}/wro/unmin/css/</cssDestinationFolder>
+                            <wroFile>${basedir}/src/main/config/wroCombiningCSS.groovy</wroFile>
+                            <contextFolder>${basedir}/src/main/resources/sass/scss</contextFolder>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+                            <extraConfigFile>${basedir}/src/main/webapp/WEB-INF/wroCombining.properties</extraConfigFile>
+                            <minimize>false</minimize>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>bundleJs</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <jsDestinationFolder>${project.build.directory}/wro/unmin/js/</jsDestinationFolder>
+                            <wroFile>${basedir}/src/main/config/wroCombiningJS.groovy</wroFile>
+                            <contextFolder>${basedir}/src/main/resources/js</contextFolder>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+                            <extraConfigFile>${basedir}/src/main/webapp/WEB-INF/wroCombining.properties</extraConfigFile>
+                            <minimize>false</minimize>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>minimiseCss</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <contextFolder>${project.build.directory}/wro/unmin/css</contextFolder>
+                            <cssDestinationFolder>${project.build.directory}/classes/distribution/</cssDestinationFolder>
+                            <wroFile>${basedir}/src/main/config/wroMinimisingCSS.groovy</wroFile>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+                            <extraConfigFile>${basedir}/src/main/webapp/WEB-INF/wroMinimising.properties</extraConfigFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>minimiseJs</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <contextFolder>${project.build.directory}/wro/unmin/js</contextFolder>
+                            <jsDestinationFolder>${project.build.directory}/classes/distribution/</jsDestinationFolder>
+                            <wroFile>${basedir}/src/main/config/wroMinimisingJS.groovy</wroFile>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+                            <extraConfigFile>${basedir}/src/main/webapp/WEB-INF/wroMinimising.properties</extraConfigFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>runJsHint</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>jshint</goal>
+                        </goals>
+                        <configuration>
+                            <options>bitwise,curly,eqeqeq,forin,immed,indent=4,latedef,newcap,noarg,nonew,undef,trailing,onevar,white,browser</options>
+                            <contextFolder>${basedir}/src/main/resources/js</contextFolder>
+                            <wroFile>${basedir}/src/main/config/wroCombiningJS.groovy</wroFile>
+                            <failNever>false</failNever>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+    </build>
+
+    <profiles>
+
+
+    </profiles>
+</project>

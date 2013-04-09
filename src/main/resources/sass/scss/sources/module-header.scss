@@ -5,7 +5,7 @@
 .ft-mod-header {
     clear: left;
     font-family: BentonSans, Helvetica, Arial, sans-serif;
-    background: url('../img/mod-header-border.png') bottom left repeat-x;
+    background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
     overflow: hidden;
 }
 
@@ -78,7 +78,7 @@ a.ft-tab-title:hover {
 }
 
 .ft-tabs-style1 .ft-state-selected {
-    background: url('../img/mod-tab-selected.gif') bottom center no-repeat;
+    background: url($imagePath + 'mod-tab-selected.gif') bottom center no-repeat;
 }
 
 .ft-tabs-style1 .ft-tab-title {
@@ -94,7 +94,7 @@ a.ft-tab-title:hover {
     border-top: 4px solid #ede2d2;
     width: 175px;
     text-align: center;
-    background: #fbeddd url('../img/mod-header-border.png') bottom left repeat-x;
+    background: #fbeddd url($imagePath + 'mod-header-border.png') bottom left repeat-x;
 }
 
 .ft-tabs-style2 .ft-tab:first-child {

@@ -1,15 +1,15 @@
 /* Benton Regular */
 @font-face {
   font-family: "BentonSans";
-  src: url('http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot');
-  src: url('http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot?#iefix') format("embedded-opentype"), url($fontPath + 'e9d47971-b7d8-4663-8c9b-3a0b425e981f-3.woff') format("woff");
+  src: url($fontPath + 'e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot');
+  src: url($fontPath + 'e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot?#iefix') format("embedded-opentype"), url($fontPath + 'e9d47971-b7d8-4663-8c9b-3a0b425e981f-3.woff') format("woff");
   font-style: normal;
   font-weight: normal; }
 
 /* Benton Bold */
 @font-face {
   font-family: "BentonSans";
-  src: url('http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot');
-  src: url('http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot?#iefix') format("embedded-opentype"), url($fontPath + '76e393a7-edbd-4283-91db-93b1a40fe465-3.woff') format("woff");
+  src: url($fontPath + '76e393a7-edbd-4283-91db-93b1a40fe465-2.eot');
+  src: url($fontPath + '76e393a7-edbd-4283-91db-93b1a40fe465-2.eot?#iefix') format("embedded-opentype"), url($fontPath + '76e393a7-edbd-4283-91db-93b1a40fe465-3.woff') format("woff");
   font-style: normal;
   font-weight: bold; }

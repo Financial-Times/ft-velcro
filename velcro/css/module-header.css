@@ -1,15 +1,50 @@
 /**
- * Module header - general
+ * Module header small - general
+ */
+.ft-modhdr-sml {
+    position: relative;
+    border-radius: 4px;
+    background-color: #e9decf;
+    height: 9px;
+    overflow: hidden;
+}
+
+.ft-modhdr-sml-title { /* TODO: shouldn't be tied to the mod hrd sml? */
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    padding:0 10px;
+    font-family: BentonSans, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 10px;
+    background-color: #fff1e0;
+}
+
+.ft-modhdr-sml-titleleft {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.ft-modhdr-sml-titleleft .ft-modhdr-sml-title {
+    padding-left: 0;
+}
+
+.ft-modhdr-sml-titlecenter {
+    text-align: center;
+}
+
+/**
+ * Module header medium - general
  */
 
-.ft-mod-header {
+.ft-modhdr-med {
     clear: left;
     font-family: BentonSans, Helvetica, Arial, sans-serif;
     background: url('../img/mod-header-border.png') bottom left repeat-x;
     overflow: hidden;
 }
 
-.ft-mod-header-title {
+.ft-modhdr-med-title {
     float: left;
     margin: 8px 0 8px 10px;
     font-size: 12px;
@@ -19,37 +54,37 @@
     color: #434343;
 }
 
-a.ft-mod-header-title:hover {
+a.ft-modhdr-med-title:hover {
     color: #2e6e9e;
 }
 
-.msie6 .ft-mod-header {
+.msie6 .ft-modhdr-med {
     height: 34px;
     overflow: visible;
 }
 
-.msie6 .ft-mod-header-title {
+.msie6 .ft-modhdr-med-title {
     display: inline;
 }
 
-.msie7 .ft-mod-header {
+.msie7 .ft-modhdr-med {
     min-height: 34px;
 }
 
 /**
- * Module header variants
+ * Module header medium variants
  */
 
-.ft-mod-header-border {
+.ft-modhdr-med-border {
     border-top: 4px solid #a7a59b;
 }
 
-.ft-mod-header-tint {
+.ft-modhdr-med-tint {
     background-color: #e9decf;
 }
 
 /**
- * Module header tabs general
+ * Module header medium tabs general
  */
 .ft-tabs {}
 
@@ -58,6 +93,7 @@ a.ft-mod-header-title:hover {
 }
 
 .ft-tab-title {
+    display: block;
     white-space: nowrap;
     color: #434343;
     text-overflow: ellipsis;
@@ -69,7 +105,7 @@ a.ft-tab-title:hover {
 
 
 /**
- * Module header tabs variants
+ * Module header medium tabs variants
  */
 
 .ft-tabs-withtitle {
@@ -97,7 +133,7 @@ a.ft-tab-title:hover {
     border-top: 4px solid #ede2d2;
     width: 175px;
     text-align: center;
-    background: #fbeddd url('../img/mod-header-border.png') bottom left repeat-x;
+    background: #fbeddd url('../img/modhdr-border.png') bottom left repeat-x;
 }
 
 .ft-tabs-notitle .ft-tab:first-child {

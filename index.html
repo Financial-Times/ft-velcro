@@ -41,7 +41,8 @@
                 <li><a href="#titles" class="v-link">Titles</a></li>
                 <li><a href="#articleHeader" class="v-link">Article header</a></li>
                 <li><a href="#buttons" class="v-link">Buttons</a></li>
-                <li><a href="#moduleHeaders" class="v-link">Module headers</a></li>
+                <li><a href="#moduleHeadersSmall" class="v-link">Module headers: small</a></li>
+                <li><a href="#moduleHeadersMedium" class="v-link">Module headers: medium</a></li>
             </ul>
         </nav>
 
@@ -301,22 +302,66 @@
 
         </section>
 
-        <section id="moduleHeaders" class="v-section">
+        <section id="moduleHeadersSmall" class="v-section">
 
-            <h2 class="v-title v-title-medium">Module headers</h2>
+            <h2 class="v-title v-title-medium">Module headers: small</h2>
+
+            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+
+            <ul class="v-list">
+                <li>Rounded corners may render as square corners</li>
+            </ul>
+
+            <h3 class="v-title v-title-small">Module Header Small</h3>
+
+            <div class="v-sample v-sample-editorial">
+
+                <div class="ft-modhdr-sml"></div>
+
+            </div>
+
+            <h3 class="v-title v-title-small">Module Header Small with Title, left-aligned</h3>
+
+            <div class="v-sample v-sample-editorial">
+
+                <div class="ft-modhdr-sml ft-modhdr-sml-titleleft">
+                    <h3 class="ft-modhdr-sml-title">HEADER TITLE TEXT</h3>
+                </div>
+
+            </div>
+
+            <h3 class="v-title v-title-small">Module Header Small with Title, centred</h3>
+
+            <div class="v-sample v-sample-editorial">
+
+                <div class="ft-modhdr-sml ft-modhdr-sml-titlecenter">
+                    <h3 class="ft-modhdr-sml-title">HEADER TITLE TEXT</h3>
+                </div>
+
+            </div>
+
+            <p class="v-note">This style of header should use uppercase in the titles, but this is not enforced via CSS. Content editors should follow this convention.</p>
+
+            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+
+        </section>
+
+        <section id="moduleHeadersMedium" class="v-section">
+
+            <h2 class="v-title v-title-medium">Module headers: medium</h2>
 
             <p class="v-paragraph">Currently used only in the rail but in future could be used anywhere.</p>
 
             <p class="v-paragraph">A virtually identical style is currently used in the site (in freestyles and components), but does not follow the Velcro coding rules, so these new classes should be used instead.</p>
 
-            <h3 class="v-title v-title-small">Module Header with Title</h3>
+            <h3 class="v-title v-title-small">Module Header Medium with Title</h3>
 
             <div class="v-grid-col v-grid-col-50">
 
                 <div class="v-sample v-sample-rail">
 
-                    <div class="ft-mod-header ft-mod-header-border">
-                        <h3 class="ft-mod-header-title">Default</h3>
+                    <div class="ft-modhdr-med ft-modhdr-med-border">
+                        <h3 class="ft-modhdr-med-title">Default</h3>
                     </div>
 
                 </div>
@@ -327,22 +372,22 @@
 
                 <div class="v-sample v-sample-rail v-sample-alongside">
 
-                    <div class="ft-mod-header ft-mod-header-border ft-mod-header-tint">
-                        <h3 class="ft-mod-header-title">With tint</h3>
+                    <div class="ft-modhdr-med ft-modhdr-med-border ft-modhdr-med-tint">
+                        <h3 class="ft-modhdr-med-title">With tint</h3>
                     </div>
 
                 </div>
 
             </div>
 
-            <h3 class="v-title v-title-small">Module Header with Tabs</h3>
+            <h3 class="v-title v-title-small">Module Header Medium with Tabs</h3>
 
             <div class="v-sample v-sample-rail">
 
-                <div class="ft-mod-header">
+                <div class="ft-modhdr-med">
                     <ul class="ft-tabs ft-tabs-notitle">
-                        <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">TAB 1</a></li>
-                        <li class="ft-tab"><a href="#" class="ft-tab-title">TAB 2</a></li>
+                        <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
+                        <li class="ft-tab"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
                     </ul>
                 </div>
 
@@ -350,17 +395,16 @@
 
             <p class="v-note">Need to show all states: selected, unselected, disabled, hover etc.</p>
 
-            <h3 class="v-title v-title-small">Module Header with Title and Tabs</h3>
+            <h3 class="v-title v-title-small">Module Header Medium with Title and Tabs</h3>
 
             <div class="v-sample v-sample-rail">
 
-                <div class="ft-mod-header ft-mod-header-border ft-mod-header-tint">
-                    <h3 class="ft-mod-header-title">Header title</h3>
+                <div class="ft-modhdr-med ft-modhdr-med-border ft-modhdr-med-tint">
+                    <h3 class="ft-modhdr-med-title">Header title</h3>
                     <ul class="ft-tabs ft-tabs-withtitle">
-                        <li class="ft-tab"><a href="#" class="ft-tab-title">Tab 1</a></li>
-                        <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">Tab 2</a></li>
-                        <li class="ft-tab"><a href="#" class="ft-tab-title">Tab 3</a></li>
-                        <li class="ft-tab"><a href="#" class="ft-tab-title">Tab 4</a></li>
+                        <li class="ft-tab"><a href="#" class="ft-tab-title">First tab title</a></li>
+                        <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                        <li class="ft-tab"><a href="#" class="ft-tab-title">Third tab title</a></li>
                     </ul>
                 </div>
 

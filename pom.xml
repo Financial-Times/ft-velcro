@@ -117,7 +117,7 @@
                             <contextFolder>${project.build.directory}/wro/unmin/css</contextFolder>
                             <cssDestinationFolder>${project.build.directory}/classes/distribution/</cssDestinationFolder>
                             <wroFile>${basedir}/src/main/config/wroMinimisingCSS.groovy</wroFile>
-                            <wroManagerFactory>com.ft.wro4j.extensions.CustomWroManagerFactory</wroManagerFactory>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
                             <extraConfigFile>${basedir}/src/main/webapp/WEB-INF/wroMinimising.properties</extraConfigFile>
                         </configuration>
                     </execution>
@@ -131,7 +131,7 @@
                             <contextFolder>${project.build.directory}/wro/unmin/js</contextFolder>
                             <jsDestinationFolder>${project.build.directory}/classes/distribution/</jsDestinationFolder>
                             <wroFile>${basedir}/src/main/config/wroMinimisingJS.groovy</wroFile>
-                            <wroManagerFactory>com.ft.wro4j.extensions.CustomWroManagerFactory</wroManagerFactory>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
                             <extraConfigFile>${basedir}/src/main/webapp/WEB-INF/wroMinimising.properties</extraConfigFile>
                         </configuration>
                     </execution>
@@ -149,13 +149,6 @@
                         </configuration>
                     </execution>
                 </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>com.ft</groupId>
-                        <artifactId>ft-wro4j-extensions</artifactId>
-                        <version>2.26-SNAPSHOT</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
 

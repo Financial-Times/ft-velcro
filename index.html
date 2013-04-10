@@ -46,7 +46,7 @@
 
             <h2 class="v-title v-title-medium">Browser support</h2>
 
-            <p class="v-paragraph">Specific details about the level of support for different browsers will be available elsewhere.</p>
+            <p class="v-paragraph">Specific details about the level of support for different browsers are available elsewhere.</p>
 
             <h2 class="v-title v-title-small">Graceful degradation</h2>
 
@@ -214,7 +214,7 @@
 
             <p class="v-paragraph">Article titles. Links from homepage Top5 component to articles etc.</p>
 
-            <div class="v-sample">
+            <div class="v-sample v-sample-editorial">
 
                 <p class="ft-title ft-title-large">Large title</p>
 
@@ -234,7 +234,7 @@
 
             <p class="v-paragraph">Additional detail about articles. Currently used in the Top5 component.</p>
 
-            <div class="v-sample">
+            <div class="v-sample v-sample-editorial">
 
                 <p class="ft-label-article">Article label</p>
 
@@ -259,73 +259,55 @@
                 <li>Background colour gradients may render as flat colour</li>
             </ul>
 
-            <h3 class="v-title v-title-small">Using <code>&lt;button&gt;</code></h3>
-
             <div class="v-sample">
 
                 <table class="v-table">
                 <tr>
-                    <th class="v-table-column-title">Size</th>
-                    <th class="v-table-column-title">Default</th>
-                    <th class="v-table-column-title"><code>ft-button-negative</code></th>
-                    <th class="v-table-column-title"><code>ft-state-disabled</code></th>
+                    <td></td>
+                    <td class="v-table-column-title" colspan="3"><strong>As <code>&lt;button&gt;</code> elements</strong></td>
+                    <td class="v-table-column-title" colspan="3"><strong>As <code>&lt;a&gt;</code> elements</strong></td>
                 </tr>
                 <tr>
-                    <td class="v-table-row-title">Large</td>
-                    <td><button class="ft-button ft-button-large"><span><span>Sign in</span></span></button></td>
-                    <td><button class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></button></td>
-                    <td><button class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></button></td>
+                    <td class="v-table-column-title"></td>
+                    <td class="v-table-column-title">Small</td>
+                    <td class="v-table-column-title">Medium</td>
+                    <td class="v-table-column-title">Large</td>
+                    <td class="v-table-column-title">Small</td>
+                    <td class="v-table-column-title">Medium</td>
+                    <td class="v-table-column-title">Large</td>
                 </tr>
                 <tr>
-                    <td class="v-table-row-title">Medium</td>
-                    <td><button class="ft-button ft-button-medium"><span><span>Sign in</span></span></button></td>
-                    <td><button class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></button></td>
-                    <td><button class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></button></td>
+                    <td class="v-table-row-title">Default</td>
+                    <td><button class="ft-button ft-button-small"><span><span>Submit</span></span></button></td>
+                    <td><button class="ft-button ft-button-medium"><span><span>Submit</span></span></button></td>
+                    <td><button class="ft-button ft-button-large"><span><span>Submit</span></span></button></td>
+                    <td><a href="#" class="ft-button ft-button-small"><span><span>Submit</span></span></a></td>
+                    <td><a href="#" class="ft-button ft-button-medium"><span><span>Submit</span></span></a></td>
+                    <td><a href="#" class="ft-button ft-button-large"><span><span>Submit</span></span></a></td>
                 </tr>
                 <tr>
-                    <td class="v-table-row-title">Small</td>
-                    <td><button class="ft-button ft-button-small"><span><span>Sign in</span></span></button></td>
+                    <td class="v-table-row-title"><code>ft-button-negative</code></td>
                     <td><button class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></button></td>
+                    <td><button class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></button></td>
+                    <td><button class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></button></td>
+                    <td><a href="#" class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></a></td>
+                    <td><a href="#" class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></a></td>
+                    <td><a href="#" class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></a></td>
+                </tr>
+                <tr>
+                    <td class="v-table-row-title"><code>ft-state-disabled</code></td>
                     <td><button class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></button></td>
+                    <td><button class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></button></td>
+                    <td><button class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></button></td>
+                    <td><a href="#" class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></a></td>
+                    <td><a href="#" class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></a></td>
+                    <td><a href="#" class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></a></td>
                 </tr>
                 </table>
 
             </div>
 
             <p class="v-note">The disabled style can be applied by either the ft-state-disabled class, or by the disabled HTML attribute.</p>
-
-            <h3 class="v-title v-title-small">Using  <code>&lt;a&gt;</code></h3>
-
-            <div class="v-sample">
-
-                <table class="v-table">
-                <tr>
-                    <th class="v-table-column-title">Size</th>
-                    <th class="v-table-column-title">Default</th>
-                    <th class="v-table-column-title"><code>ft-button-negative</code></th>
-                    <th class="v-table-column-title"><code>ft-state-disabled</code></th>
-                </tr>
-                <tr>
-                    <td class="v-table-row-title">Large</td>
-                    <td><a href="#" class="ft-button ft-button-large"><span><span>Submit</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></a></td>
-                </tr>
-                <tr>
-                    <td class="v-table-row-title">Medium</td>
-                    <td><a href="#" class="ft-button ft-button-medium"><span><span>Submit</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></a></td>
-                </tr>
-                <tr>
-                    <td class="v-table-row-title">Small</td>
-                    <td><a href="#" class="ft-button ft-button-small"><span><span>Submit</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></a></td>
-                </tr>
-                </table>
-
-            </div>
 
             <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
 

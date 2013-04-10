@@ -12,6 +12,7 @@
 }
 
 .v-section {
+    position: relative;
     margin: 0 0 20px 0;
     border-top: 1px solid #ddd;
     padding-top: 20px;

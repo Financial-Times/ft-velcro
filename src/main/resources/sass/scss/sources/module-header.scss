@@ -131,10 +131,10 @@ a.ft-tab-title:hover {
 
 .ft-tabs-notitle .ft-tab {
     margin-left: 2px;
-    border-top: 4px solid #ede2d2;
+    border-top: 4px solid #A8A79C;
     width: 175px;
     text-align: center;
-    background: #fbeddd url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+    background: $ftColor-Tint2 url($imagePath + 'mod-header-border.png') bottom left repeat-x;
 }
 
 .ft-tabs-notitle .ft-tab:first-child {
@@ -148,11 +148,11 @@ a.ft-tab-title:hover {
     color: #979088;
 }
 
-.ft-tabs-notitle .ft-state-selected .ft-tab-title {
-    color: #333;
+.ft-tabs-notitle .ft-state-selected {
+    border-top-color: #A7294D;
+    background: #f6e9d8;
 }
 
-.ft-tabs-notitle .ft-state-selected {
-    border-top-color: $ftColor-WarmGrey1;
-    background-color: $ftColor-Tint2;
+.ft-tabs-notitle .ft-state-selected .ft-tab-title {
+    color: #333;
 }

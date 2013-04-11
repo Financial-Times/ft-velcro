@@ -134,7 +134,7 @@ a.ft-tab-title:hover {
     border-top: 4px solid #A8A79C;
     width: 175px;
     text-align: center;
-    background: $ftColor-Tint2 url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+    background: $ftColor-Tint2 url($imagePath + 'mod-header-border.png') bottom 2px repeat-x;
 }
 
 .ft-tabs-notitle .ft-tab:first-child {

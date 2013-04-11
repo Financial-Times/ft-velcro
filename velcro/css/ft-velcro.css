@@ -1,3 +1,25 @@
+/* Primary Palette */
+/* Greys */
+/* Tints */
+/* Colours */
+/* Benton Regular */
+@font-face {
+  font-family: "BentonSans";
+  src: url("http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot");
+  src: url("http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot?#iefix") format("embedded-opentype"), url("http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-3.woff") format("woff");
+  font-style: normal;
+  font-weight: normal; }
+
+/* Benton Bold */
+@font-face {
+  font-family: "BentonSans";
+  src: url("http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot");
+  src: url("http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot?#iefix") format("embedded-opentype"), url("http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-3.woff") format("woff");
+  font-style: normal;
+  font-weight: bold; }
+
+/* These variables should probably be renamed to generic "ftFont-Serif" & "ftFont-SansSerif" once we have fully switched
+   page components over to use the brand web fonts. Currently for example, there is a mix of Benton & Arial */
 .ft-label-article {
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -82,29 +104,28 @@
   cursor: default;
   color: #fff; }
 
-/* Primary Palette */
-/* Greys */
-/* Tints */
-/* Colours */
-/* Benton Regular */
-@font-face {
-  font-family: "BentonSans";
-  src: url("http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot");
-  src: url("http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot?#iefix") format("embedded-opentype"), url("http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-3.woff") format("woff");
-  font-style: normal;
-  font-weight: normal; }
+.ft-columns-span7 {
+  float: left;
+  margin-right: 20px;
+  width: 414px; }
 
-/* Benton Bold */
-@font-face {
-  font-family: "BentonSans";
-  src: url("http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot");
-  src: url("http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot?#iefix") format("embedded-opentype"), url("http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-3.woff") format("woff");
-  font-style: normal;
-  font-weight: bold; }
+.ft-columns-span3 {
+  float: left;
+  width: 166px; }
 
-/* These variables should probably be renamed to generic "ftFont-Serif" & "ftFont-SansSerif" once we have fully switched
-   page components over to use the brand web fonts. Currently for example, there is a mix of Benton & Arial */
-                                                  /**
+.ft-link {
+  color: #2e6e9e; }
+
+.ft-link:hover {
+  color: #000; }
+
+.ft-link-stealth {
+  color: inherit; }
+
+.ft-link-stealth:hover {
+  color: #2e6e9e; }
+
+/**
 * Module header small - general
 */
 .ft-modhdr-sml {
@@ -210,10 +231,10 @@ a.ft-tab-title:hover {
 
 .ft-tabs-notitle .ft-tab {
   margin-left: 2px;
-  border-top: 4px solid #ede2d2;
+  border-top: 4px solid #A8A79C;
   width: 175px;
   text-align: center;
-  background: #fbeddd url("../img/mod-header-border.png") bottom left repeat-x; }
+  background: #e9decf url("../img/mod-header-border.png") bottom 2px repeat-x; }
 
 .ft-tabs-notitle .ft-tab:first-child {
   margin-left: 0; }
@@ -224,12 +245,15 @@ a.ft-tab-title:hover {
   font-weight: bold;
   color: #979088; }
 
+.ft-tabs-notitle .ft-state-selected {
+  border-top-color: #A7294D;
+  background: #f6e9d8; }
+
 .ft-tabs-notitle .ft-state-selected .ft-tab-title {
   color: #333; }
 
-.ft-tabs-notitle .ft-state-selected {
-  border-top-color: #a7a59b;
-  background-color: #e9decf; }
+.ft-state-hidden {
+  display: none; }
 
 .ft-title {
   margin: 0 0 5px 0;

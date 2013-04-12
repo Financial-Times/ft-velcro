@@ -40,7 +40,6 @@
 .ft-modhdr-med {
     clear: left;
     font-family: $ftFont-Benton;
-    background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
     overflow: hidden;
 }
 
@@ -77,6 +76,7 @@ a.ft-modhdr-med-title:hover {
 
 .ft-modhdr-med-border {
     border-top: 4px solid $ftColor-WarmGrey1;
+    background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
 }
 
 .ft-modhdr-med-tint {
@@ -134,7 +134,7 @@ a.ft-tab-title:hover {
     border-top: 4px solid #A8A79C;
     width: 175px;
     text-align: center;
-    background: $ftColor-Tint2 url($imagePath + 'mod-header-border.png') bottom 2px repeat-x;
+    background: $ftColor-Tint2 url($imagePath + 'mod-header-border.png') bottom left repeat-x;
 }
 
 .ft-tabs-notitle .ft-tab:first-child {

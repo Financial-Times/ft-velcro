@@ -161,7 +161,6 @@
 .ft-modhdr-med {
   clear: left;
   font-family: BentonSans, Helvetica, Arial, sans-serif;
-  background: url("../img/mod-header-border.png") bottom left repeat-x;
   overflow: hidden; }
 
 .ft-modhdr-med-title {
@@ -190,7 +189,8 @@ a.ft-modhdr-med-title:hover {
  * Module header medium variants
  */
 .ft-modhdr-med-border {
-  border-top: 4px solid #a7a59b; }
+  border-top: 4px solid #a7a59b;
+  background: url("../img/mod-header-border.png") bottom left repeat-x; }
 
 .ft-modhdr-med-tint {
   background-color: #e9decf; }
@@ -234,7 +234,7 @@ a.ft-tab-title:hover {
   border-top: 4px solid #A8A79C;
   width: 175px;
   text-align: center;
-  background: #e9decf url("../img/mod-header-border.png") bottom 2px repeat-x; }
+  background: #e9decf url("../img/mod-header-border.png") bottom left repeat-x; }
 
 .ft-tabs-notitle .ft-tab:first-child {
   margin-left: 0; }

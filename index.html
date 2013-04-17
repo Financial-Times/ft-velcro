@@ -34,8 +34,9 @@
                 <li><a href="#interactionStates" class="v-link">Interaction states</a></li>
                 <li><a href="#fonts" class="v-link">Fonts</a></li>
                 <li><a href="#palette" class="v-link">Palette</a></li>
+                <li><a href="#headings" class="v-link">Headings</a></li>
                 <li><a href="#titles" class="v-link">Titles</a></li>
-                <li><a href="#articleHeader" class="v-link">Article header</a></li>
+                <li><a href="#timestamps" class="v-link">Timestamps</a></li>
                 <li><a href="#buttons" class="v-link">Buttons</a></li>
                 <li><a href="#moduleHeadersSmall" class="v-link">Module headers: small</a></li>
                 <li><a href="#moduleHeadersMedium" class="v-link">Module headers: medium</a></li>
@@ -208,11 +209,31 @@
 
         </section>
 
+        <section id="headings" class="v-section">
+
+            <h2 class="v-title v-title-medium">Headings</h2>
+
+            <p class="v-paragraph">Should not be used for article titles.</p>
+
+            <div class="v-sample v-sample-editorial">
+
+                <!--<p class="ft-heading ft-heading-large">Large heading | <a href="#">Large heading link</a></p>-->
+
+                <p class="ft-heading ft-heading-medium">Medium heading | <a href="#">Medium heading link</a></p>
+
+                <p class="ft-heading ft-heading-small">Small heading | <a href="#">Small heading link</a></p>
+
+            </div>
+
+            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+
+        </section>
+
         <section id="titles" class="v-section">
 
             <h2 class="v-title v-title-medium">Titles</h2>
 
-            <p class="v-paragraph">Article titles. Links from homepage Top5 component to articles etc.</p>
+            <p class="v-paragraph">Article titles.</p>
 
             <div class="v-sample v-sample-editorial">
 
@@ -228,17 +249,13 @@
 
         </section>
 
-        <section id="articleHeader" class="v-section">
+        <section id="timestamps" class="v-section">
 
-            <h2 class="v-title v-title-medium">Article header</h2>
-
-            <p class="v-paragraph">Additional detail about articles. Currently used in the Top5 component.</p>
+            <h2 class="v-title v-title-medium">Timestamps</h2>
 
             <div class="v-sample v-sample-editorial">
 
-                <p class="ft-label-article">Article label</p>
-
-                <p class="ft-article-timestamp">12:34pm Article timestamp</p>
+                <p class="ft-timestamp">12:34pm timestamp</p>
 
             </div>
 
@@ -365,13 +382,13 @@
 
             <p class="v-paragraph">A virtually identical style is currently used in the site (in freestyles and components), but does not follow the Velcro coding rules, so these new classes should be used instead.</p>
 
-            <h3 class="v-title v-title-small">Module Header Medium with Title</h3>
-
             <div class="v-grid-col v-grid-col-50">
+
+                <h3 class="v-title v-title-small">Module Header Medium with Title</h3>
 
                 <div class="v-sample v-sample-rail">
 
-                    <div class="ft-modhdr-med ft-modhdr-med-border">
+                    <div class="ft-modhdr-med">
                         <h3 class="ft-modhdr-med-title">Default</h3>
                     </div>
 
@@ -381,9 +398,11 @@
 
             <div class="v-grid-col v-grid-col-50">
 
+                <h3 class="v-title v-title-small">Module Header Medium with Title (and tint)</h3>
+
                 <div class="v-sample v-sample-rail v-sample-alongside">
 
-                    <div class="ft-modhdr-med ft-modhdr-med-border ft-modhdr-med-tint">
+                    <div class="ft-modhdr-med ft-modhdr-med-tint">
                         <h3 class="ft-modhdr-med-title">With tint</h3>
                     </div>
 
@@ -391,32 +410,41 @@
 
             </div>
 
-            <h3 class="v-title v-title-small">Module Header Medium with Tabs</h3>
+            <div class="v-grid-col v-grid-col-50">
 
-            <div class="v-sample v-sample-rail">
+                <h3 class="v-title v-title-small">Module Header Medium with Tabs</h3>
 
-                <div class="ft-modhdr-med">
-                    <ul class="ft-tabs ft-tabs-notitle">
-                        <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
-                        <li class="ft-tab"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
-                    </ul>
+                <div class="v-sample v-sample-rail">
+
+                    <div class="ft-modhdr-med ft-modhdr-med-tabs">
+                        <ul class="ft-tabs ft-tabs-notitle">
+                            <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
+                            <li class="ft-tab"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
 
-            <p class="v-note">Need to show all states: selected, unselected, disabled, hover etc.</p>
+            <div class="v-grid-col v-grid-col-50">
 
-            <h3 class="v-title v-title-small">Module Header Medium with Title and Tabs</h3>
+                <h3 class="v-title v-title-small">Module Header Medium with Tabs and Sub-tabs</h3>
 
-            <div class="v-sample v-sample-rail">
+                <div class="v-sample v-sample-rail" style="clear: left;">
 
-                <div class="ft-modhdr-med ft-modhdr-med-border ft-modhdr-med-tint">
-                    <h3 class="ft-modhdr-med-title">Header title</h3>
-                    <ul class="ft-tabs ft-tabs-withtitle">
-                        <li class="ft-tab"><a href="#" class="ft-tab-title">First tab title</a></li>
-                        <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
-                        <li class="ft-tab"><a href="#" class="ft-tab-title">Third tab title</a></li>
-                    </ul>
+                    <div class="ft-modhdr-med ft-modhdr-med-tabs">
+                        <ul class="ft-tabs ft-tabs-notitle">
+                            <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
+                            <li class="ft-tab"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
+                        </ul>
+                        <ul class="ft-subtabs">
+                            <li class="ft-subtab"><a href="#" class="ft-tab-title">First tab title</a></li>
+                            <li class="ft-subtab ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                            <li class="ft-subtab"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>

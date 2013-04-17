@@ -36,11 +36,12 @@
 /**
  * Module header medium - general
  */
-
 .ft-modhdr-med {
     clear: left;
     font-family: $ftFont-Benton;
     overflow: hidden;
+    border-top: 4px solid $ftColor-WarmGrey1;
+    background: url($imagePath + 'img/mod-header-border.png') bottom left repeat-x;
 }
 
 .ft-modhdr-med-title {
@@ -73,10 +74,9 @@ a.ft-modhdr-med-title:hover {
 /**
  * Module header medium variants
  */
-
-.ft-modhdr-med-border {
-    border-top: 4px solid $ftColor-WarmGrey1;
-    background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+.ft-modhdr-med-tabs {
+    border-top: 0;
+    background-image: none;
 }
 
 .ft-modhdr-med-tint {
@@ -86,10 +86,21 @@ a.ft-modhdr-med-title:hover {
 /**
  * Module header medium tabs general
  */
-.ft-tabs {}
+.ft-tabs {
+    background-image: none;
+}
 
 .ft-tab {
     float: left;
+    margin-left: 2px;
+    border-top: 4px solid #A8A79C;
+    width: 175px;
+    text-align: center;
+    background: $ftColor-Tint2 url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+}
+
+.ft-tab:first-child {
+    margin-left: 0;
 }
 
 .ft-tab-title {
@@ -103,57 +114,50 @@ a.ft-tab-title:hover {
     color: $ftColor-Blue;
 }
 
-
-/**
- * Module header medium tabs variants
- */
-
-.ft-tabs-withtitle {
-    float: right;
-}
-
-.ft-tabs-withtitle .ft-tab {
-    margin-right: 10px;
-}
-
-.ft-tabs-withtitle .ft-state-selected {
-    background: url($imagePath + 'mod-tab-selected.gif') bottom center no-repeat;
-}
-
-.ft-tabs-withtitle .ft-tab-title {
-    font-size: 11px;
-    line-height: 34px;
-}
-
-.ft-tabs-withtitle .ft-state-selected .ft-tab-title {
-    color: #000;
-}
-
-.ft-tabs-notitle .ft-tab {
-    margin-left: 2px;
-    border-top: 4px solid #A8A79C;
-    width: 175px;
-    text-align: center;
-    background: $ftColor-Tint2 url($imagePath + 'mod-header-border.png') bottom left repeat-x;
-}
-
-.ft-tabs-notitle .ft-tab:first-child {
-    margin-left: 0;
-}
-
-.ft-tabs-notitle .ft-tab-title {
-    height: 34px;
+.ft-tabs .ft-tab-title {
     font-size: 12px;
     line-height: 34px;
     font-weight: bold;
     color: #979088;
 }
 
-.ft-tabs-notitle .ft-state-selected {
+.ft-tabs .ft-state-selected {
     border-top-color: #A7294D;
     background: #f6e9d8;
 }
 
-.ft-tabs-notitle .ft-state-selected .ft-tab-title {
+.ft-tabs .ft-state-selected .ft-tab-title {
     color: #333;
+}
+
+/**
+ * Module header medium sub-tabs
+ */
+.ft-subtabs {
+    clear: left;
+    padding-left: 20px;
+    background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+    overflow: hidden;
+}
+
+.ft-subtab {
+  float: left;
+  margin-right: 10px;
+}
+
+.ft-subtabs .ft-tab-title {
+    font-size: 11px;
+    line-height: 34px;
+}
+
+.ft-subtabs .ft-state-selected {
+    background: url($imagePath + 'mod-tab-selected.gif') bottom center no-repeat;
+}
+
+.ft-subtabs .ft-state-selected .ft-tab-title {
+    color: #000;
+}
+
+.ft-state-hidden {
+    display: none;
 }

@@ -41,7 +41,7 @@
     font-family: $ftFont-Benton;
     overflow: hidden;
     border-top: 4px solid $ftColor-WarmGrey1;
-    background: url($imagePath + 'img/mod-header-border.png') bottom left repeat-x;
+    background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
 }
 
 .ft-modhdr-med-title {
@@ -156,8 +156,4 @@ a.ft-tab-title:hover {
 
 .ft-subtabs .ft-state-selected .ft-tab-title {
     color: #000;
-}
-
-.ft-state-hidden {
-    display: none;
 }

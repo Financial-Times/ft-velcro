@@ -1,3 +1,5 @@
+/** module-header.scss */
+
 /**
  * Module header small - general
  */
@@ -87,11 +89,11 @@ a.ft-modhdr-med-title:hover {
 /**
  * Module header medium tabs general
  */
-.ft-tabs {
+.ft-tabs-large {
     background-image: none;
 }
 
-.ft-tab {
+.ft-tab-large {
     float: left;
     margin-left: 2px;
     border-top: 4px solid #A8A79C;
@@ -100,7 +102,7 @@ a.ft-modhdr-med-title:hover {
     background: $ftColor-Tint2 url($imagePath + 'mod-header-border.png') bottom left repeat-x;
 }
 
-.ft-tab:first-child {
+.ft-tab-large:first-child {
     margin-left: 0;
 }
 
@@ -115,46 +117,46 @@ a.ft-tab-title:hover {
     color: $ftColor-Blue;
 }
 
-.ft-tabs .ft-tab-title {
+.ft-tabs-large .ft-tab-title {
     font-size: 12px;
     line-height: 34px;
     font-weight: bold;
     color: #979088;
 }
 
-.ft-tabs .ft-state-selected {
+.ft-tabs-large .ft-state-selected {
     border-top-color: #A7294D;
     background: #f6e9d8;
 }
 
-.ft-tabs .ft-state-selected .ft-tab-title {
+.ft-tabs-large .ft-state-selected .ft-tab-title {
     color: #333;
 }
 
 /**
  * Module header medium sub-tabs
  */
-.ft-subtabs {
+.ft-tabs-small {
     clear: left;
     padding-left: 20px;
     background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
     overflow: hidden;
 }
 
-.ft-subtab {
-  float: left;
-  margin-right: 10px;
+.ft-tab-small {
+    float: left;
+    margin-right: 10px;
 }
 
-.ft-subtabs .ft-tab-title {
+.ft-tabs-small .ft-tab-title {
     font-size: 11px;
     line-height: 34px;
 }
 
-.ft-subtabs .ft-state-selected {
+.ft-tabs-small .ft-state-selected {
     background: url($imagePath + 'mod-tab-selected.gif') bottom center no-repeat;
 }
 
-.ft-subtabs .ft-state-selected .ft-tab-title {
+.ft-tabs-small .ft-state-selected .ft-tab-title {
     color: #000;
 }

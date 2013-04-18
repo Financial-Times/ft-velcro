@@ -1,15 +1,16 @@
-/** Headings */
+/** headings.scss */
 
 .ft-heading {
     font-family: BentonSans, Helvetica, Arial, sans-serif;
     color: #000;
 }
-.ft-heading a[href] {
-    color: #000;
+
+.ft-heading a {
+    color: $ftColor-Blue;
 }
 
-.ft-heading a[href]:hover {
-    color: #2e6e9e;
+.ft-heading a {
+    color: #000;
 }
 
 .ft-heading-medium {

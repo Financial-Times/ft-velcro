@@ -20,42 +20,7 @@
 
 /* These variables should probably be renamed to generic "ftFont-Serif" & "ftFont-SansSerif" once we have fully switched
    page components over to use the brand web fonts. Currently for example, there is a mix of Benton & Arial */
-
-.ft-heading {
-    font-family: BentonSans, Helvetica, Arial, sans-serif;
-    color: #000;
-}
-.ft-heading a[href] {
-    color: #000;
-}
-
-.ft-heading a[href]:hover {
-    color: #2e6e9e;
-}
-
-.ft-heading-medium {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 14px;
-}
-
-.ft-heading-small {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.ft-timestamp {
-  font-family: BentonSans, Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 14px;
-  color: #000; }
-
-.ft-lead-small .ft-timestamp {
-  font-size: 11px; }
-
-/*
+                                                  /*
 * Not yet cross-browser tested.
 * The colours should probably be replaced with variables.
 */
@@ -131,6 +96,27 @@
   float: left;
   width: 166px; }
 
+/** Headings */
+.ft-heading {
+  font-family: BentonSans, Helvetica, Arial, sans-serif;
+  color: #000; }
+
+.ft-heading a[href] {
+  color: #000; }
+
+.ft-heading a[href]:hover {
+  color: #2e6e9e; }
+
+.ft-heading-medium {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px; }
+
+.ft-heading-small {
+  font-size: 14px;
+  line-height: 18px; }
+
 .ft-link {
   color: #2e6e9e; }
 
@@ -161,7 +147,8 @@
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 10px;
-  background-color: #fff1e0; }
+  background-color: #fff1e0;
+  color: #333; }
 
 .ft-modhdr-sml-titleleft {
   border-top-left-radius: 0;
@@ -180,9 +167,8 @@
   clear: left;
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   overflow: hidden;
-    border-top: 4px solid #a7a59b;
-    background: url("../img/mod-header-border.png") bottom left repeat-x;
-}
+  border-top: 4px solid #a7a59b;
+  background: url("../img/mod-header-border.png") bottom left repeat-x; }
 
 .ft-modhdr-med-title {
   float: left;
@@ -210,9 +196,8 @@ a.ft-modhdr-med-title:hover {
  * Module header medium variants
  */
 .ft-modhdr-med-tabs {
-    border-top: 0;
-    background-image: none;
-}
+  border-top: 0;
+  background-image: none; }
 
 .ft-modhdr-med-tint {
   background-color: #e9decf; }
@@ -221,17 +206,15 @@ a.ft-modhdr-med-title:hover {
  * Module header medium tabs general
  */
 .ft-tabs {
-    background-image: none;
-}
+  background-image: none; }
 
 .ft-tab {
   float: left;
-    margin-left: 2px;
-    border-top: 4px solid #A8A79C;
-    width: 175px;
-    text-align: center;
-    background: #e9decf url("../img/mod-header-border.png") bottom left repeat-x;
-}
+  margin-left: 2px;
+  border-top: 4px solid #A8A79C;
+  width: 175px;
+  text-align: center;
+  background: #e9decf url("../img/mod-header-border.png") bottom left repeat-x; }
 
 .ft-tab:first-child {
   margin-left: 0; }
@@ -262,16 +245,14 @@ a.ft-tab-title:hover {
  * Module header medium sub-tabs
  */
 .ft-subtabs {
-    clear: left;
-    padding-left: 20px;
-    background: url("../img/mod-header-border.png") bottom left repeat-x;
-    overflow: hidden;
-}
+  clear: left;
+  padding-left: 20px;
+  background: url("../img/mod-header-border.png") bottom left repeat-x;
+  overflow: hidden; }
 
 .ft-subtab {
-    float:left;
-  margin-right: 10px;
-}
+  float: left;
+  margin-right: 10px; }
 
 .ft-subtabs .ft-tab-title {
   font-size: 11px;
@@ -280,12 +261,21 @@ a.ft-tab-title:hover {
 .ft-subtabs .ft-state-selected {
   background: url("../img/mod-tab-selected.gif") bottom center no-repeat; }
 
-
 .ft-subtabs .ft-state-selected .ft-tab-title {
   color: #000; }
 
 .ft-state-hidden {
   display: none; }
+
+.ft-timestamp {
+  font-family: BentonSans, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px;
+  color: #000; }
+
+.ft-lead-small .ft-timestamp {
+  font-size: 11px; }
 
 .ft-title {
   margin: 0 0 5px 0;

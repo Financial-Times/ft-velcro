@@ -101,17 +101,18 @@
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   color: #000; }
 
-.ft-heading a[href] {
-  color: #000; }
-
-.ft-heading a[href]:hover {
-  color: #2e6e9e; }
-
 .ft-heading-medium {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-  line-height: 14px; }
+  line-height: 14px;
+}
+.ft-heading a {
+    color: #2e6e9e;
+}
+.ft-heading a:hover {
+    color: #000;
+}
 
 .ft-heading-small {
   font-size: 14px;
@@ -205,10 +206,10 @@ a.ft-modhdr-med-title:hover {
 /**
  * Module header medium tabs general
  */
-.ft-tabs {
+.ft-tabs-large {
   background-image: none; }
 
-.ft-tab {
+.ft-tab-large {
   float: left;
   margin-left: 2px;
   border-top: 4px solid #A8A79C;
@@ -216,7 +217,7 @@ a.ft-modhdr-med-title:hover {
   text-align: center;
   background: #e9decf url("../img/mod-header-border.png") bottom left repeat-x; }
 
-.ft-tab:first-child {
+.ft-tab-large:first-child {
   margin-left: 0; }
 
 .ft-tab-title {
@@ -228,40 +229,43 @@ a.ft-modhdr-med-title:hover {
 a.ft-tab-title:hover {
   color: #2e6e9e; }
 
-.ft-tabs .ft-tab-title {
+.ft-tabs-large .ft-tab-title {
   font-size: 12px;
   line-height: 34px;
   font-weight: bold;
   color: #979088; }
 
-.ft-tabs .ft-state-selected {
+.ft-tabs-large .ft-state-selected {
   border-top-color: #A7294D;
   background: #f6e9d8; }
 
-.ft-tabs .ft-state-selected .ft-tab-title {
+.ft-tabs-large .ft-state-selected .ft-tab-title {
   color: #333; }
 
 /**
  * Module header medium sub-tabs
  */
-.ft-subtabs {
-  clear: left;
-  padding-left: 20px;
+.ft-tabs-small {
+  padding-left: 10px;
   background: url("../img/mod-header-border.png") bottom left repeat-x;
   overflow: hidden; }
 
-.ft-subtab {
+.ft-modhdr-med-title + .ft-tabs-small {
+    float: right;
+}
+
+.ft-tab-small {
   float: left;
   margin-right: 10px; }
 
-.ft-subtabs .ft-tab-title {
+.ft-tabs-small .ft-tab-title {
   font-size: 11px;
   line-height: 34px; }
 
-.ft-subtabs .ft-state-selected {
+.ft-tabs-small .ft-state-selected {
   background: url("../img/mod-tab-selected.gif") bottom center no-repeat; }
 
-.ft-subtabs .ft-state-selected .ft-tab-title {
+.ft-tabs-small .ft-state-selected .ft-tab-title {
   color: #000; }
 
 .ft-state-hidden {

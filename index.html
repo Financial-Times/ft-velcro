@@ -25,7 +25,7 @@
 
         <p class="v-paragraph">HTML snippets and CSS class usage examples for FT branded page elements.</p>
 
-        <p class="v-paragraph v-warning">WARNING: This is currently just a prototype and is not yet production-ready code.</p>
+        <p class="v-paragraph v-warning">WARNING: This is currently just a prototype and is not yet ready for use outside of ft-cms.</p>
 
         <nav id="nav-primary" class="v-nav">
             <h2 class="v-title v-title-small">Velcro Navigation</h2>
@@ -213,7 +213,7 @@
 
             <h2 class="v-title v-title-medium">Headings</h2>
 
-            <p class="v-paragraph">Should not be used for article titles.</p>
+            <p class="v-paragraph">Used for section or brand headings. Should not be used for article titles.</p>
 
             <div class="v-sample v-sample-editorial">
 
@@ -233,7 +233,7 @@
 
             <h2 class="v-title v-title-medium">Titles</h2>
 
-            <p class="v-paragraph">Article titles.</p>
+            <p class="v-paragraph">Used for article titles.</p>
 
             <div class="v-sample v-sample-editorial">
 
@@ -334,6 +334,8 @@
 
             <h2 class="v-title v-title-medium">Module headers: small</h2>
 
+            <p class="v-paragraph">Content editors should ensure that the titles in these module headers should always be uppercase.</p>
+
             <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
 
             <ul class="v-list">
@@ -368,8 +370,6 @@
 
             </div>
 
-            <p class="v-note">This style of header should use uppercase in the titles, but this is not enforced via CSS. Content editors should follow this convention.</p>
-
             <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
 
         </section>
@@ -378,9 +378,15 @@
 
             <h2 class="v-title v-title-medium">Module headers: medium</h2>
 
-            <p class="v-paragraph">Currently used only in the rail but in future could be used anywhere.</p>
+            <p class="v-paragraph">Content editors should ensure that the titles in these module headers should always be uppercase.</p>
 
-            <p class="v-paragraph">A virtually identical style is currently used in the site (in freestyles and components), but does not follow the Velcro coding rules, so these new classes should be used instead.</p>
+            <p class="v-paragraph">When these headers are used in the Rail, the tint option should be used.</p>
+
+            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+
+            <ul class="v-list">
+                <li>Small tabs with title may left align.</li>
+            </ul>
 
             <div class="v-grid-col v-grid-col-50">
 
@@ -389,7 +395,7 @@
                 <div class="v-sample v-sample-rail">
 
                     <div class="ft-modhdr-med">
-                        <h3 class="ft-modhdr-med-title">Default</h3>
+                        <h3 class="ft-modhdr-med-title">TITLE</h3>
                     </div>
 
                 </div>
@@ -403,7 +409,7 @@
                 <div class="v-sample v-sample-rail v-sample-alongside">
 
                     <div class="ft-modhdr-med ft-modhdr-med-tint">
-                        <h3 class="ft-modhdr-med-title">With tint</h3>
+                        <h3 class="ft-modhdr-med-title">TITLE</h3>
                     </div>
 
                 </div>
@@ -412,14 +418,52 @@
 
             <div class="v-grid-col v-grid-col-50">
 
-                <h3 class="v-title v-title-small">Module Header Medium with Tabs</h3>
+                <h3 class="v-title v-title-small">Module Header Medium with Small Tabs</h3>
+
+                <div class="v-sample v-sample-rail">
+
+                    <div class="ft-modhdr-med">
+                        <h3 class="ft-modhdr-med-title">TITLE</h3>
+                        <ul class="ft-tabs-small">
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
+                            <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="v-grid-col v-grid-col-50">
+
+                <h3 class="v-title v-title-small">Module Header Medium with Small Tabs (and tint)</h3>
+
+                <div class="v-sample v-sample-rail">
+
+                    <div class="ft-modhdr-med ft-modhdr-med-tint">
+                        <h3 class="ft-modhdr-med-title">TITLE</h3>
+                        <ul class="ft-tabs-small">
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
+                            <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="v-grid-col v-grid-col-50">
+
+                <h3 class="v-title v-title-small">Module Header Medium with Large Tabs</h3>
 
                 <div class="v-sample v-sample-rail">
 
                     <div class="ft-modhdr-med ft-modhdr-med-tabs">
-                        <ul class="ft-tabs ft-tabs-notitle">
-                            <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
-                            <li class="ft-tab"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
+                        <ul class="ft-tabs-large">
+                            <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
+                            <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
                         </ul>
                     </div>
 
@@ -429,19 +473,19 @@
 
             <div class="v-grid-col v-grid-col-50">
 
-                <h3 class="v-title v-title-small">Module Header Medium with Tabs and Sub-tabs</h3>
+                <h3 class="v-title v-title-small">Module Header Medium with Large and Small Tabs</h3>
 
-                <div class="v-sample v-sample-rail" style="clear: left;">
+                <div class="v-sample v-sample-rail">
 
                     <div class="ft-modhdr-med ft-modhdr-med-tabs">
-                        <ul class="ft-tabs ft-tabs-notitle">
-                            <li class="ft-tab ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
-                            <li class="ft-tab"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
+                        <ul class="ft-tabs-large">
+                            <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
+                            <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
                         </ul>
-                        <ul class="ft-subtabs">
-                            <li class="ft-subtab"><a href="#" class="ft-tab-title">First tab title</a></li>
-                            <li class="ft-subtab ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
-                            <li class="ft-subtab"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                        <ul class="ft-tabs-small">
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
+                            <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
                         </ul>
                     </div>
 
@@ -450,8 +494,6 @@
             </div>
 
             <p class="v-note">Need to show all states: selected, unselected, disabled, hover etc.</p>
-
-            <p class="v-note">This style of tabs should use uppercase in the titles, but this is not enforced via CSS. Content editors should follow this convention.</p>
 
             <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
 

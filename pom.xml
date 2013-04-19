@@ -31,6 +31,19 @@
 
     <name>FTVelcro</name>
 
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Internal Releases</name>
+            <url>http://anthill.svc.ft.com:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <uniqueVersion>true</uniqueVersion>
+            <url>http://anthill.svc.ft.com:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <build>
         <resources>
             <resource>

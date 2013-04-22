@@ -44,7 +44,7 @@
     font-family: $ftFont-Benton;
     overflow: hidden;
     border-top: 4px solid $ftColor-WarmGrey1;
-    background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+    background: url($imagePath + $ftVelcro-namespaceDir + 'mod-header-border.png') bottom left repeat-x;
 }
 
 .ft-modhdr-med-title {
@@ -99,7 +99,7 @@ a.ft-modhdr-med-title:hover {
     border-top: 4px solid #A8A79C;
     width: 175px;
     text-align: center;
-    background: $ftColor-Tint2 url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+    background: $ftColor-Tint2 url($imagePath + $ftVelcro-namespaceDir + 'mod-header-border.png') bottom left repeat-x;
 }
 
 .ft-tab-large:first-child {
@@ -139,7 +139,7 @@ a.ft-tab-title:hover {
 .ft-tabs-small {
     clear: left;
     padding-left: 20px;
-    background: url($imagePath + 'mod-header-border.png') bottom left repeat-x;
+    background: url($imagePath + $ftVelcro-namespaceDir + 'mod-header-border.png') bottom left repeat-x;
     overflow: hidden;
 }
 
@@ -154,7 +154,7 @@ a.ft-tab-title:hover {
 }
 
 .ft-tabs-small .ft-state-selected {
-    background: url($imagePath + 'mod-tab-selected.gif') bottom center no-repeat;
+    background: url($imagePath + $ftVelcro-namespaceDir + 'mod-tab-selected.gif') bottom center no-repeat;
 }
 
 .ft-tabs-small .ft-state-selected .ft-tab-title {

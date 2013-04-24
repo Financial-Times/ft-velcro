@@ -3,7 +3,7 @@
 /**
  * Module header small - general
  */
-.ft-modhdr-sml {
+.ft-header-small {
     position: relative;
     border-radius: 4px;
     background-color: $ftColor-Tint2;
@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-.ft-modhdr-sml-title {
+.ft-header-small-title {
     display: inline-block;
     position: relative;
     top: -5px;
@@ -23,23 +23,23 @@
     color: #333;
 }
 
-.ft-modhdr-sml-titleleft {
+.ft-header-small-titleleft {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.ft-modhdr-sml-titleleft .ft-modhdr-sml-title {
+.ft-header-small-titleleft .ft-header-small-title {
     padding-left: 0;
 }
 
-.ft-modhdr-sml-titlecenter {
+.ft-header-small-titlecenter {
     text-align: center;
 }
 
 /**
  * Module header medium - general
  */
-.ft-modhdr-med {
+.ft-header-medium {
     clear: left;
     font-family: $ftFont-Benton;
     overflow: hidden;
@@ -47,7 +47,7 @@
     background: url($imagePath + $ftVelcro-namespaceDir + 'mod-header-border.png') bottom left repeat-x;
 }
 
-.ft-modhdr-med-title {
+.ft-header-medium-title {
     float: left;
     margin: 8px 0 8px 10px;
     font-size: 12px;
@@ -57,32 +57,32 @@
     color: #434343;
 }
 
-a.ft-modhdr-med-title:hover {
+a.ft-header-medium-title:hover {
     color: $ftColor-Blue;
 }
 
-.msie6 .ft-modhdr-med {
+.msie6 .ft-header-medium {
     height: 34px;
     overflow: visible;
 }
 
-.msie6 .ft-modhdr-med-title {
+.msie6 .ft-header-medium-title {
     display: inline;
 }
 
-.msie7 .ft-modhdr-med {
+.msie7 .ft-header-medium {
     min-height: 34px;
 }
 
 /**
  * Module header medium variants
  */
-.ft-modhdr-med-tabs {
+.ft-header-medium-tabs {
     border-top: 0;
     background-image: none;
 }
 
-.ft-modhdr-med-tint {
+.ft-header-medium-tint {
     background-color: $ftColor-Tint2;
 }
 

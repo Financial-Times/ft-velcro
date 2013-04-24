@@ -296,6 +296,7 @@ a.ft-tab-title:hover {
   line-height: 18px; }
 
 .ft-lead {
+    margin: 0 0 5px 0;
   color: #505050; }
 
 .ft-lead-large {
@@ -311,5 +312,5 @@ a.ft-tab-title:hover {
 .ft-byline {
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   clear: left;
-  margin-top: 15px;
+  margin: 15px 0 0 0;
   color: #666; }

@@ -2,7 +2,7 @@
 
 .ft-title {
     margin: 0 0 5px 0;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: $ftFont-Georgia;
     color: #333;
 }
 
@@ -18,23 +18,23 @@
 }
 
 .ft-lead {
+    font-family: $ftFont-Benton;
     color: #505050;
 }
 
 .ft-lead-large {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: $ftFont-Georgia;
     font-size: 24px;
     line-height: 28px;
 }
 
 .ft-lead-small {
-    font-family: BentonSans, Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
 }
 
 .ft-byline {
-    font-family: BentonSans, Helvetica, Arial, sans-serif;
+    font-family: $ftFont-Benton;
     clear: left;
     margin-top:15px ;
     color: #666;

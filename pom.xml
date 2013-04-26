@@ -18,7 +18,7 @@
     <groupId>com.ft.velcro</groupId>
     <artifactId>ft-velcro</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
 
     <properties>

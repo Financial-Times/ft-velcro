@@ -1,0 +1,18 @@
+.v-link {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #66a;
+    text-decoration: underline;
+}
+
+.v-link:hover {
+    text-decoration: none;
+}
+
+.v-link-small {
+    font-size: 12px;
+}
+
+.v-back-to-top {
+    display: block;
+    clear: both;
+}

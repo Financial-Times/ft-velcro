@@ -1,0 +1,25 @@
+.v-pagecontainer {
+    margin: 0 auto 200px auto;
+    width: 960px;
+}
+
+.v-header {
+    margin-bottom: 20px;
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.v-section {
+    position: relative;
+    margin: 0 0 20px 0;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.v-nav {
+    margin: 0 0 20px 0;
+}
+
+.v-nav li {
+    margin: 0 0 5px 0;
+}

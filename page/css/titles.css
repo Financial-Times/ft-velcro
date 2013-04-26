@@ -1,0 +1,17 @@
+.v-title {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: bold;
+    color: #BAB195;
+}
+
+.v-title-large {
+    font-size: 28px;
+}
+
+.v-title-medium {
+    font-size: 20px;
+}
+
+.v-title-small {
+    font-size: 16px;
+}

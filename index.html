@@ -9,7 +9,15 @@
     <meta name="description" content="The Financial Times branded web code library." />
     <meta name="author" content="The Financial Times" />
     <link rel="stylesheet" href="page/css/reset.css" />
-    <link rel="stylesheet" href="page/css/style.css" />
+    <link rel="stylesheet" href="page/css/page.css" />
+    <link rel="stylesheet" href="page/css/typography.css" />
+    <link rel="stylesheet" href="page/css/grid.css" />
+    <link rel="stylesheet" href="page/css/samples.css" />
+    <link rel="stylesheet" href="page/css/tables.css" />
+    <link rel="stylesheet" href="page/css/swatches.css" />
+    <link rel="stylesheet" href="page/css/titles.css" />
+    <link rel="stylesheet" href="page/css/links.css" />
+    <link rel="stylesheet" href="page/css/lists.css" />
     <link rel="stylesheet" href="velcro/css/ft-velcro.css" />
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,6 +45,8 @@
                 <li><a href="#headings" class="v-link">Headings</a></li>
                 <li><a href="#titles" class="v-link">Titles</a></li>
                 <li><a href="#timestamps" class="v-link">Timestamps</a></li>
+                <li><a href="#lists" class="v-link">Lists</a></li>
+                <li><a href="#badges" class="v-link">Badges</a></li>
                 <li><a href="#buttons" class="v-link">Buttons</a></li>
                 <li><a href="#headersSmall" class="v-link">Headers: small</a></li>
                 <li><a href="#headersMedium" class="v-link">Headers: medium</a></li>
@@ -61,7 +71,7 @@
                 <li>The Benton font may be replaced with Helvetica or Arial</li>
             </ul>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 
@@ -76,9 +86,10 @@
                 <li><code>:hover</code> - when mouse pointer is positioned over the element, or when it has focus using keyboard navigation</li>
                 <li><code>ft-state-selected</code> e.g. for a tab when its contents are currently shown</li>
                 <li><code>ft-state-disabled</code> for when something is currently not functional</li>
+                <li><code>ft-state-loading</code></li>
             </ul>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 
@@ -111,7 +122,7 @@
             </tbody>
             </table>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 
@@ -205,7 +216,7 @@
                 </div>
             </div>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 
@@ -225,7 +236,7 @@
 
             </div>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 
@@ -235,31 +246,39 @@
 
             <p class="v-paragraph">Used for article titles.</p>
 
-            <div class="v-sample v-sample-editorial">
+            <div class="v-grid-col v-grid-col-6">
 
-                <p class="ft-title ft-title-large">Large title</p>
+                <div class="v-sample">
 
-                <p class="ft-title ft-title-medium">Medium title</p>
+                    <p class="ft-title ft-title-large">Large title</p>
 
-                <p class="ft-title ft-title-small">Small title</p>
+                    <p class="ft-title ft-title-medium">Medium title</p>
 
-            </div>
+                    <p class="ft-title ft-title-small">Small title</p>
 
-            <div class="v-sample v-sample-editorial">
-
-                <p class="ft-lead ft-lead-large">Large lead</p>
-
-                <p class="ft-lead ft-lead-small">Small lead</p>
+                </div>
 
             </div>
 
-            <div class="v-sample v-sample-editorial">
+            <div class="v-grid-col v-grid-col-6">
 
-                <p class="ft-byline">Byline</p>
+                <div class="v-sample">
+
+                    <p class="ft-lead ft-lead-large">Large lead</p>
+
+                    <p class="ft-lead ft-lead-small">Small lead</p>
+
+                </div>
+
+                <div class="v-sample">
+
+                    <p class="ft-byline">Byline</p>
+
+                </div>
 
             </div>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 
@@ -267,13 +286,83 @@
 
             <h2 class="v-title v-title-medium">Timestamps</h2>
 
-            <div class="v-sample v-sample-editorial">
+            <div class="v-grid-col v-grid-col-6">
 
-                <p class="ft-timestamp">12:34pm timestamp</p>
+                <div class="v-sample">
+
+                    <p class="ft-timestamp">12:34pm timestamp</p>
+
+                </div>
 
             </div>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+        </section>
+
+        <section id="lists" class="v-section">
+
+            <h2 class="v-title v-title-medium">Lists</h2>
+
+            <div class="v-grid-col v-grid-col-4">
+
+                <h3 class="v-title v-title-small">Plain</h3>
+
+                <div class="v-sample"></div>
+
+            </div>
+
+            <div class="v-grid-col v-grid-col-4">
+
+                <h3 class="v-title v-title-small">Bulletted</h3>
+
+                <div class="v-sample"></div>
+
+            </div>
+
+            <div class="v-grid-col v-grid-col-4">
+
+                <h3 class="v-title v-title-small">Numbered</h3>
+
+                <div class="v-sample"></div>
+
+            </div>
+
+            <h3 class="v-title v-title-small">Options</h3>
+
+            <div class="v-grid-col v-grid-col-6">
+
+                <p class="v-paragraph">Non-wrapping. Each list item will be on a new line.</p>
+
+                <div class="v-sample"></div>
+
+            </div>
+
+            <div class="v-grid-col v-grid-col-6">
+
+                <p class="v-paragraph">Wrapping. List items will wrap if the whole list item fits on one line.</p>
+
+                <div class="v-sample"></div>
+
+            </div>
+
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+        </section>
+
+        <section id="badges" class="v-section">
+
+            <h2 class="v-title v-title-medium">Badges</h2>
+
+            <p class="v-paragraph">Used to denote content is NEW, for example.</p>
+
+            <div class="v-grid-col v-grid-col-4">
+
+                <div class="v-sample"></div>
+
+            </div>
+
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 
@@ -340,7 +429,7 @@
 
             <p class="v-note">The disabled style can be applied by either the ft-state-disabled class, or by the disabled HTML attribute.</p>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 
@@ -384,7 +473,7 @@
 
             </div>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 
@@ -402,7 +491,7 @@
                 <li>Small tabs with title may left align.</li>
             </ul>
 
-            <div class="v-grid-col v-grid-col-50">
+            <div class="v-grid-col v-grid-col-6">
 
                 <h3 class="v-title v-title-small">Header Medium with Title</h3>
 
@@ -416,7 +505,7 @@
 
             </div>
 
-            <div class="v-grid-col v-grid-col-50">
+            <div class="v-grid-col v-grid-col-6">
 
                 <h3 class="v-title v-title-small">Header Medium with Title (and tint)</h3>
 
@@ -430,7 +519,7 @@
 
             </div>
 
-            <div class="v-grid-col v-grid-col-50">
+            <div class="v-grid-col v-grid-col-6">
 
                 <h3 class="v-title v-title-small">Header Medium with Small Tabs</h3>
 
@@ -449,7 +538,7 @@
 
             </div>
 
-            <div class="v-grid-col v-grid-col-50">
+            <div class="v-grid-col v-grid-col-6">
 
                 <h3 class="v-title v-title-small">Header Medium with Small Tabs (and tint)</h3>
 
@@ -468,7 +557,7 @@
 
             </div>
 
-            <div class="v-grid-col v-grid-col-50">
+            <div class="v-grid-col v-grid-col-6">
 
                 <h3 class="v-title v-title-small">Header Medium with Large Tabs</h3>
 
@@ -485,7 +574,7 @@
 
             </div>
 
-            <div class="v-grid-col v-grid-col-50">
+            <div class="v-grid-col v-grid-col-6">
 
                 <h3 class="v-title v-title-small">Header Medium with Large and Small Tabs</h3>
 
@@ -509,7 +598,7 @@
 
             <p class="v-note">Need to show all states: selected, unselected, disabled, hover etc.</p>
 
-            <a href="#nav-primary" class="v-link v-link-small">Back to top</a>
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>
 

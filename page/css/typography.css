@@ -1,0 +1,30 @@
+/* Velcro GitHub pages styles - not part of Velcro itself */
+
+.v-paragraph {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666;
+}
+
+.v-warning {
+    color: #a66;
+}
+
+.v-note {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+    color: #888;
+}
+
+.v-list {
+    margin: 0 0 20px 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+
+.v-list li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+}

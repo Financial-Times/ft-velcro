@@ -1,0 +1,22 @@
+.v-table {
+    margin: 0 0 20px 0;
+}
+
+.v-table-column-title,
+.v-table-row-title {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #666;
+}
+
+.v-table-column-title {
+    font-size:14px ;
+}
+
+.v-table-row-title {
+    font-size:12px ;
+}
+
+.v-table th,
+.v-table td {
+    padding: 2px 20px 20px 0;
+}

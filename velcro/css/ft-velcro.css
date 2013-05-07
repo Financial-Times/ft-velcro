@@ -5,25 +5,22 @@
 /* Benton Regular */
 @font-face {
   font-family: "BentonSans";
-  src: url("http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot");
-  src: url("http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot?#iefix") format("embedded-opentype"), url("http://s1.ft-static.com/m/font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-3.woff") format("woff");
+  src: url("../font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot");
+  src: url("../font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot?#iefix") format("embedded-opentype"), url("../font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-3.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 /* Benton Bold */
 @font-face {
   font-family: "BentonSans";
-  src: url("http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot");
-  src: url("http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot?#iefix") format("embedded-opentype"), url("http://s1.ft-static.com/m/font/76e393a7-edbd-4283-91db-93b1a40fe465-3.woff") format("woff");
+  src: url("../font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot");
+  src: url("../font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot?#iefix") format("embedded-opentype"), url("../font/76e393a7-edbd-4283-91db-93b1a40fe465-3.woff") format("woff");
   font-style: normal;
   font-weight: bold; }
 
 /* These variables should probably be renamed to generic "ftFont-Serif" & "ftFont-SansSerif" once we have fully switched
    page components over to use the brand web fonts. Currently for example, there is a mix of Benton & Arial */
-                                                  /*
-* Not yet cross-browser tested.
-* The colours should probably be replaced with variables.
-*/
+/** buttons.scss */
 .ft-button {
   display: inline-block;
   margin: 0;
@@ -87,6 +84,7 @@
   cursor: default;
   color: #fff; }
 
+/** grid.scss */
 .ft-columns-span7 {
   float: left;
   margin-right: 20px;
@@ -96,48 +94,16 @@
   float: left;
   width: 166px; }
 
-/** Headings */
-.ft-heading {
-  font-family: BentonSans, Helvetica, Arial, sans-serif;
-  color: #000; }
-
-.ft-heading-medium {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 14px;
-}
-.ft-heading a {
-    color: #2e6e9e;
-}
-.ft-heading a:hover {
-    color: #000;
-}
-
-.ft-heading-small {
-  font-size: 14px;
-  line-height: 18px; }
-
-.ft-link {
-  color: #2e6e9e; }
-
-.ft-link:hover {
-  color: #000; }
-
-.ft-link-stealth {
-  color: inherit; }
-
-.ft-link-stealth:hover {
-  color: #2e6e9e; }
-
+/** module-header.scss */
 /**
-* Module header small - general
-*/
+ * Module header small - general
+ */
 .ft-header-small {
   position: relative;
   border-radius: 4px;
   background-color: #e9decf;
   height: 9px;
+  line-height: 18px;
   overflow: hidden; }
 
 .ft-header-small-title {
@@ -146,10 +112,23 @@
   top: -5px;
   padding: 0 10px;
   font-family: BentonSans, Helvetica, Arial, sans-serif;
+  font-weight: bold;
   font-size: 12px;
   line-height: 10px;
   background-color: #fff1e0;
   color: #333; }
+
+.msie8 .ft-header-small-title {
+  top: -6px; }
+
+.msie7 .ft-header-small-title {
+  display: inline;
+  top: 0;
+  zoom: 1; }
+
+.msie6 .ft-header-small-title {
+  position: static;
+  background-color: transparent; }
 
 .ft-header-small-titleleft {
   border-top-left-radius: 0;
@@ -220,11 +199,18 @@ a.ft-header-medium-title:hover {
 .ft-tab-large:first-child {
   margin-left: 0; }
 
+.msie6 .ft-tab-large {
+  margin-left: 0;
+  width: 176px; }
+
 .ft-tab-title {
   display: block;
   white-space: nowrap;
   color: #434343;
   text-overflow: ellipsis; }
+
+.ft-tab-title img {
+  vertical-align: middle; }
 
 a.ft-tab-title:hover {
   color: #2e6e9e; }
@@ -246,13 +232,13 @@ a.ft-tab-title:hover {
  * Module header medium sub-tabs
  */
 .ft-tabs-small {
-  padding-left: 10px;
+  clear: left;
+  padding-left: 20px;
   background: url("../img/mod-header-border.png") bottom left repeat-x;
   overflow: hidden; }
 
-.ft-header-medium-title + .ft-tabs-small {
-    float: right;
-}
+.msie6 .ft-tabs-small {
+  zoom: 1; }
 
 .ft-tab-small {
   float: left;
@@ -268,9 +254,45 @@ a.ft-tab-title:hover {
 .ft-tabs-small .ft-state-selected .ft-tab-title {
   color: #000; }
 
+/** headings.scss */
+.ft-heading {
+  font-family: BentonSans, Helvetica, Arial, sans-serif;
+  color: #000; }
+
+.ft-heading a {
+  color: #2e6e9e; }
+
+.ft-heading a {
+  color: #000; }
+
+.ft-heading-medium {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px; }
+
+.ft-heading-small {
+  font-size: 14px;
+  line-height: 18px; }
+
+/** links.scss */
+.ft-link {
+  color: #2e6e9e; }
+
+.ft-link:hover {
+  color: #000; }
+
+.ft-link-stealth {
+  color: inherit; }
+
+.ft-link-stealth:hover {
+  color: #2e6e9e; }
+
+/** states.scss */
 .ft-state-hidden {
   display: none; }
 
+/** timestamp.scss */
 .ft-timestamp {
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -281,6 +303,7 @@ a.ft-tab-title:hover {
 .ft-lead-small .ft-timestamp {
   font-size: 11px; }
 
+/** titles.scss */
 .ft-title {
   margin: 0 0 5px 0;
   font-family: Georgia, "Times New Roman", serif;
@@ -296,7 +319,8 @@ a.ft-tab-title:hover {
   line-height: 18px; }
 
 .ft-lead {
-    margin: 0 0 5px 0;
+  margin: 0 0 5px 0;
+  font-family: BentonSans, Helvetica, Arial, sans-serif;
   color: #505050; }
 
 .ft-lead-large {
@@ -305,7 +329,6 @@ a.ft-tab-title:hover {
   line-height: 28px; }
 
 .ft-lead-small {
-  font-family: BentonSans, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 18px; }
 

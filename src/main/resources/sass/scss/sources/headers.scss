@@ -8,6 +8,7 @@
     border-radius: 4px;
     background-color: $ftColor-Tint2;
     height: 9px;
+    line-height: 18px;
     overflow: hidden;
 }
 
@@ -17,10 +18,26 @@
     top: -5px;
     padding:0 10px;
     font-family: $ftFont-Benton;
+    font-weight: bold;
     font-size: 12px;
     line-height: 10px;
     background-color: $ftColor-Pink;
     color: #333;
+}
+
+.msie8 .ft-header-small-title {
+    top: -6px;
+}
+
+.msie7 .ft-header-small-title {
+    display: inline;
+    top: 0;
+    zoom: 1;
+}
+
+.msie6 .ft-header-small-title {
+    position: static;
+    background-color: transparent;
 }
 
 .ft-header-small-titleleft {
@@ -106,6 +123,11 @@ a.ft-header-medium-title:hover {
     margin-left: 0;
 }
 
+.msie6 .ft-tab-large {
+    margin-left: 0;
+    width: 176px;
+}
+
 .ft-tab-title {
     display: block;
     white-space: nowrap;
@@ -146,6 +168,8 @@ a.ft-tab-title:hover {
     background: url($imagePath + $ftVelcro-namespaceDir + 'mod-header-border.png') bottom left repeat-x;
     overflow: hidden;
 }
+
+.msie6 .ft-tabs-small { zoom: 1; }
 
 .ft-tab-small {
     float: left;

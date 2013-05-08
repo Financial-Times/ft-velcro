@@ -157,10 +157,17 @@ a.ft-tab-title:hover {
  * Module header medium sub-tabs
  */
 .ft-tabs-small {
-    clear: left;
     padding-left: 20px;
     background: url($imagePath + $ftVelcro-namespaceDir + 'mod-header-border.png') bottom left repeat-x;
     overflow: hidden;
+}
+
+.ft-header-medium-title + .ft-tabs-small {
+    float: right;
+}
+
+.ft-tabs-large + .ft-tabs-small {
+    background-color: $ftColor-Tint1;
 }
 
 .msie6 .ft-tabs-small { zoom: 1; }

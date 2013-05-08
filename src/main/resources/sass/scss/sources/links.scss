@@ -1,17 +1,17 @@
 /** links.scss */
 
-a.ft-link {
+.ft-link {
     color: $ftColor-Blue;
 }
 
-a.ft-link:hover {
+.ft-link:hover {
     color: #000;
 }
 
-a.ft-link-stealth {
+.ft-link-stealth {
     color: inherit;
 }
 
-a.ft-link-stealth:hover {
+.ft-link-stealth:hover {
     color: $ftColor-Blue;
 }

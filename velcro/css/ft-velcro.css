@@ -227,10 +227,12 @@ a.ft-tab-title:hover {
  * Module header medium sub-tabs
  */
 .ft-tabs-small {
-  clear: left;
   padding-left: 20px;
   background: url("../img/mod-header-border.png") bottom left repeat-x;
   overflow: hidden; }
+
+.ft-header-medium-title + .ft-tabs-small {
+  float: right; }
 
 .msie6 .ft-tabs-small {
   zoom: 1; }
@@ -238,6 +240,9 @@ a.ft-tab-title:hover {
 .ft-tab-small {
   float: left;
   margin-right: 10px; }
+
+.ft-tabs-large + .ft-tabs-small {
+  background-color: #f6e9d8; }
 
 .ft-tabs-small .ft-tab-title {
   font-size: 11px;

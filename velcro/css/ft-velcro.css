@@ -115,11 +115,10 @@
   font-size: 12px;
   line-height: 10px;
   background-color: #fff1e0;
-  color: red; }
+  color: #333; }
 
 .msie7 .ft-header-small-title {
   display: inline;
-  top: 0;
   zoom: 1; }
 
 .msie6 .ft-header-small-title {
@@ -269,16 +268,16 @@ a.ft-tab-title:hover {
   line-height: 18px; }
 
 /** links.scss */
-a.ft-link {
+.ft-link {
   color: #2e6e9e; }
 
-a.ft-link:hover {
+.ft-link:hover {
   color: #000; }
 
-a.ft-link-stealth {
+.ft-link-stealth {
   color: inherit; }
 
-a.ft-link-stealth:hover {
+.ft-link-stealth:hover {
   color: #2e6e9e; }
 
 /** states.scss */

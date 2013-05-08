@@ -103,21 +103,19 @@
   border-radius: 4px;
   background-color: #e9decf;
   height: 9px;
-  line-height: 18px;
+  line-height: 9px;
   font-size: 14px;
   overflow: hidden; }
 
 .ft-header-small-title {
   display: inline-block;
-  position: relative;
-  top: -5px;
   padding: 0 10px;
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 10px;
   background-color: #fff1e0;
-  color: #333; }
+  color: red; }
 
 .msie7 .ft-header-small-title {
   display: inline;

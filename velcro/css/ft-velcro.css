@@ -104,6 +104,7 @@
   background-color: #e9decf;
   height: 9px;
   line-height: 18px;
+  font-size: 14px;
   overflow: hidden; }
 
 .ft-header-small-title {
@@ -117,9 +118,6 @@
   line-height: 10px;
   background-color: #fff1e0;
   color: #333; }
-
-.msie8 .ft-header-small-title {
-  top: -6px; }
 
 .msie7 .ft-header-small-title {
   display: inline;
@@ -262,9 +260,6 @@ a.ft-tab-title:hover {
 .ft-heading a {
   color: #2e6e9e; }
 
-.ft-heading a {
-  color: #000; }
-
 .ft-heading-medium {
   text-transform: uppercase;
   font-size: 12px;
@@ -276,16 +271,16 @@ a.ft-tab-title:hover {
   line-height: 18px; }
 
 /** links.scss */
-.ft-link {
+a.ft-link {
   color: #2e6e9e; }
 
-.ft-link:hover {
+a.ft-link:hover {
   color: #000; }
 
-.ft-link-stealth {
+a.ft-link-stealth {
   color: inherit; }
 
-.ft-link-stealth:hover {
+a.ft-link-stealth:hover {
   color: #2e6e9e; }
 
 /** states.scss */

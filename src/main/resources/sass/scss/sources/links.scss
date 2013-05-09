@@ -12,6 +12,10 @@
     color: inherit;
 }
 
+.msie7 .ft-link-stealth {
+    color:expression(this.parentNode.currentStyle['color']);
+}
+
 .ft-link-stealth:hover {
     color: $ftColor-Blue;
 }

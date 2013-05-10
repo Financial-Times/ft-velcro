@@ -315,8 +315,9 @@ a.ft-tab-title:hover {
   list-style-type: decimal; }
 
 .ft-list-wrapping .ft-list-item {
-  display: inline-block;
-  clear: none; }
+  float: left;
+  clear: none;
+  margin-right: 18px; }
 
 /** states.scss */
 .ft-state-hidden {

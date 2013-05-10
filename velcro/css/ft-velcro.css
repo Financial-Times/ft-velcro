@@ -295,7 +295,10 @@ a.ft-tab-title:hover {
 .ft-list {
   margin: 0;
   padding: 0;
-  color: #505050; }
+  font-family: BentonSans, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+  color: #777777; }
 
 .ft-list-item {
   margin: 0;

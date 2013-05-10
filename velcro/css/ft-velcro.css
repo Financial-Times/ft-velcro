@@ -234,15 +234,15 @@ a.ft-tab-title:hover {
 .ft-header-medium-title + .ft-tabs-small {
   float: right; }
 
+.ft-tabs-large + .ft-tabs-small {
+  background-color: #f6e9d8; }
+
 .msie6 .ft-tabs-small {
   zoom: 1; }
 
 .ft-tab-small {
   float: left;
   margin-right: 10px; }
-
-.ft-tabs-large + .ft-tabs-small {
-  background-color: #f6e9d8; }
 
 .ft-tabs-small .ft-tab-title {
   font-size: 11px;
@@ -261,6 +261,9 @@ a.ft-tab-title:hover {
 
 .ft-heading a {
   color: #2e6e9e; }
+
+.ft-heading a:hover {
+  color: #000; }
 
 .ft-heading-medium {
   text-transform: uppercase;
@@ -282,8 +285,38 @@ a.ft-tab-title:hover {
 .ft-link-stealth {
   color: inherit; }
 
+.msie7 .ft-link-stealth {
+  color: expression(this.parentNode.currentStyle["color"]); }
+
 .ft-link-stealth:hover {
   color: #2e6e9e; }
+
+/** Lists */
+.ft-list {
+  margin: 0;
+  padding: 0;
+  color: #505050; }
+
+.ft-list-item {
+  margin: 0;
+  padding: 0; }
+
+.ft-list-bulletted .ft-list-item,
+.ft-list-numbered .ft-list-item {
+  margin-left: 18px; }
+
+.ft-list-plain .ft-list-item {
+  list-style-type: none; }
+
+.ft-list-bulletted .ft-list-item {
+  list-style-type: disc; }
+
+.ft-list-numbered .ft-list-item {
+  list-style-type: decimal; }
+
+.ft-list-wrapping .ft-list-item {
+  display: inline-block;
+  clear: none; }
 
 /** states.scss */
 .ft-state-hidden {

@@ -11,9 +11,9 @@
     padding: 0;
 }
 
-.ft-list-bulletted ft-list-item,
-.fr-list-numbered ft-list-item {
-    margin-left: 20px;
+.ft-list-bulletted .ft-list-item,
+.ft-list-numbered .ft-list-item {
+    margin-left: 18px;
 }
 
 .ft-list-plain .ft-list-item {
@@ -29,6 +29,7 @@
 }
 
 .ft-list-wrapping .ft-list-item {
-    display: inline-block;
+    float: left;
     clear: none;
+    margin-right: 18px;
 }

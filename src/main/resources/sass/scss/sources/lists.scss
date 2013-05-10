@@ -3,7 +3,10 @@
 .ft-list {
     margin: 0;
     padding: 0;
-    color: $ftColor-DarkGrey;
+    font-family: $ftFont-Benton;
+    font-size: 13px;
+    line-height: 21px;
+    color: $ftColor-CoolGrey1;
 }
 
 .ft-list-item {

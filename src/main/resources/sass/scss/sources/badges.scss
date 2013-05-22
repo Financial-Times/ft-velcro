@@ -1,0 +1,13 @@
+.ft-badge {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 2px 3px 1px 3px;
+    font-family: $ftFont-Benton;
+    font-size: 11px;
+    line-height: 11px;
+}
+
+.ft-badge-red {
+    background-color: $ftColor-Red;
+    color: #fff;
+}

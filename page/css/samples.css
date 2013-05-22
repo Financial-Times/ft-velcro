@@ -14,3 +14,31 @@
 .v-sample-editorial {
     width: 600px;
 }
+
+.v-mock-image {
+    display: inline-block;
+    text-align: center;
+    background-color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    outline: 1px solid #ccc;
+    color: #888;
+}
+
+.v-mock-image-assassination {
+    width: 466px;
+    height: 280px;
+    line-height: 280px;
+}
+
+.v-mock-image-primary {
+    width: 272px;
+    height: 153px;
+    line-height: 153px;
+}
+
+.v-mock-image-secondary {
+    width: 167px;
+    height: 96px;
+    line-height: 96px;
+}

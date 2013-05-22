@@ -20,6 +20,18 @@
 
 /* These variables should probably be renamed to generic "ftFont-Serif" & "ftFont-SansSerif" once we have fully switched
    page components over to use the brand web fonts. Currently for example, there is a mix of Benton & Arial */
+.ft-badge {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 2px 3px 1px 3px;
+  font-family: BentonSans, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 11px; }
+
+.ft-badge-red {
+  background-color: #cc0000;
+  color: #fff; }
+
 /** buttons.scss */
 .ft-button {
   display: inline-block;

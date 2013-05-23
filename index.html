@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="page/css/links.css" />
     <link rel="stylesheet" href="page/css/lists.css" />
     <link rel="stylesheet" href="velcro/css/ft-velcro.css" />
+    <link rel="stylesheet" href="page/js/google-code-prettify/prettify.css" />
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -248,7 +249,7 @@
 
             <p class="v-paragraph">Used for article titles.</p>
 
-            <div class="v-sample  v-sample-editorial">
+            <div class="v-sample v-sample-editorial">
 
                 <p class="ft-title ft-title-large">Large title | <a href="#" class="ft-link-stealth">Large title link</a></p>
 
@@ -280,13 +281,9 @@
 
             <h2 class="v-title v-title-medium">Timestamps</h2>
 
-            <div class="v-grid-col v-grid-col-6">
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
-
-                    <p class="ft-timestamp">12:34pm timestamp</p>
-
-                </div>
+                <p class="ft-timestamp">12:34pm timestamp</p>
 
             </div>
 
@@ -298,118 +295,98 @@
 
             <h2 class="v-title v-title-medium">Lists</h2>
 
-            <div class="v-grid-col v-grid-col-4">
+            <h3 class="v-title v-title-small">Plain</h3>
 
-                <h3 class="v-title v-title-small">Plain</h3>
+            <p class="v-paragraph">Can be a <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> or <code>&lt;div&gt;</code>.</p>
 
-                <p class="v-paragraph">Can be a <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> or <code>&lt;div&gt;</code>.</p>
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
-
-                    <ul class="ft-list ft-list-plain">
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                    </ul>
-
-                </div>
+                <ul class="ft-list ft-list-plain">
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                </ul>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-4">
+            <h3 class="v-title v-title-small">Bulletted</h3>
 
-                <h3 class="v-title v-title-small">Bulletted</h3>
+            <p class="v-paragraph">Must be a <code>&lt;ul&gt;</code>.</p>
 
-                <p class="v-paragraph">Must be a <code>&lt;ul&gt;</code>.</p>
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
-
-                    <ul class="ft-list ft-list-bulletted">
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                    </ul>
-
-                </div>
+                <ul class="ft-list ft-list-bulletted">
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                </ul>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-4">
+            <h3 class="v-title v-title-small">Numbered</h3>
 
-                <h3 class="v-title v-title-small">Numbered</h3>
+            <p class="v-paragraph">Must be a <code>&lt;ol&gt;</code>.</p>
 
-                <p class="v-paragraph">Must be a <code>&lt;ol&gt;</code>.</p>
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
-
-                    <ul class="ft-list ft-list-numbered">
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                    </ul>
-
-                </div>
+                <ul class="ft-list ft-list-numbered">
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                </ul>
 
             </div>
 
             <h3 class="v-title v-title-small">Options</h3>
 
-            <div class="v-grid-col v-grid-col-6">
+            <p class="v-paragraph">Non-wrapping (default). Each list item will be on a new line.</p>
 
-                <p class="v-paragraph">Non-wrapping (default). Each list item will be on a new line.</p>
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
-
-                    <ul class="ft-list ft-list-plain">
-                        <li class="ft-list-item">Long plain text list item content here</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                    </ul>
-
-                </div>
-
-                <div class="v-sample">
-
-                    <ul class="ft-list ft-list-bulletted">
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                    </ul>
-
-                </div>
+                <ul class="ft-list ft-list-plain">
+                    <li class="ft-list-item">Long plain text list item content here</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                </ul>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-6">
+            <div class="v-sample v-sample-editorial">
 
-                <p class="v-paragraph">Wrapping. List items will wrap if the whole list item fits on one line.</p>
+                <ul class="ft-list ft-list-bulletted">
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                </ul>
 
-                <div class="v-sample">
+            </div>
 
-                    <ul class="ft-list ft-list-plain ft-list-wrapping">
-                        <li class="ft-list-item">Long plain text list item content here</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                    </ul>
+            <p class="v-paragraph">Wrapping. List items will wrap if the whole list item fits on one line.</p>
 
-                </div>
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
+                <ul class="ft-list ft-list-plain ft-list-wrapping">
+                    <li class="ft-list-item">Long plain text list item content here</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                </ul>
 
-                    <ul class="ft-list ft-list-bulletted ft-list-wrapping">
-                        <li class="ft-list-item">Long plain text list item content here</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                        <li class="ft-list-item">Plain text list item content</li>
-                    </ul>
+            </div>
 
-                </div>
+            <div class="v-sample v-sample-editorial">
+
+                <ul class="ft-list ft-list-bulletted ft-list-wrapping">
+                    <li class="ft-list-item">Long plain text list item content here</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                    <li class="ft-list-item">Plain text list item content</li>
+                </ul>
 
             </div>
 
@@ -429,38 +406,34 @@
                 <li>Semi-transparent image credit background may render as opaque</li>
             </ul>
 
-            <div class="v-grid-col v-grid-col-7">
+            <p class="v-paragraph">Assassination size container, without credit.</p>
 
-                <p class="v-paragraph">Assassination size container, without credit.</p>
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
-
-                    <div class="ft-image ft-image-assassination"><div class="v-mock-image v-mock-image-assassination">Assassination (466px x 280px)</div></div>
-
+                <div class="ft-image ft-image-assassination">
+                    <div class="v-mock-image v-mock-image-assassination">Assassination (466px x 280px)</div>
                 </div>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-5">
+            <p class="v-paragraph">Primary size container, with linking credit.</p>
 
-                <p class="v-paragraph">Primary size container, with linking credit.</p>
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
-
-                    <div class="ft-image ft-image-primary"><div class="v-mock-image v-mock-image-primary">Primary (272px x 153px)</div><a href="#" class="ft-image-credit">&copy;Credit</a></div>
-
+                <div class="ft-image ft-image-primary">
+                    <div class="v-mock-image v-mock-image-primary">Primary (272px x 153px)</div>
+                    <a href="#" class="ft-image-credit">&copy;Credit</a>
                 </div>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-5">
+            <p class="v-paragraph">Secondary size container, with non-linking credit.</p>
 
-                <p class="v-paragraph">Secondary size container, with non-linking credit.</p>
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
-
-                    <div class="ft-image ft-image-secondary"><div class="v-mock-image v-mock-image-secondary">Secondary (167px x 96px)</div><span class="ft-image-credit">&copy;Credit</span></div>
-
+                <div class="ft-image ft-image-secondary">
+                    <div class="v-mock-image v-mock-image-secondary">Secondary (167px x 96px)</div>
+                    <span class="ft-image-credit">&copy;Credit</span>
                 </div>
 
             </div>
@@ -481,13 +454,9 @@
                 <li>Rounded corners may render as square corners</li>
             </ul>
 
-            <div class="v-grid-col v-grid-col-4">
+            <div class="v-sample v-sample-editorial">
 
-                <div class="v-sample">
-
-                    <span class="ft-badge ft-badge-red">NEW</span>
-
-                </div>
+                <span class="ft-badge ft-badge-red">NEW</span>
 
             </div>
 
@@ -499,7 +468,7 @@
 
             <h2 class="v-title v-title-medium">Buttons</h2>
 
-            <p class="v-paragraph">Things that look like buttons.</p>
+            <p class="v-paragraph">Things that look like buttons. Can be <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> elements.</p>
 
             <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
 
@@ -508,51 +477,36 @@
                 <li>Background colour gradients may render as flat colour</li>
             </ul>
 
-            <div class="v-sample">
+            <div class="v-sample v-sample-editorial">
 
-                <table class="v-table">
-                <tr>
-                    <td></td>
-                    <td class="v-table-column-title" colspan="3"><strong>As <code>&lt;button&gt;</code> elements</strong></td>
-                    <td class="v-table-column-title" colspan="3"><strong>As <code>&lt;a&gt;</code> elements</strong></td>
-                </tr>
-                <tr>
-                    <td class="v-table-column-title"></td>
-                    <td class="v-table-column-title">Small</td>
-                    <td class="v-table-column-title">Medium</td>
-                    <td class="v-table-column-title">Large</td>
-                    <td class="v-table-column-title">Small</td>
-                    <td class="v-table-column-title">Medium</td>
-                    <td class="v-table-column-title">Large</td>
-                </tr>
-                <tr>
-                    <td class="v-table-row-title">Default</td>
-                    <td><button class="ft-button ft-button-small"><span><span>Submit</span></span></button></td>
-                    <td><button class="ft-button ft-button-medium"><span><span>Submit</span></span></button></td>
-                    <td><button class="ft-button ft-button-large"><span><span>Submit</span></span></button></td>
-                    <td><a href="#" class="ft-button ft-button-small"><span><span>Submit</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-medium"><span><span>Submit</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-large"><span><span>Submit</span></span></a></td>
-                </tr>
-                <tr>
-                    <td class="v-table-row-title"><code>ft-button-negative</code></td>
-                    <td><button class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></button></td>
-                    <td><button class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></button></td>
-                    <td><button class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></button></td>
-                    <td><a href="#" class="ft-button ft-button-small ft-button-negative"><span><span>Cancel</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-medium ft-button-negative"><span><span>Cancel</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-large ft-button-negative"><span><span>Cancel</span></span></a></td>
-                </tr>
-                <tr>
-                    <td class="v-table-row-title"><code>ft-state-disabled</code></td>
-                    <td><button class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></button></td>
-                    <td><button class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></button></td>
-                    <td><button class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></button></td>
-                    <td><a href="#" class="ft-button ft-button-small ft-state-disabled"><span><span>Disabled</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-medium ft-state-disabled"><span><span>Disabled</span></span></a></td>
-                    <td><a href="#" class="ft-button ft-button-large ft-state-disabled"><span><span>Disabled</span></span></a></td>
-                </tr>
-                </table>
+                <button class="ft-button ft-button-small">Small</button>
+                <button class="ft-button ft-button-medium">Medium</button>
+                <button class="ft-button ft-button-large">Large</button>
+                <a href="#" class="ft-button ft-button-small">Small</a>
+                <a href="#" class="ft-button ft-button-medium">Medium</a>
+                <a href="#" class="ft-button ft-button-large">Large</a>
+
+            </div>
+
+            <div class="v-sample v-sample-editorial">
+
+                <button class="ft-button ft-button-small ft-button-negative">Cancel</button>
+                <button class="ft-button ft-button-medium ft-button-negative">Cancel</button>
+                <button class="ft-button ft-button-large ft-button-negative">Cancel</button>
+                <a href="#" class="ft-button ft-button-small ft-button-negative">Cancel</a>
+                <a href="#" class="ft-button ft-button-medium ft-button-negative">Cancel</a>
+                <a href="#" class="ft-button ft-button-large ft-button-negative">Cancel</a>
+
+            </div>
+
+            <div class="v-sample v-sample-editorial">
+
+                <button class="ft-button ft-button-small ft-state-disabled">Disabled</button>
+                <button class="ft-button ft-button-medium ft-state-disabled">Disabled</button>
+                <button class="ft-button ft-button-large ft-state-disabled">Disabled</button>
+                <a href="#" class="ft-button ft-button-small ft-state-disabled">Disabled</a>
+                <a href="#" class="ft-button ft-button-medium ft-state-disabled">Disabled</a>
+                <a href="#" class="ft-button ft-button-large ft-state-disabled">Disabled</a>
 
             </div>
 
@@ -621,107 +575,83 @@
                 <li>Small tabs with title may left align.</li>
             </ul>
 
-            <div class="v-grid-col v-grid-col-6">
+            <h3 class="v-title v-title-small">Header Medium with Title</h3>
 
-                <h3 class="v-title v-title-small">Header Medium with Title</h3>
+            <div class="v-sample v-sample-rail">
 
-                <div class="v-sample v-sample-rail">
-
-                    <div class="ft-header-medium">
-                        <h3 class="ft-header-medium-title">TITLE</h3>
-                    </div>
-
+                <div class="ft-header-medium">
+                    <h3 class="ft-header-medium-title">TITLE</h3>
                 </div>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-6">
+            <h3 class="v-title v-title-small">Header Medium with Title (and tint)</h3>
 
-                <h3 class="v-title v-title-small">Header Medium with Title (and tint)</h3>
+            <div class="v-sample v-sample-rail v-sample-alongside">
 
-                <div class="v-sample v-sample-rail v-sample-alongside">
-
-                    <div class="ft-header-medium ft-header-medium-tint">
-                        <h3 class="ft-header-medium-title">TITLE</h3>
-                    </div>
-
+                <div class="ft-header-medium ft-header-medium-tint">
+                    <h3 class="ft-header-medium-title">TITLE</h3>
                 </div>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-6">
+            <h3 class="v-title v-title-small">Header Medium with Small Tabs</h3>
 
-                <h3 class="v-title v-title-small">Header Medium with Small Tabs</h3>
+            <div class="v-sample v-sample-rail">
 
-                <div class="v-sample v-sample-rail">
-
-                    <div class="ft-header-medium">
-                        <h3 class="ft-header-medium-title">TITLE</h3>
-                        <ul class="ft-tabs-small">
-                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
-                            <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
-                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
-                        </ul>
-                    </div>
-
+                <div class="ft-header-medium">
+                    <h3 class="ft-header-medium-title">TITLE</h3>
+                    <ul class="ft-tabs-small">
+                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
+                        <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                    </ul>
                 </div>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-6">
+            <h3 class="v-title v-title-small">Header Medium with Small Tabs (and tint)</h3>
 
-                <h3 class="v-title v-title-small">Header Medium with Small Tabs (and tint)</h3>
+            <div class="v-sample v-sample-rail">
 
-                <div class="v-sample v-sample-rail">
-
-                    <div class="ft-header-medium ft-header-medium-tint">
-                        <h3 class="ft-header-medium-title">TITLE</h3>
-                        <ul class="ft-tabs-small">
-                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
-                            <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
-                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
-                        </ul>
-                    </div>
-
+                <div class="ft-header-medium ft-header-medium-tint">
+                    <h3 class="ft-header-medium-title">TITLE</h3>
+                    <ul class="ft-tabs-small">
+                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
+                        <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                    </ul>
                 </div>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-6">
+            <h3 class="v-title v-title-small">Header Medium with Large Tabs</h3>
 
-                <h3 class="v-title v-title-small">Header Medium with Large Tabs</h3>
+            <div class="v-sample v-sample-rail">
 
-                <div class="v-sample v-sample-rail">
-
-                    <div class="ft-header-medium ft-header-medium-tabs">
-                        <ul class="ft-tabs-large">
-                            <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
-                            <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
-                        </ul>
-                    </div>
-
+                <div class="ft-header-medium ft-header-medium-tabs">
+                    <ul class="ft-tabs-large">
+                        <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
+                        <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
+                    </ul>
                 </div>
 
             </div>
 
-            <div class="v-grid-col v-grid-col-6">
+            <h3 class="v-title v-title-small">Header Medium with Large and Small Tabs</h3>
 
-                <h3 class="v-title v-title-small">Header Medium with Large and Small Tabs</h3>
+            <div class="v-sample v-sample-rail">
 
-                <div class="v-sample v-sample-rail">
-
-                    <div class="ft-header-medium ft-header-medium-tabs">
-                        <ul class="ft-tabs-large">
-                            <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
-                            <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
-                        </ul>
-                        <ul class="ft-tabs-small">
-                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
-                            <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
-                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
-                        </ul>
-                    </div>
-
+                <div class="ft-header-medium ft-header-medium-tabs">
+                    <ul class="ft-tabs-large">
+                        <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
+                        <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
+                    </ul>
+                    <ul class="ft-tabs-small">
+                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
+                        <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                    </ul>
                 </div>
 
             </div>
@@ -734,7 +664,10 @@
 
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="page/js/google-code-prettify/prettify.js"></script>
+    <script src="page/js/google-code-prettify/lang-basic.js"></script>
+    <script src="page/js/codeSamples.js"></script>
     <script src="page/js/init.js"></script>
 
 </body>

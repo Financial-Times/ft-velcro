@@ -5,4 +5,6 @@ $(document).ready(function () {
         ev.preventDefault();
     });
 
+    velcroDoc.codeSamples.showCodeForElements(".v-sample");
+
 });

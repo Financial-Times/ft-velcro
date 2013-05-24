@@ -18,8 +18,12 @@
 
 .v-nav {
     margin: 0 0 20px 0;
+    width: 800px;
+    overflow: hidden;
 }
 
 .v-nav li {
+    float: left;
     margin: 0 0 5px 0;
+    width: 200px;
 }

@@ -118,8 +118,7 @@
   background-color: #e9decf;
   height: 9px;
   line-height: 9px;
-  font-size: 14px;
-  overflow: hidden; }
+  font-size: 14px; }
 
 .ft-header-small-title {
   display: inline-block;
@@ -404,6 +403,10 @@ a.ft-image-credit {
 .ft-title-large {
   font-size: 40px;
   line-height: 40px; }
+
+.ft-title-medium {
+  font-size: 21px;
+  line-height: 26px; }
 
 .ft-title-small {
   font-size: 16px;

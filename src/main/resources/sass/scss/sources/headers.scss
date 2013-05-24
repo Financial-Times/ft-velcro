@@ -89,6 +89,7 @@ a.ft-header-medium-title:hover {
  */
 .ft-header-medium-tabs {
     border-top: 0;
+    background-color: $ftColor-Tint2;
     background-image: none;
 }
 
@@ -166,6 +167,7 @@ a.ft-tab-title:hover {
 }
 
 .ft-tabs-large + .ft-tabs-small {
+    clear: left;
     background-color: $ftColor-Tint1;
 }
 

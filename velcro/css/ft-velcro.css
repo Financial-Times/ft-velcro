@@ -185,6 +185,7 @@ a.ft-header-medium-title:hover {
  */
 .ft-header-medium-tabs {
   border-top: 0;
+  background-color: #e9decf;
   background-image: none; }
 
 .ft-header-medium-tint {
@@ -248,6 +249,7 @@ a.ft-tab-title:hover {
   float: right; }
 
 .ft-tabs-large + .ft-tabs-small {
+  clear: left;
   background-color: #f6e9d8; }
 
 .msie6 .ft-tabs-small {

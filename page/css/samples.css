@@ -25,10 +25,10 @@
     color: #888;
 }
 
-.v-mock-image-assassination {
-    width: 466px;
-    height: 280px;
-    line-height: 280px;
+.v-mock-image-article {
+    width: 600px;
+    height: 338px;
+    line-height: 338px;
 }
 
 .v-mock-image-primary {
@@ -41,4 +41,22 @@
     width: 167px;
     height: 96px;
     line-height: 96px;
+}
+
+.v-mock-image-tertiary {
+    width: 114px;
+    height: 64px;
+    line-height: 64px;
+}
+
+.v-mock-image-leader {
+    width: 414px;
+    height: 223px;
+    line-height: 223px;
+}
+
+.v-mock-image-fullwidth {
+    width: 972px;
+    height: 547px;
+    line-height: 547px;
 }

@@ -12,7 +12,7 @@
 }
 
 .v-swatch code {
-    color: #aaa;
+    color: #777;
 }
 
 .v-swatch-color {
@@ -25,5 +25,5 @@
 .v-swatch-label {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 12px;
-    line-height: 30px;
+    line-height: 15px;
 }

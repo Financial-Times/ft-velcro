@@ -153,6 +153,10 @@ a.ft-tab-title:hover {
     color: #333;
 }
 
+.ft-tabs-large .ft-state-selected .ft-tab-title:hover {
+    cursor: text;
+}
+
 /**
  * Module header medium sub-tabs
  */
@@ -189,4 +193,8 @@ a.ft-tab-title:hover {
 
 .ft-tabs-small .ft-state-selected .ft-tab-title {
     color: #000;
+}
+
+.ft-tabs-small .ft-state-selected .ft-tab-title:hover {
+    cursor: text;
 }

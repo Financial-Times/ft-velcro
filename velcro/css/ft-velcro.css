@@ -1,3 +1,7 @@
+/* Primary Palette */
+/* Greys */
+/* Tints */
+/* Colours */
 /* Benton Regular */
 @font-face {
   font-family: "BentonSans";
@@ -299,9 +303,9 @@ a.ft-tab-title:hover {
   display: inline; }
 
 /* image sizes */
-.ft-image-assassination {
-  width: 466px;
-  height: 280px; }
+.ft-image-article {
+  width: 600px;
+  height: 338px; }
 
 .ft-image-primary {
   width: 272px;
@@ -310,6 +314,18 @@ a.ft-tab-title:hover {
 .ft-image-secondary {
   width: 167px;
   height: 96px; }
+
+.ft-image-tertiary {
+  width: 114px;
+  height: 64px; }
+
+.ft-image-leader {
+  width: 414px;
+  height: 233px; }
+
+.ft-image-fullwidth {
+  width: 972px;
+  height: 547px; }
 
 .ft-image-credit {
   display: block;

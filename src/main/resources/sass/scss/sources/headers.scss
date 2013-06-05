@@ -141,7 +141,7 @@ a.ft-tab-title:hover {
     font-size: 12px;
     line-height: 34px;
     font-weight: bold;
-    color: #979088;
+    opacity: 0.5;
 }
 
 .ft-tabs-large .ft-state-selected {
@@ -151,6 +151,7 @@ a.ft-tab-title:hover {
 
 .ft-tabs-large .ft-state-selected .ft-tab-title {
     color: #333;
+    opacity: 1;
 }
 
 .ft-tabs-large .ft-state-selected .ft-tab-title:hover {

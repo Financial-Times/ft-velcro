@@ -117,7 +117,7 @@
   border-radius: 4px;
   background-color: #e9decf;
   height: 9px;
-  line-height: 9px;
+  line-height: 8px;
   font-size: 14px; }
 
 .ft-header-small-title {
@@ -228,14 +228,18 @@ a.ft-tab-title:hover {
   font-size: 12px;
   line-height: 34px;
   font-weight: bold;
-  color: #979088; }
+  opacity: 0.5; }
 
 .ft-tabs-large .ft-state-selected {
   border-top-color: #A7294D;
   background: #f6e9d8; }
 
 .ft-tabs-large .ft-state-selected .ft-tab-title {
-  color: #333; }
+  color: #333;
+  opacity: 1; }
+
+.ft-tabs-large .ft-state-selected .ft-tab-title:hover {
+  cursor: text; }
 
 /**
  * Module header medium sub-tabs
@@ -268,6 +272,9 @@ a.ft-tab-title:hover {
 
 .ft-tabs-small .ft-state-selected .ft-tab-title {
   color: #000; }
+
+.ft-tabs-small .ft-state-selected .ft-tab-title:hover {
+  cursor: text; }
 
 /** headings.scss */
 .ft-heading {
@@ -361,6 +368,12 @@ a.ft-image-credit {
 
 .ft-link-stealth:hover {
   color: #2e6e9e; }
+
+.ft-link-alternative {
+  color: #9b164f; }
+
+.ft-link-kicker {
+  color: #000; }
 
 /** Lists */
 .ft-list {

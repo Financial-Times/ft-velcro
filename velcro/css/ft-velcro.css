@@ -98,6 +98,13 @@
   cursor: default;
   color: #fff; }
 
+/* divider.scss */
+.ft-divider {
+  border-width: 0;
+  border-radius: 4px;
+  height: 9px;
+  background-color: #e9decf; }
+
 /** grid.scss */
 .ft-columns-span7 {
   float: left;

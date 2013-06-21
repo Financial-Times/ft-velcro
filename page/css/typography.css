@@ -1,6 +1,7 @@
 /* Velcro GitHub pages styles - not part of Velcro itself */
 
 .v-paragraph {
+    margin: 0 0 20px 0;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 14px;
     line-height: 19px;
@@ -12,6 +13,7 @@
 }
 
 .v-note {
+    margin: 0 0 10px 0;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 12px;
     color: #888;

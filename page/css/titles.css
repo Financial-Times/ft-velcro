@@ -5,13 +5,16 @@
 }
 
 .v-title-large {
+    margin: 0 0 20px 0;
     font-size: 28px;
 }
 
 .v-title-medium {
+    margin: 0 0 15px 0;
     font-size: 20px;
 }
 
 .v-title-small {
+    margin: 0 0 10px 0;
     font-size: 16px;
 }

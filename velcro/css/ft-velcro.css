@@ -20,15 +20,33 @@
 
 /* These variables should probably be renamed to generic "ftFont-Serif" & "ftFont-SansSerif" once we have fully switched
    page components over to use the brand web fonts. Currently for example, there is a mix of Benton & Arial */
+/* reset.scss */
+body, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-weight: normal; }
+
+ul, ol {
+  list-style: none; }
+
+acronym, a img, :link img, :visited img, fieldset {
+  border: none; }
+
+address {
+  font-style: normal; }
+
 .ft-badge {
   display: inline-block;
   border-radius: 5px;
   padding: 2px 4px 0px 4px;
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   font-size: 10px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 13px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-transform: uppercase; }
 
 .ft-badge-red {
   background-color: #cc0000;
@@ -104,16 +122,6 @@
   border-radius: 4px;
   height: 9px;
   background-color: #e9decf; }
-
-/** grid.scss */
-.ft-columns-span7 {
-  float: left;
-  margin-right: 20px;
-  width: 414px; }
-
-.ft-columns-span3 {
-  float: left;
-  width: 166px; }
 
 /** module-header.scss */
 /**
@@ -468,5 +476,4 @@ a.ft-image-credit {
 .ft-byline {
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   clear: left;
-  margin: 15px 0 0 0;
   color: #666; }

@@ -370,13 +370,15 @@ a.ft-image-credit {
 
 /** links.scss */
 .ft-link {
-  color: #2e6e9e; }
+  color: #2e6e9e;
+  text-decoration: none; }
 
 .ft-link:hover {
   color: #000; }
 
 .ft-link-stealth {
-  color: inherit; }
+  color: inherit;
+  text-decoration: none; }
 
 .msie7 .ft-link-stealth {
   color: expression(this.parentNode.currentStyle["color"]); }

@@ -22,17 +22,23 @@
 }
 
 .ft-lead {
-    font-family: $ftFont-Benton;
-    color: #505050;
+    font-family: $ftFont-Georgia;
+    color: $ftColor-DarkGrey;
 }
 
 .ft-lead-large {
-    font-family: $ftFont-Georgia;
     font-size: 24px;
     line-height: 28px;
 }
 
+.ft-lead-medium {
+    font-size: 17px;
+    line-height: 21px;
+    color: $ftColor-CoolGrey1;
+}
+
 .ft-lead-small {
+    font-family: $ftFont-Benton;
     font-size: 13px;
     line-height: 17px;
 }

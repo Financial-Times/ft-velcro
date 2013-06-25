@@ -463,15 +463,20 @@ a.ft-image-credit {
   line-height: 17px; }
 
 .ft-lead {
-  font-family: BentonSans, Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
   color: #505050; }
 
 .ft-lead-large {
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 24px;
   line-height: 28px; }
 
+.ft-lead-medium {
+  font-size: 17px;
+  line-height: 21px;
+  color: #777777; }
+
 .ft-lead-small {
+  font-family: BentonSans, Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 17px; }
 

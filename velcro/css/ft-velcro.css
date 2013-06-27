@@ -118,6 +118,8 @@ address {
 
 /* divider.scss */
 .ft-divider {
+  clear: both;
+  margin: 0;
   border-width: 0;
   border-radius: 4px;
   height: 9px;
@@ -442,7 +444,7 @@ a.ft-image-credit {
   font-size: 12px;
   font-weight: normal;
   line-height: 14px;
-  color: #000; }
+  color: #777; }
 
 /** titles.scss */
 .ft-title {

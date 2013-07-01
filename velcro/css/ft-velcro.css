@@ -420,6 +420,16 @@ a.ft-image-credit {
 .ft-list-numbered .ft-list-item {
   list-style-type: decimal; }
 
+/* Clearfix must be used instead of overflow: hidden, as individual list items must wrap around floated elements.
+   With the overflow: hidden solution, the left edge of the <ul> will be adjacent to the right edge of the floated element */
+.ft-list-wrapping:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
 .ft-list-wrapping .ft-list-item {
   float: left;
   clear: none;
@@ -444,7 +454,7 @@ a.ft-image-credit {
   font-size: 12px;
   font-weight: normal;
   line-height: 14px;
-  color: #777; }
+  color: #777777; }
 
 /** titles.scss */
 .ft-title {

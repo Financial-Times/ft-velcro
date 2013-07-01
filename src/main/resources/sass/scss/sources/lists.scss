@@ -31,6 +31,10 @@
     list-style-type: decimal;
 }
 
+.ft-list-wrapping {
+    overflow: hidden;
+}
+
 .ft-list-wrapping .ft-list-item {
     float: left;
     clear: none;

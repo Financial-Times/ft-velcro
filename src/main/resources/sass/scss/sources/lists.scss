@@ -31,8 +31,10 @@
     list-style-type: decimal;
 }
 
-.ft-list-wrapping {
-    overflow: hidden;
+/* Clearfix must be used instead of overflow: hidden, as individual list items must wrap around floated elements.
+   With the overflow: hidden solution, the left edge of the <ul> will be adjacent to the right edge of the floated element */
+.ft-list-wrapping:after {
+    @include clearfix
 }
 
 .ft-list-wrapping .ft-list-item {

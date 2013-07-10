@@ -54,7 +54,7 @@
     font-family: $ftFont-Benton;
     overflow: hidden;
     border-top: 4px solid $ftColor-WarmGrey1;
-    background: url($imagePath + $ftVelcro-namespaceDir + 'mod-header-border.png') bottom left repeat-x;
+    background: url($imagePath + $ftVelcro-namespaceDir + 'border-horizontal-dotted.png') bottom left repeat-x;
 }
 
 .ft-header-medium-title {
@@ -110,7 +110,7 @@ a.ft-header-medium-title:hover {
     border-top: 4px solid #A8A79C;
     width: 175px;
     text-align: center;
-    background: $ftColor-Tint2 url($imagePath + $ftVelcro-namespaceDir + 'mod-header-border.png') bottom left repeat-x;
+    background: $ftColor-Tint2 url($imagePath + $ftVelcro-namespaceDir + 'border-horizontal-dotted.png') bottom left repeat-x;
 }
 
 .ft-tab-large:first-child {
@@ -163,7 +163,7 @@ a.ft-tab-title:hover {
  */
 .ft-tabs-small {
     padding-left: 20px;
-    background: url($imagePath + $ftVelcro-namespaceDir + 'mod-header-border.png') bottom left repeat-x;
+    background: url($imagePath + $ftVelcro-namespaceDir + 'border-horizontal-dotted.png') bottom left repeat-x;
     overflow: hidden;
 }
 

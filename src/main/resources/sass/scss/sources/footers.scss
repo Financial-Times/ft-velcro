@@ -1,0 +1,7 @@
+/* footers.scss */
+
+.ft-footer-small {
+    clear: left;
+    height: 1px;
+    background: url($imagePath + $ftVelcro-namespaceDir + 'border-horizontal-dotted.png') bottom left repeat-x;
+}

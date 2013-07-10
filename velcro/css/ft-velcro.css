@@ -128,6 +128,12 @@ address {
   height: 9px;
   background-color: #e9decf; }
 
+/* footers.scss */
+.ft-footer-small {
+  clear: left;
+  height: 1px;
+  background: url("../img/border-horizontal-dotted.png") bottom left repeat-x; }
+
 /** module-header.scss */
 /**
  * Module header small - general
@@ -176,7 +182,7 @@ address {
   font-family: BentonSans, Helvetica, Arial, sans-serif;
   overflow: hidden;
   border-top: 4px solid #a7a59b;
-  background: url("../img/mod-header-border.png") bottom left repeat-x; }
+  background: url("../img/border-horizontal-dotted.png") bottom left repeat-x; }
 
 .ft-header-medium-title {
   float: left;
@@ -223,7 +229,7 @@ a.ft-header-medium-title:hover {
   border-top: 4px solid #A8A79C;
   width: 175px;
   text-align: center;
-  background: #e9decf url("../img/mod-header-border.png") bottom left repeat-x; }
+  background: #e9decf url("../img/border-horizontal-dotted.png") bottom left repeat-x; }
 
 .ft-tab-large:first-child {
   margin-left: 0; }
@@ -266,7 +272,7 @@ a.ft-tab-title:hover {
  */
 .ft-tabs-small {
   padding-left: 20px;
-  background: url("../img/mod-header-border.png") bottom left repeat-x;
+  background: url("../img/border-horizontal-dotted.png") bottom left repeat-x;
   overflow: hidden; }
 
 .ft-header-medium-title + .ft-tabs-small {

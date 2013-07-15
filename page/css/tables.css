@@ -13,10 +13,12 @@
 }
 
 .v-table-row-title {
+    font-weight: bold;
     font-size:12px ;
 }
 
 .v-table th,
 .v-table td {
+    text-align: left;
     padding: 2px 20px 20px 0;
 }

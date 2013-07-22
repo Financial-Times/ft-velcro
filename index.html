@@ -50,7 +50,8 @@
                 <li><a href="#timestamps" class="v-link">Timestamps</a></li>
                 <li><a href="#lists" class="v-link">Lists</a></li>
                 <li><a href="#spacing" class="v-link">Spacing</a></li>
-                <li><a href="#images" class="v-link">Images</a></li>
+                <li><a href="#imageContainers" class="v-link">Image Containers</a></li>
+                <li><a href="#imageOverlays" class="v-link">Image Overlays</a></li>
                 <li><a href="#badges" class="v-link">Badges</a></li>
                 <li><a href="#buttons" class="v-link">Buttons</a></li>
                 <li><a href="#dividers" class="v-link">Dividers</a></li>
@@ -479,21 +480,15 @@
 
         </section>
 
-        <section id="images" class="v-section">
+        <section id="imageContainers" class="v-section">
 
-            <h2 class="v-title v-title-medium">Images</h2>
+            <h2 class="v-title v-title-medium">Image Containers</h2>
 
-            <p class="v-paragraph">These are the standard image sizes for content positions. Images may optionally have credit links.</p>
+            <p class="v-paragraph">These are the standard image sizes for content positions. Images may optionally have <a href="#imageOverlays" class="v-link">overlays</a>.</p>
 
-            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+            <p class="v-paragraph">Article size image container.</p>
 
-            <ul class="v-list">
-                <li>Semi-transparent image credit background may render as opaque</li>
-            </ul>
-
-            <p class="v-paragraph">Article size container, without credit.</p>
-
-            <div class="v-sample v-sample-col9">
+            <div class="v-sample v-grid-col-9">
 
                 <div class="ft-image ft-image-article">
                     <div class="v-mock-image v-mock-image-article">Article (600px x 338px)</div>
@@ -501,9 +496,9 @@
 
             </div>
 
-            <p class="v-paragraph">Leader size container, without credit.</p>
+            <p class="v-paragraph">Leader size image container.</p>
 
-            <div class="v-sample v-sample-col6">
+            <div class="v-sample v-grid-col-6">
 
                 <div class="ft-image ft-image-leader">
                     <div class="v-mock-image v-mock-image-leader">Primary (414px x 233px)</div>
@@ -511,28 +506,66 @@
 
             </div>
 
-            <p class="v-paragraph">Primary size container, with linking credit.</p>
+            <p class="v-paragraph">Primary size image container.</p>
 
-            <div class="v-sample v-sample-col6">
+            <div class="v-sample v-grid-col-4">
 
                 <div class="ft-image ft-image-primary">
                     <div class="v-mock-image v-mock-image-primary">Primary (272px x 153px)</div>
-                    <a href="#" class="ft-image-credit">&copy;Credit</a>
                 </div>
 
             </div>
 
-            <p class="v-paragraph">Secondary size container, with non-linking credit.</p>
+            <p class="v-paragraph">Secondary size image container.</p>
 
-            <div class="v-sample v-sample-col6">
+            <div class="v-sample v-grid-col-3">
 
                 <div class="ft-image ft-image-secondary">
                     <div class="v-mock-image v-mock-image-secondary">Secondary (167px x 94px)</div>
+                </div>
+
+            </div>
+
+            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+        </section>
+
+        <section id="imageOverlays" class="v-section">
+
+            <h2 class="v-title v-title-medium">Image Overlays</h2>
+
+            <p class="v-paragraph">Image overlays are nested within <a href="imageContainers" class="v-link">image containers</a> and are superimposed onto the image.</p>
+
+            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+
+            <ul class="v-list">
+                <li>Semi-transparent image backgrounds may render as opaque</li>
+            </ul>
+
+            <h2 class="v-title v-title-small">Overlay Image Credit</h2>
+
+            <p class="v-paragraph">Non-linking credit.</p>
+
+            <div class="v-sample v-grid-col-3">
+
+                <div class="ft-image ft-image-secondary">
+                    <div class="v-mock-image v-mock-image-secondary">Image</div>
                     <span class="ft-image-credit">&copy;Credit</span>
                 </div>
 
             </div>
 
+
+            <p class="v-paragraph">Linking credit.</p>
+
+            <div class="v-sample v-grid-col-3">
+
+                <div class="ft-image ft-image-secondary">
+                    <div class="v-mock-image v-mock-image-secondary">Image</div>
+                    <a href="#" class="ft-image-credit">&copy;Credit</a>
+                </div>
+
+            </div>
             <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>

@@ -536,36 +536,127 @@
 
             <p class="v-paragraph">Image overlays are nested within <a href="imageContainers" class="v-link">image containers</a> and are superimposed onto the image.</p>
 
+            <p class="v-paragraph">Overlays must have three parts: container, background and content.</p>
+
+            <h2 class="v-title v-title-small">Overlay containers</h2>
+
+            <table class="v-table">
+            <thead>
+            <tr>
+                <th class="v-table-column-title">Container</th>
+                <th class="v-table-column-title">Description</th>
+                <th class="v-table-column-title">CSS class</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="v-table-row-title">Top-left</td>
+                <td class="v-paragraph">Displays at top left of container, variable width and height.</td>
+                <td class="v-paragraph"><code>ft-overlay-topleft</code></td>
+            </tr>
+            <tr>
+                <td class="v-table-row-title">Bottom</td>
+                <td class="v-paragraph">Displays full-width at the bottom of the container, variable height.</td>
+                <td class="v-paragraph"><code>ft-overlay-bottom</code></td>
+            </tr>
+            <tr>
+                <td class="v-table-row-title">Bottom-right credit</td>
+                <td class="v-paragraph">Displays at bottom-right of the container, with minimal padding.</td>
+                <td class="v-paragraph"><code>ft-overlay-bottomright-credit</code></td>
+            </tr>
+            </tbody>
+            </table>
+
+            <h2 class="v-title v-title-small">Overlay backgrounds</h2>
+
             <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
 
             <ul class="v-list">
                 <li>Semi-transparent image backgrounds may render as opaque</li>
             </ul>
 
-            <h2 class="v-title v-title-small">Overlay Image Credit</h2>
+            <table class="v-table">
+            <thead>
+            <tr>
+                <th class="v-table-column-title">Background</th>
+                <th class="v-table-column-title">Description</th>
+                <th class="v-table-column-title">CSS class</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="v-table-row-title">20%</td>
+                <td class="v-paragraph">20% opacity.</td>
+                <td class="v-paragraph"><code>ft-overlay-bg20</code></td>
+            </tr>
+            <tr>
+                <td class="v-table-row-title">30%</td>
+                <td class="v-paragraph">30% opacity.</td>
+                <td class="v-paragraph"><code>ft-overlay-bg30</code></td>
+            </tr>
+            <tr>
+                <td class="v-table-row-title">50%</td>
+                <td class="v-paragraph">50% opacity.</td>
+                <td class="v-paragraph"><code>ft-overlay-bg50</code></td>
+            </tr>
+            </tbody>
+            </table>
 
-            <p class="v-paragraph">Non-linking credit.</p>
+            <h2 class="v-title v-title-small">Example heading and title</h2>
+
+            <p class="v-paragraph">Top-left, with 30% opaque background, containing Heading and Title.</p>
+
+            <div class="v-sample v-grid-col-4">
+
+                <div class="ft-image ft-image-primary">
+                    <div class="v-mock-image v-mock-image-primary">Image</div>
+                    <div class="ft-overlay ft-overlay-topleft ft-overlay-bg30">
+                        <span class="ft-overlay-heading">HEADING</span>
+                        <h3 class="ft-overlay-title">Title text title text</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="v-title v-title-small">Example caption</h2>
+
+            <p class="v-paragraph">Bottom, with 50% opaque background, containing caption.</p>
+
+            <div class="v-sample v-grid-col-6">
+
+                <div class="ft-image ft-image-leader">
+                    <div class="v-mock-image v-mock-image-leader">Image</div>
+                    <div class="ft-overlay ft-overlay-bottom ft-overlay-bg50">
+                        <p class="ft-overlay-caption">Caption text lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula nibh at lorem egestas sodales.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="v-title v-title-small">Example image credits</h2>
+
+            <p class="v-paragraph">Bottom-right credit container, with 20% opaque background, containing non-linking image credit.</p>
 
             <div class="v-sample v-grid-col-3">
 
                 <div class="ft-image ft-image-secondary">
                     <div class="v-mock-image v-mock-image-secondary">Image</div>
-                    <span class="ft-image-credit">&copy;Credit</span>
+                    <span class="ft-overlay ft-overlay-bottomright-credit ft-overlay-bg20"><span class="ft-overlay-credit">&copy;Credit</span></span>
                 </div>
 
             </div>
 
-
-            <p class="v-paragraph">Linking credit.</p>
+            <p class="v-paragraph">Bottom-right credit container, with 20% opaque background, containing linking image credit.</p>
 
             <div class="v-sample v-grid-col-3">
 
                 <div class="ft-image ft-image-secondary">
                     <div class="v-mock-image v-mock-image-secondary">Image</div>
-                    <a href="#" class="ft-image-credit">&copy;Credit</a>
+                    <span class="ft-overlay ft-overlay-bottomright-credit ft-overlay-bg20"><a href="#" class="ft-overlay-credit">&copy;Credit</a></span>
                 </div>
 
             </div>
+
             <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
         </section>

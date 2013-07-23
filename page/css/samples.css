@@ -18,7 +18,7 @@
 .v-mock-image {
     display: inline-block;
     text-align: center;
-    background-color: #ddd;
+    background: #ddd url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAIAAABxU02MAAAAyElEQVRIiZ3UsQpEIQxE0dmIha/x/z/RXrAQYRtBlEST2A7X0+VXSqm1QnhElHMW19aatAH4vu+y0hhD2kIIMUZp7b3T5eOU0mVtrYnxkx1jiPGTBcDHGlaMNSwfK1k+VrJMrGeZWM+esYk9YxO7xVZ2i63sih3sih3sjH3sjH0sAHKzAMjNAiA3G0K43bA7m1IS4ycbYxTjJwvpDGlYMdawfKxk+VjJMrGeZWI9e8Ym9oxN7BZb2S22sit2sCt2sDP2sTP2sQD+xXK0HW4TBd8AAAAASUVORK5CYII=');
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     outline: 1px solid #ccc;

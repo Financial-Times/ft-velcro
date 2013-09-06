@@ -5,16 +5,16 @@
 /* Benton Regular */
 @font-face {
   font-family: "BentonSans";
-  src: url("../font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot");
-  src: url("../font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-2.eot?#iefix") format("embedded-opentype"), url("../font/e9d47971-b7d8-4663-8c9b-3a0b425e981f-3.woff") format("woff");
+  src: url("../font/bentonsans-regular.eot");
+  src: url("../font/bentonsans-regular.eot?#iefix") format("embedded-opentype"), url("../font/bentonsans-regular.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 /* Benton Bold */
 @font-face {
   font-family: "BentonSans";
-  src: url("../font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot");
-  src: url("../font/76e393a7-edbd-4283-91db-93b1a40fe465-2.eot?#iefix") format("embedded-opentype"), url("../font/76e393a7-edbd-4283-91db-93b1a40fe465-3.woff") format("woff");
+  src: url("../font/bentonsans-bold.eot");
+  src: url("../font/bentonsans-bold.eot?#iefix") format("embedded-opentype"), url("../font/bentonsans-bold.woff") format("woff");
   font-style: normal;
   font-weight: bold; }
 

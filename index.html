@@ -1,935 +1,954 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html lang="en" class="msie msie6"><![endif]-->
-<!--[if IE 7 ]><html lang="en" class="msie msie7"><![endif]-->
-<!--[if IE 8 ]><html lang="en" class="msie msie8"><![endif]-->
-<!--[if IE 9 ]><html lang="en" class="msie msie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
     <title>FT Velcro</title>
     <meta name="description" content="The Financial Times branded web code library." />
     <meta name="author" content="The Financial Times" />
-    <link rel="stylesheet" href="page/css/page.css" />
-    <link rel="stylesheet" href="page/css/typography.css" />
-    <link rel="stylesheet" href="page/css/grid.css" />
-    <link rel="stylesheet" href="page/css/samples.css" />
-    <link rel="stylesheet" href="page/css/tables.css" />
-    <link rel="stylesheet" href="page/css/swatches.css" />
-    <link rel="stylesheet" href="page/css/titles.css" />
-    <link rel="stylesheet" href="page/css/links.css" />
-    <link rel="stylesheet" href="page/css/lists.css" />
+    <link rel="stylesheet" href="static/css/docs.css" />
     <link rel="stylesheet" href="velcro/css/ft-velcro.css" />
-    <link rel="stylesheet" href="page/js/google-code-prettify/prettify.css" />
+    <link rel="stylesheet" href="static/js/google-code-prettify/prettify.css" />
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body>
 
-    <div class="v-pagecontainer">
-
-        <header class="v-header">
-            <h1 class="v-title v-title-large">FT Velcro</h1>
-        </header>
-
-        <p class="v-paragraph">HTML snippets and CSS class usage examples for FT branded page elements.</p>
-
-        <p class="v-paragraph v-warning">WARNING: Velcro is currently not ready for use outside of ft-cms.</p>
-
-        <nav id="nav-primary" class="v-nav">
-            <h2 class="v-title v-title-medium">Navigation</h2>
-            <ul>
-                <li><a href="#browserSupport" class="v-link">Browser support</a></li>
-                <li><a href="#interactionStates" class="v-link">Interaction states</a></li>
-                <li><a href="#fonts" class="v-link">Fonts</a></li>
-                <li><a href="#palette" class="v-link">Palette</a></li>
-                <li><a href="#links" class="v-link">Links</a></li>
-                <li><a href="#headings" class="v-link">Headings</a></li>
-                <li><a href="#titles" class="v-link">Titles</a></li>
-                <li><a href="#leads" class="v-link">Leads</a></li>
-                <li><a href="#timestamps" class="v-link">Timestamps</a></li>
-                <li><a href="#lists" class="v-link">Lists</a></li>
-                <li><a href="#spacing" class="v-link">Spacing</a></li>
-                <li><a href="#imageContainers" class="v-link">Image Containers</a></li>
-                <li><a href="#imageOverlays" class="v-link">Image Overlays</a></li>
-                <li><a href="#badges" class="v-link">Badges</a></li>
-                <li><a href="#buttons" class="v-link">Buttons</a></li>
-                <li><a href="#dividers" class="v-link">Dividers</a></li>
-                <li><a href="#headersSmall" class="v-link">Headers: small</a></li>
-                <li><a href="#headersMedium" class="v-link">Headers: medium</a></li>
-                <li><a href="#footers" class="v-link">Footers</a></li>
-            </ul>
-        </nav>
-
-        <section id="browserSupport" class="v-section">
-
-            <h2 class="v-title v-title-medium">Browser support</h2>
-
-            <p class="v-paragraph">Velcro is built for the latest desktop and mobile browsers, but older versions of Internet Explorer are also supported.</p>
-
-            <h2 class="v-title v-title-small">Graceful degradation</h2>
-
-            <p class="v-paragraph">To ensure maximum performance and low maintenance, native CSS is used as much as possible. This means
-                that in older browsers there may be minor differences in appearance. These differences should be listed in this document alongside
-                the examples.</p>
-
-            <p class="v-paragraph">General examples of degradation:</p>
-
-            <ul class="v-list">
-                <li>The Benton font may be replaced with Arial or Helvetica</li>
-            </ul>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="interactionStates" class="v-section">
-
-            <h2 class="v-title v-title-medium">Interaction states</h2>
-
-            <p class="v-paragraph">Standard class names will be used to mark the interaction states of page elements.
-                These classes are not styled on their own, but instead used in combination with other classes.</p>
-
-            <ul class="v-list">
-                <li><code>:hover</code> - when mouse pointer is positioned over the element</li>
-                <li><code>:focus</code> - when the element has focus</li>
-                <li><code>ft-state-selected</code> e.g. for a tab when its contents are currently shown</li>
-                <li><code>ft-state-disabled</code> for when something is currently not functional</li>
-                <li><code>ft-state-loading</code></li>
-            </ul>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="fonts" class="v-section">
-
-            <h2 class="v-title v-title-medium">Fonts</h2>
-
-            <p class="v-paragraph">Non-websafe fonts are used, specified with fallbacks as shown below.</p>
-
-            <table class="v-table">
-            <thead>
-            <tr>
-                <th class="v-table-column-title">Font</th>
-                <th class="v-table-column-title">Value</th>
-                <th class="v-table-column-title">SASS variable</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="v-table-row-title">Arial</td>
-                <td class="v-paragraph">Arial, Helvetica, sans-serif</td>
-                <td class="v-paragraph"><code>$ftFont-Arial</code></td>
-            </tr>
-            <tr>
-                <td class="v-table-row-title">Benton</td>
-                <td class="v-paragraph">BentonSans, Helvetica, Arial, sans-serif</td>
-                <td class="v-paragraph"><code>$ftFont-Benton</code></td>
-            </tr>
-            <tr>
-                <td class="v-table-row-title">Georgia</td>
-                <td class="v-paragraph">Georgia, 'Times New Roman', serif</td>
-                <td class="v-paragraph"><code>$ftFont-Georgia</code></td>
-            </tr>
-            </tbody>
-            </table>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="palette" class="v-section">
-
-            <h2 class="v-title v-title-medium">Palette</h2>
-
-            <p class="v-paragraph">The SASS variable names are shown as <code>code</code>.</p>
-
-            <h3 class="v-title v-title-small">Primary</h3>
-
-            <div class="v-swatches">
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #fff1e0;"></div>
-                    <div class="v-swatch-label">Pink <code>#fff1e0</code><br /><code>$ftColor-Pink</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #2e6e9e;"></div>
-                    <div class="v-swatch-label">Blue <code>#2e6e9e</code><br /><code>$ftColor-Blue</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #9b164f;"></div>
-                    <div class="v-swatch-label">Claret <code>#9b164f</code><br /><code>$ftColor-Claret</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #e3dfca;"></div>
-                    <div class="v-swatch-label">Skyline <code>#e3dfca</code><br /><code>$ftColor-Skyline</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #d66d06;"></div>
-                    <div class="v-swatch-label">Orange <code>#d66d06</code><br /><code>$ftColor-Orange</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #9e2f50;"></div>
-                    <div class="v-swatch-label">Fills <code>#9e2f50</code><br /><code>$ftColor-Fills</code></div>
-                </div>
-            </div>
-
-            <h3 class="v-title v-title-small">Greys</h3>
-
-            <div class="v-swatches">
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #a7a59b;"></div>
-                    <div class="v-swatch-label">Warm Grey 1 <code>#a7a59b</code><br /><code>$ftColor-WarmGrey1</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #74736c;"></div>
-                    <div class="v-swatch-label">Warm Grey 2 <code>#74736c</code><br /><code>$ftColor-WarmGrey2</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #777;"></div>
-                    <div class="v-swatch-label">Cool Grey 1 <code>#777</code><br /><code>$ftColor-CoolGrey1</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #dfded8;"></div>
-                    <div class="v-swatch-label">Cool Grey 2 <code>#dfded8</code><br /><code>$ftColor-CoolGrey2</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #505050;"></div>
-                    <div class="v-swatch-label">Dark Grey <code>#505050</code><br /><code>$ftColor-DarkGrey</code></div>
-                </div>
-            </div>
-
-            <h3 class="v-title v-title-small">Tints</h3>
-
-            <div class="v-swatches">
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #f6e9d8;"></div>
-                    <div class="v-swatch-label">Tint 1 <code>#f6e9d8</code><br /><code>$ftColor-Tint1</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #e9decf;"></div>
-                    <div class="v-swatch-label">Tint 2 <code>#e9decf</code><br /><code>$ftColor-Tint2</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #cec6b9;"></div>
-                    <div class="v-swatch-label">Tint 3 <code>#cec6b9</code><br /><code>$ftColor-Tint3</code></div>
-                </div>
-            </div>
+    <div class="ft-grid-row">
 
-            <h3 class="v-title v-title-small">Colours</h3>
+        <div class="ft-grid-col-d12">
+            <header class="v-header">
+                <img src="static/img/ft-velcro-logo.png" alt="Velcro" />
+            </header>
+        </div>
 
-            <div class="v-swatches">
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #c00;"></div>
-                    <div class="v-swatch-label">Red <code>#c00</code><br /><code>$ftColor-Red</code></div>
-                </div>
-                <div class="v-swatch">
-                    <div class="v-swatch-color" style="background-color: #458b00;"></div>
-                    <div class="v-swatch-label">Green <code>#458b00</code><br /><code>$ftColor-Green</code></div>
-                </div>
-            </div>
+        <div class="ft-grid-col-d12-xl2">
 
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+            <nav id="nav-primary" class="v-nav">
+                <h2 class="v-title v-title-small">Navigation</h2>
+                <ul>
+                    <li><a href="#about" class="v-link">About</a></li>
+                    <li><a href="#browserSupport" class="v-link">Browser support</a></li>
+                    <li><a href="#interactionStates" class="v-link">Interaction states</a></li>
+                    <li><a href="#fonts" class="v-link">Fonts</a></li>
+                    <li><a href="#palette" class="v-link">Palette</a></li>
+                    <li><a href="#links" class="v-link">Links</a></li>
+                    <li><a href="#headings" class="v-link">Headings</a></li>
+                    <li><a href="#titles" class="v-link">Titles</a></li>
+                    <li><a href="#leads" class="v-link">Leads</a></li>
+                    <li><a href="#timestamps" class="v-link">Timestamps</a></li>
+                    <li><a href="#lists" class="v-link">Lists</a></li>
+                    <li><a href="#spacing" class="v-link">Spacing</a></li>
+                    <li><a href="#imageContainers" class="v-link">Image Containers</a></li>
+                    <li><a href="#imageOverlays" class="v-link">Image Overlays</a></li>
+                    <li><a href="#badges" class="v-link">Badges</a></li>
+                    <li><a href="#buttons" class="v-link">Buttons</a></li>
+                    <li><a href="#dividers" class="v-link">Dividers</a></li>
+                    <li><a href="#headersSmall" class="v-link">Headers: small</a></li>
+                    <li><a href="#headersMedium" class="v-link">Headers: medium</a></li>
+                    <li><a href="#footers" class="v-link">Footers</a></li>
+                </ul>
+            </nav>
 
-        </section>
+            <br />
 
-        <section id="links" class="v-section">
+        </div>
 
-            <h2 class="v-title v-title-medium">Links</h2>
+        <div class="ft-grid-col-d12-xl10">
 
-            <p class="v-paragraph">Links inherit font styling from parent elements.</p>
+            <section id="about" class="v-section">
 
-            <div class="v-sample v-sample-col6">
-                <span class="ft-link-kicker">Kicker</span> <a class="ft-link" href="#">Normal link</a>
-            </div>
+                <h2 class="v-title v-title-medium">About</h2>
 
-            <div class="v-sample v-sample-col6">
-                <a class="ft-link ft-link-alternative" href="#">Alternative link</a>
-            </div>
+                <p class="v-paragraph"><strong>Velcro is a library of CSS for styling common FT-branded page elements.</strong></p>
 
-            <div class="v-sample v-sample-col6">
-                <a class="ft-link-stealth" href="#">Stealth link</a>
-            </div>
+                <p class="v-paragraph">It is currently only contains low-level elements rather being than a comprehensive framework (like Bootstrap etc). It doesn't include or rely on any grid system.</p>
 
-            <p class="v-note">Stealth links inherit colour of parent element and turn blue on hover.</p>
+                <p class="v-paragraph">All the styles are namespaced with the "ft-" prefix so it should not conflict with anything.</p>
 
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+                <p class="v-paragraph">Although Velcro uses SASS (in a very limited way) and some SASS variables are mentioned in the documentation, there is no need to consume it as raw SASS or use mixins, functions etc</p>
 
-        </section>
+                <p class="v-paragraph">It is included on all ft-cms pages (as part of the core.css bundle), including wrapper pages.</p>
 
-        <section id="headings" class="v-section">
+                <p class="v-paragraph">With Velcro CSS on your page (either via core.css, including it from GitHub, or via Maven), it's just a matter of using the CSS classes shown in the code samples here. It should be that simple.</p>
 
-            <h2 class="v-title v-title-medium">Headings</h2>
 
-            <p class="v-paragraph">Used for section or brand headings. Should not be used for article titles.</p>
+            </section>
 
-            <h3 class="v-title v-title-small">Medium: Benton 12px/14px</h3>
+            <section id="browserSupport" class="v-section">
 
-            <div class="v-sample v-sample-col6">
-                <h2 class="ft-heading ft-heading-medium">Medium heading | <a href="#" class="ft-link">Medium heading link</a></h2>
-            </div>
+                <h2 class="v-title v-title-medium">Browser support</h2>
 
-            <h3 class="v-title v-title-small">Small: Benton 14px/18px</h3>
+                <p class="v-paragraph">Velcro is built for the latest desktop and mobile browsers, but older versions of Internet Explorer are also supported.</p>
 
-            <div class="v-sample v-sample-col6">
-                <h3 class="ft-heading ft-heading-small">Small heading | <a href="#" class="ft-link">Small heading link</a></h3>
-            </div>
+                <h2 class="v-title v-title-small">Graceful degradation</h2>
 
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+                <p class="v-paragraph">To ensure maximum performance and low maintenance, native CSS is used as much as possible. This means
+                    that in older browsers there may be minor differences in appearance. These differences should be listed in this document alongside
+                    the examples.</p>
 
-        </section>
+                <p class="v-paragraph">General examples of degradation:</p>
 
-        <section id="titles" class="v-section">
-
-            <h2 class="v-title v-title-medium">Titles</h2>
-
-            <p class="v-paragraph">Used for article titles.</p>
-
-            <h3 class="v-title v-title-small">Large Title: Georgia 32px/36px</h3>
-
-            <div class="v-sample v-sample-col9">
-                <h1 class="ft-title ft-title-large">Large title | <a href="#" class="ft-link-stealth">Large title link</a></h1>
-            </div>
-
-            <h3 class="v-title v-title-small">Medium Title: Georgia 21px/16px</h3>
-
-            <div class="v-sample v-sample-col9">
-                <h2 class="ft-title ft-title-medium">Medium title | <a href="#" class="ft-link-stealth">Medium title link</a></h2>
-            </div>
-
-            <h3 class="v-title v-title-small">Small Title: Georgia 15px/17px</h3>
-
-            <div class="v-sample v-sample-col9">
-                <h3 class="ft-title ft-title-small">Small title | <a href="#" class="ft-link-stealth">Small title link</a></h3>
-            </div>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="leads" class="v-section">
-
-            <h2 class="v-title v-title-medium">Leads</h2>
-
-            <p class="v-paragraph">Used for article subheadlines.</p>
-
-            <h3 class="v-title v-title-small">Large lead: Georgia 21px/26px</h3>
-
-            <div class="v-sample v-sample-col6">
-                <h1 class="ft-lead ft-lead-large">Large lead | <a href="#" class="ft-link">Large lead link</a></h1>
-            </div>
-
-            <h3 class="v-title v-title-small">Medium lead: Georgia 17px/21px</h3>
-
-            <div class="v-sample v-sample-col6">
-                <h2 class="ft-lead ft-lead-medium">Medium lead | <a href="#" class="ft-link">Medium lead link</a></h2>
-            </div>
-
-            <h3 class="v-title v-title-small">Small lead: Benton 13px/17px</h3>
-
-            <div class="v-sample v-sample-col6">
-                <h3 class="ft-lead ft-lead-small">Small lead | <a href="#" class="ft-link">Small lead link</a></h3>
-            </div>
-
-            <h3 class="v-title v-title-small">Byline</h3>
-
-            <div class="v-sample v-sample-col6">
-
-                <p class="ft-byline">Byline</p>
-
-            </div>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="timestamps" class="v-section">
-
-            <h2 class="v-title v-title-medium">Timestamps</h2>
-
-            <div class="v-sample v-sample-col6">
-
-                <p class="ft-timestamp">12:34pm timestamp</p>
-
-            </div>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="lists" class="v-section">
-
-            <h2 class="v-title v-title-medium">Lists</h2>
-
-            <h3 class="v-title v-title-small">Plain</h3>
-
-            <p class="v-paragraph">Can be a <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> or <code>&lt;div&gt;</code>.</p>
-
-            <div class="v-sample v-sample-col6">
-
-                <ul class="ft-list ft-list-plain">
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
+                <ul class="v-list">
+                    <li>The Benton font may be replaced with Arial or Helvetica</li>
                 </ul>
 
-            </div>
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
-            <h3 class="v-title v-title-small">Bulletted</h3>
+            </section>
 
-            <p class="v-paragraph">Should be a <code>&lt;ul&gt;</code>.</p>
+            <section id="interactionStates" class="v-section">
 
-            <div class="v-sample v-sample-col6">
+                <h2 class="v-title v-title-medium">Interaction states</h2>
 
-                <ul class="ft-list ft-list-bulletted">
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
+                <p class="v-paragraph">Standard class names will be used to mark the interaction states of page elements.
+                    These classes are not styled on their own, but instead used in combination with other classes.</p>
+
+                <ul class="v-list">
+                    <li><code>:hover</code> - when mouse pointer is positioned over the element</li>
+                    <li><code>:focus</code> - when the element has focus</li>
+                    <li><code>ft-state-selected</code> e.g. for a tab when its contents are currently shown</li>
+                    <li><code>ft-state-disabled</code> for when something is currently not functional</li>
+                    <li><code>ft-state-loading</code></li>
                 </ul>
 
-            </div>
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
-            <h3 class="v-title v-title-small">Numbered</h3>
+            </section>
 
-            <p class="v-paragraph">Should be a <code>&lt;ol&gt;</code>.</p>
+            <section id="fonts" class="v-section">
 
-            <div class="v-sample v-sample-col6">
+                <h2 class="v-title v-title-medium">Fonts</h2>
 
-                <ol class="ft-list ft-list-numbered">
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                </ol>
+                <p class="v-paragraph">Non-websafe fonts are used, specified with fallbacks as shown below.</p>
 
-            </div>
+                <table class="v-table">
+                <thead>
+                <tr>
+                    <th class="v-table-column-title">Font</th>
+                    <th class="v-table-column-title">Value</th>
+                    <th class="v-table-column-title">SASS variable</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="v-table-row-title">Arial</td>
+                    <td class="v-paragraph">Arial, Helvetica, sans-serif</td>
+                    <td class="v-paragraph"><code>$ftFont-Arial</code></td>
+                </tr>
+                <tr>
+                    <td class="v-table-row-title">Benton</td>
+                    <td class="v-paragraph">BentonSans, Helvetica, Arial, sans-serif</td>
+                    <td class="v-paragraph"><code>$ftFont-Benton</code></td>
+                </tr>
+                <tr>
+                    <td class="v-table-row-title">Georgia</td>
+                    <td class="v-paragraph">Georgia, 'Times New Roman', serif</td>
+                    <td class="v-paragraph"><code>$ftFont-Georgia</code></td>
+                </tr>
+                </tbody>
+                </table>
 
-            <h3 class="v-title v-title-small">Options</h3>
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
-            <p class="v-paragraph">Non-wrapping (default). Each list item will be on a new line.</p>
+            </section>
 
-            <div class="v-sample v-sample-col6">
+            <section id="palette" class="v-section">
 
-                <ul class="ft-list ft-list-plain">
-                    <li class="ft-list-item">Long plain text list item content here</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                </ul>
+                <h2 class="v-title v-title-medium">Palette</h2>
 
-            </div>
+                <p class="v-paragraph">The SASS variable names are shown as <code>code</code>.</p>
 
-            <div class="v-sample v-sample-col6">
+                <h3 class="v-title v-title-small">Primary</h3>
 
-                <ul class="ft-list ft-list-bulletted">
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                </ul>
-
-            </div>
-
-            <p class="v-paragraph">Wrapping. List items will wrap if the whole list item fits on one line.</p>
-
-            <div class="v-sample v-sample-col6">
-
-                <ul class="ft-list ft-list-plain ft-list-wrapping">
-                    <li class="ft-list-item">Long plain text list item content here</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                </ul>
-
-            </div>
-
-            <div class="v-sample v-sample-col6">
-
-                <ul class="ft-list ft-list-bulletted ft-list-wrapping">
-                    <li class="ft-list-item">Long plain text list item content here</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                    <li class="ft-list-item">Plain text list item content</li>
-                </ul>
-
-            </div>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="spacing" class="v-section">
-
-            <h2 class="v-title v-title-medium">Spacing</h2>
-
-            <p class="v-paragraph">Velcro text styles do not include any margins to create space between them and other elements.</p>
-
-            <p class="v-paragraph">Spacing is applied using the following classes:</p>
-
-            <ul class="v-list">
-                <li><code>ft-spc-btm-full</code> one full unit of spacing below</li>
-                <li><code>ft-spc-btm-half</code> half unit of spacing below</li>
-                <li><code>ft-spc-btm-qtr</code> quarter unit of spacing below</li>
-            </ul>
-
-        </section>
-
-        <section id="imageContainers" class="v-section">
-
-            <h2 class="v-title v-title-medium">Image Containers</h2>
-
-            <p class="v-paragraph">These are the standard image sizes for content positions. Images may optionally have <a href="#imageOverlays" class="v-link">overlays</a>.</p>
-
-            <p class="v-paragraph">Article size image container.</p>
-
-            <div class="v-sample v-grid-col-9">
-
-                <div class="ft-image ft-image-article">
-                    <div class="v-mock-image v-mock-image-article">Article (600px x 338px)</div>
-                </div>
-
-            </div>
-
-            <p class="v-paragraph">Leader size image container.</p>
-
-            <div class="v-sample v-grid-col-6">
-
-                <div class="ft-image ft-image-leader">
-                    <div class="v-mock-image v-mock-image-leader">Primary (414px x 233px)</div>
-                </div>
-
-            </div>
-
-            <p class="v-paragraph">Primary size image container.</p>
-
-            <div class="v-sample v-grid-col-4">
-
-                <div class="ft-image ft-image-primary">
-                    <div class="v-mock-image v-mock-image-primary">Primary (272px x 153px)</div>
-                </div>
-
-            </div>
-
-            <p class="v-paragraph">Secondary size image container.</p>
-
-            <div class="v-sample v-grid-col-3">
-
-                <div class="ft-image ft-image-secondary">
-                    <div class="v-mock-image v-mock-image-secondary">Secondary (167px x 94px)</div>
-                </div>
-
-            </div>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="imageOverlays" class="v-section">
-
-            <h2 class="v-title v-title-medium">Image Overlays</h2>
-
-            <p class="v-paragraph">Image overlays are nested within <a href="#imageContainers" class="v-link">image containers</a> and are superimposed onto the image.</p>
-
-            <p class="v-paragraph">Overlays must have three parts: container, background and content.</p>
-
-            <h2 class="v-title v-title-small">Overlay containers</h2>
-
-            <table class="v-table">
-            <thead>
-            <tr>
-                <th class="v-table-column-title">Container</th>
-                <th class="v-table-column-title">Description</th>
-                <th class="v-table-column-title">CSS class</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="v-table-row-title">Top-left</td>
-                <td class="v-paragraph">Displays at top left of container, variable width and height.</td>
-                <td class="v-paragraph"><code>ft-overlay-topleft</code></td>
-            </tr>
-            <tr>
-                <td class="v-table-row-title">Bottom</td>
-                <td class="v-paragraph">Displays full-width at the bottom of the container, variable height.</td>
-                <td class="v-paragraph"><code>ft-overlay-bottom</code></td>
-            </tr>
-            <tr>
-                <td class="v-table-row-title">Bottom-right credit</td>
-                <td class="v-paragraph">Displays at bottom-right of the container, with minimal padding.</td>
-                <td class="v-paragraph"><code>ft-overlay-bottomright-credit</code></td>
-            </tr>
-            </tbody>
-            </table>
-
-            <h2 class="v-title v-title-small">Overlay backgrounds</h2>
-
-            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
-
-            <ul class="v-list">
-                <li>Semi-transparent image backgrounds may render as opaque</li>
-            </ul>
-
-            <table class="v-table">
-            <thead>
-            <tr>
-                <th class="v-table-column-title">Background</th>
-                <th class="v-table-column-title">Description</th>
-                <th class="v-table-column-title">CSS class</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="v-table-row-title">20%</td>
-                <td class="v-paragraph">20% opacity.</td>
-                <td class="v-paragraph"><code>ft-overlay-bg20</code></td>
-            </tr>
-            <tr>
-                <td class="v-table-row-title">30%</td>
-                <td class="v-paragraph">30% opacity.</td>
-                <td class="v-paragraph"><code>ft-overlay-bg30</code></td>
-            </tr>
-            <tr>
-                <td class="v-table-row-title">50%</td>
-                <td class="v-paragraph">50% opacity.</td>
-                <td class="v-paragraph"><code>ft-overlay-bg50</code></td>
-            </tr>
-            </tbody>
-            </table>
-
-            <h2 class="v-title v-title-small">Example heading and title</h2>
-
-            <p class="v-paragraph">Top-left, with 30% opaque background, containing Heading and Title.</p>
-
-            <div class="v-sample v-grid-col-4">
-
-                <div class="ft-image ft-image-primary">
-                    <div class="v-mock-image v-mock-image-primary">Image</div>
-                    <div class="ft-overlay ft-overlay-topleft ft-overlay-bg30">
-                        <span class="ft-overlay-heading">HEADING</span>
-                        <h3 class="ft-overlay-title">Title text title text</h3>
+                <div class="v-swatches">
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #fff1e0;"></div>
+                        <div class="v-swatch-label">Pink <code>#fff1e0</code><br /><code>$ftColor-Pink</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #2e6e9e;"></div>
+                        <div class="v-swatch-label">Blue <code>#2e6e9e</code><br /><code>$ftColor-Blue</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #9b164f;"></div>
+                        <div class="v-swatch-label">Claret <code>#9b164f</code><br /><code>$ftColor-Claret</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #e3dfca;"></div>
+                        <div class="v-swatch-label">Skyline <code>#e3dfca</code><br /><code>$ftColor-Skyline</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #d66d06;"></div>
+                        <div class="v-swatch-label">Orange <code>#d66d06</code><br /><code>$ftColor-Orange</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #9e2f50;"></div>
+                        <div class="v-swatch-label">Fills <code>#9e2f50</code><br /><code>$ftColor-Fills</code></div>
                     </div>
                 </div>
 
-            </div>
+                <h3 class="v-title v-title-small">Greys</h3>
 
-            <h2 class="v-title v-title-small">Example caption</h2>
-
-            <p class="v-paragraph">Bottom, with 50% opaque background, containing caption.</p>
-
-            <div class="v-sample v-grid-col-6">
-
-                <div class="ft-image ft-image-leader">
-                    <div class="v-mock-image v-mock-image-leader">Image</div>
-                    <div class="ft-overlay ft-overlay-bottom ft-overlay-bg50">
-                        <p class="ft-overlay-caption">Caption text lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula nibh at lorem egestas sodales.</p>
+                <div class="v-swatches">
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #a7a59b;"></div>
+                        <div class="v-swatch-label">Warm Grey 1 <code>#a7a59b</code><br /><code>$ftColor-WarmGrey1</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #74736c;"></div>
+                        <div class="v-swatch-label">Warm Grey 2 <code>#74736c</code><br /><code>$ftColor-WarmGrey2</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #777;"></div>
+                        <div class="v-swatch-label">Cool Grey 1 <code>#777</code><br /><code>$ftColor-CoolGrey1</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #dfded8;"></div>
+                        <div class="v-swatch-label">Cool Grey 2 <code>#dfded8</code><br /><code>$ftColor-CoolGrey2</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #505050;"></div>
+                        <div class="v-swatch-label">Dark Grey <code>#505050</code><br /><code>$ftColor-DarkGrey</code></div>
                     </div>
                 </div>
 
-            </div>
+                <h3 class="v-title v-title-small">Tints</h3>
 
-            <h2 class="v-title v-title-small">Example image credits</h2>
-
-            <p class="v-paragraph">Bottom-right credit container, with 20% opaque background, containing non-linking image credit.</p>
-
-            <div class="v-sample v-grid-col-3">
-
-                <div class="ft-image ft-image-secondary">
-                    <div class="v-mock-image v-mock-image-secondary">Image</div>
-                    <span class="ft-overlay ft-overlay-bottomright-credit ft-overlay-bg20"><span class="ft-overlay-credit">&copy;Credit</span></span>
+                <div class="v-swatches">
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #f6e9d8;"></div>
+                        <div class="v-swatch-label">Tint 1 <code>#f6e9d8</code><br /><code>$ftColor-Tint1</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #e9decf;"></div>
+                        <div class="v-swatch-label">Tint 2 <code>#e9decf</code><br /><code>$ftColor-Tint2</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #cec6b9;"></div>
+                        <div class="v-swatch-label">Tint 3 <code>#cec6b9</code><br /><code>$ftColor-Tint3</code></div>
+                    </div>
                 </div>
 
-            </div>
+                <h3 class="v-title v-title-small">Colours</h3>
 
-            <p class="v-paragraph">Bottom-right credit container, with 20% opaque background, containing linking image credit.</p>
-
-            <div class="v-sample v-grid-col-3">
-
-                <div class="ft-image ft-image-secondary">
-                    <div class="v-mock-image v-mock-image-secondary">Image</div>
-                    <span class="ft-overlay ft-overlay-bottomright-credit ft-overlay-bg20"><a href="#" class="ft-overlay-credit">&copy;Credit</a></span>
+                <div class="v-swatches">
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #c00;"></div>
+                        <div class="v-swatch-label">Red <code>#c00</code><br /><code>$ftColor-Red</code></div>
+                    </div>
+                    <div class="v-swatch">
+                        <div class="v-swatch-color" style="background-color: #458b00;"></div>
+                        <div class="v-swatch-label">Green <code>#458b00</code><br /><code>$ftColor-Green</code></div>
+                    </div>
                 </div>
 
-            </div>
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+            </section>
 
-        </section>
+            <section id="links" class="v-section">
 
-        <section id="badges" class="v-section">
+                <h2 class="v-title v-title-medium">Links</h2>
 
-            <h2 class="v-title v-title-medium">Badges</h2>
+                <p class="v-paragraph">Links inherit font styling from parent elements.</p>
 
-            <p class="v-paragraph">Used to denote content is NEW, for example.</p>
-
-            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
-
-            <ul class="v-list">
-                <li>Rounded corners may render as square corners</li>
-            </ul>
-
-            <div class="v-sample v-sample-col6">
-
-                <span class="ft-badge ft-badge-red">NEW</span>
-
-            </div>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="buttons" class="v-section">
-
-            <h2 class="v-title v-title-medium">Buttons</h2>
-
-            <p class="v-paragraph">Things that look like buttons. Can be <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> elements.</p>
-
-            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
-
-            <ul class="v-list">
-                <li>Rounded corners may render as square corners</li>
-                <li>Background colour gradients may render as flat colour</li>
-            </ul>
-
-            <div class="v-sample v-sample-col9">
-
-                <button class="ft-button ft-button-small">Small</button>
-                <button class="ft-button ft-button-medium">Medium</button>
-                <button class="ft-button ft-button-large">Large</button>
-                <a href="#" class="ft-button ft-button-small">Small</a>
-                <a href="#" class="ft-button ft-button-medium">Medium</a>
-                <a href="#" class="ft-button ft-button-large">Large</a>
-
-            </div>
-
-            <div class="v-sample v-sample-col9">
-
-                <button class="ft-button ft-button-small ft-button-negative">Cancel</button>
-                <button class="ft-button ft-button-medium ft-button-negative">Cancel</button>
-                <button class="ft-button ft-button-large ft-button-negative">Cancel</button>
-                <a href="#" class="ft-button ft-button-small ft-button-negative">Cancel</a>
-                <a href="#" class="ft-button ft-button-medium ft-button-negative">Cancel</a>
-                <a href="#" class="ft-button ft-button-large ft-button-negative">Cancel</a>
-
-            </div>
-
-            <div class="v-sample v-sample-col9">
-
-                <button class="ft-button ft-button-small ft-state-disabled">Disabled</button>
-                <button class="ft-button ft-button-medium ft-state-disabled">Disabled</button>
-                <button class="ft-button ft-button-large ft-state-disabled">Disabled</button>
-                <a href="#" class="ft-button ft-button-small ft-state-disabled">Disabled</a>
-                <a href="#" class="ft-button ft-button-medium ft-state-disabled">Disabled</a>
-                <a href="#" class="ft-button ft-button-large ft-state-disabled">Disabled</a>
-
-            </div>
-
-            <p class="v-note">The disabled style can be applied by either the ft-state-disabled class, or by the disabled HTML attribute.</p>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="dividers" class="v-section">
-
-            <h2 class="v-title v-title-medium">Dividers</h2>
-
-            <p class="v-paragraph">Can be an <code>&lt;hr&gt;</code> or a <code>&lt;div&gt;</code>.</p>
-
-            <div class="v-sample v-sample-col6">
-
-                <hr class="ft-divider" />
-
-            </div>
-
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
-
-        </section>
-
-        <section id="headersSmall" class="v-section">
-
-            <h2 class="v-title v-title-medium">Headers: small</h2>
-
-            <p class="v-paragraph">Content editors should ensure that the titles in these module headers should always be uppercase.</p>
-
-            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
-
-            <ul class="v-list">
-                <li>Rounded corners may render as square corners</li>
-                <li>Background colour may continue behind title text</li>
-            </ul>
-
-            <h3 class="v-title v-title-small">Header Small</h3>
-
-            <div class="v-sample v-sample-col6">
-
-                <div class="ft-header-small"></div>
-
-            </div>
-
-            <h3 class="v-title v-title-small">Header Small with Title, left-aligned</h3>
-
-            <div class="v-sample v-sample-col6">
-
-                <div class="ft-header-small ft-header-small-titleleft">
-                    <h3 class="ft-header-small-title">HEADER TITLE TEXT</h3>
+                <div class="v-sample v-sample-col6">
+                    <span class="ft-link-kicker">Kicker</span> <a class="ft-link" href="#">Normal link</a>
                 </div>
 
-            </div>
-
-            <h3 class="v-title v-title-small">Header Small with Title, centred</h3>
-
-            <div class="v-sample v-sample-col6">
-
-                <div class="ft-header-small ft-header-small-titlecenter">
-                    <h3 class="ft-header-small-title">HEADER TITLE TEXT</h3>
+                <div class="v-sample v-sample-col6">
+                    <a class="ft-link ft-link-alternative" href="#">Alternative link</a>
                 </div>
 
-            </div>
-
-            <h3 class="v-title v-title-small">Header Small with linking Title, left-aligned</h3>
-
-            <div class="v-sample v-sample-col6">
-
-                <div class="ft-header-small ft-header-small-titleleft">
-                    <h3 class="ft-header-small-title"><a href="#" class="ft-link-stealth">HEADER TITLE TEXT</a></h3>
+                <div class="v-sample v-sample-col6">
+                    <a class="ft-link-stealth" href="#">Stealth link</a>
                 </div>
 
-            </div>
+                <p class="v-note">Stealth links inherit colour of parent element and turn blue on hover.</p>
 
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
-        </section>
+            </section>
 
-        <section id="headersMedium" class="v-section">
+            <section id="headings" class="v-section">
 
-            <h2 class="v-title v-title-medium">Headers: medium</h2>
+                <h2 class="v-title v-title-medium">Headings</h2>
 
-            <p class="v-paragraph">Content editors should ensure that the titles in these module headers should always be uppercase.</p>
+                <p class="v-paragraph">Used for section or brand headings. Should not be used for article titles.</p>
 
-            <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+                <h3 class="v-title v-title-small">Medium: Benton 12px/14px</h3>
 
-            <ul class="v-list">
-                <li>Small tabs with title may left align.</li>
-            </ul>
-
-            <h3 class="v-title v-title-small">Header Medium with Title</h3>
-
-            <div class="v-sample v-sample-col6">
-
-                <div class="ft-header-medium">
-                    <h3 class="ft-header-medium-title">TITLE</h3>
+                <div class="v-sample v-sample-col6">
+                    <h2 class="ft-heading ft-heading-medium">Medium heading | <a href="#" class="ft-link">Medium heading link</a></h2>
                 </div>
 
-            </div>
+                <h3 class="v-title v-title-small">Small: Benton 14px/18px</h3>
 
-            <h3 class="v-title v-title-small">Header Medium with Title (and tint)</h3>
-
-            <div class="v-sample v-sample-col6">
-
-                <div class="ft-header-medium ft-header-medium-tint">
-                    <h3 class="ft-header-medium-title">TITLE</h3>
+                <div class="v-sample v-sample-col6">
+                    <h3 class="ft-heading ft-heading-small">Small heading | <a href="#" class="ft-link">Small heading link</a></h3>
                 </div>
 
-            </div>
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
-            <h3 class="v-title v-title-small">Header Medium with Small Tabs</h3>
+            </section>
 
-            <div class="v-sample v-sample-col6">
+            <section id="titles" class="v-section">
 
-                <div class="ft-header-medium">
-                    <h3 class="ft-header-medium-title">TITLE</h3>
-                    <ul class="ft-tabs-small">
-                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
-                        <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
-                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                <h2 class="v-title v-title-medium">Titles</h2>
+
+                <p class="v-paragraph">Used for article titles.</p>
+
+                <h3 class="v-title v-title-small">Large Title: Georgia 32px/36px</h3>
+
+                <div class="v-sample v-sample-col9">
+                    <h1 class="ft-title ft-title-large">Large title | <a href="#" class="ft-link-stealth">Large title link</a></h1>
+                </div>
+
+                <h3 class="v-title v-title-small">Medium Title: Georgia 21px/16px</h3>
+
+                <div class="v-sample v-sample-col9">
+                    <h2 class="ft-title ft-title-medium">Medium title | <a href="#" class="ft-link-stealth">Medium title link</a></h2>
+                </div>
+
+                <h3 class="v-title v-title-small">Small Title: Georgia 15px/17px</h3>
+
+                <div class="v-sample v-sample-col9">
+                    <h3 class="ft-title ft-title-small">Small title | <a href="#" class="ft-link-stealth">Small title link</a></h3>
+                </div>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="leads" class="v-section">
+
+                <h2 class="v-title v-title-medium">Leads</h2>
+
+                <p class="v-paragraph">Used for article subheadlines.</p>
+
+                <h3 class="v-title v-title-small">Large lead: Georgia 21px/26px</h3>
+
+                <div class="v-sample v-sample-col6">
+                    <h1 class="ft-lead ft-lead-large">Large lead | <a href="#" class="ft-link">Large lead link</a></h1>
+                </div>
+
+                <h3 class="v-title v-title-small">Medium lead: Georgia 17px/21px</h3>
+
+                <div class="v-sample v-sample-col6">
+                    <h2 class="ft-lead ft-lead-medium">Medium lead | <a href="#" class="ft-link">Medium lead link</a></h2>
+                </div>
+
+                <h3 class="v-title v-title-small">Small lead: Benton 13px/17px</h3>
+
+                <div class="v-sample v-sample-col6">
+                    <h3 class="ft-lead ft-lead-small">Small lead | <a href="#" class="ft-link">Small lead link</a></h3>
+                </div>
+
+                <h3 class="v-title v-title-small">Byline</h3>
+
+                <div class="v-sample v-sample-col6">
+
+                    <p class="ft-byline">Byline</p>
+
+                </div>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="timestamps" class="v-section">
+
+                <h2 class="v-title v-title-medium">Timestamps</h2>
+
+                <div class="v-sample v-sample-col6">
+
+                    <p class="ft-timestamp">12:34pm timestamp</p>
+
+                </div>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="lists" class="v-section">
+
+                <h2 class="v-title v-title-medium">Lists</h2>
+
+                <h3 class="v-title v-title-small">Plain</h3>
+
+                <p class="v-paragraph">Can be a <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> or <code>&lt;div&gt;</code>.</p>
+
+                <div class="v-sample v-sample-col6">
+
+                    <ul class="ft-list ft-list-plain">
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
                     </ul>
+
                 </div>
 
-            </div>
+                <h3 class="v-title v-title-small">Bulletted</h3>
 
-            <h3 class="v-title v-title-small">Header Medium with Small Tabs (and tint)</h3>
+                <p class="v-paragraph">Should be a <code>&lt;ul&gt;</code>.</p>
 
-            <div class="v-sample v-sample-col6">
+                <div class="v-sample v-sample-col6">
 
-                <div class="ft-header-medium ft-header-medium-tint">
-                    <h3 class="ft-header-medium-title">TITLE</h3>
-                    <ul class="ft-tabs-small">
-                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
-                        <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
-                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                    <ul class="ft-list ft-list-bulletted">
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
                     </ul>
+
                 </div>
 
-            </div>
+                <h3 class="v-title v-title-small">Numbered</h3>
 
-            <h3 class="v-title v-title-small">Header Medium with Large Tabs</h3>
+                <p class="v-paragraph">Should be a <code>&lt;ol&gt;</code>.</p>
 
-            <p class="v-paragraph">Awaiting final design for when this displays at &gt;300 pixel wide.</p>
+                <div class="v-sample v-sample-col6">
 
-            <div class="v-sample v-sample-col6">
+                    <ol class="ft-list ft-list-numbered">
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                    </ol>
 
-                <div class="ft-header-medium ft-header-medium-tabs">
-                    <ul class="ft-tabs-large">
-                        <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
-                        <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
-                    </ul>
                 </div>
 
-            </div>
+                <h3 class="v-title v-title-small">Options</h3>
 
-            <h3 class="v-title v-title-small">Header Medium with Large and Small Tabs</h3>
+                <p class="v-paragraph">Non-wrapping (default). Each list item will be on a new line.</p>
 
-            <p class="v-paragraph">Awaiting final design for when this displays at &gt;300 pixel wide.</p>
+                <div class="v-sample v-sample-col6">
 
-            <div class="v-sample v-sample-col6">
-
-                <div class="ft-header-medium ft-header-medium-tabs">
-                    <ul class="ft-tabs-large">
-                        <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
-                        <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
+                    <ul class="ft-list ft-list-plain">
+                        <li class="ft-list-item">Long plain text list item content here</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
                     </ul>
-                    <ul class="ft-tabs-small">
-                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
-                        <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
-                        <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
-                    </ul>
+
                 </div>
 
-            </div>
+                <div class="v-sample v-sample-col6">
 
-            <p class="v-note">Need to show all states: selected, unselected, disabled, hover etc.</p>
+                    <ul class="ft-list ft-list-bulletted">
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                    </ul>
 
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+                </div>
 
-        </section>
+                <p class="v-paragraph">Wrapping. List items will wrap if the whole list item fits on one line.</p>
 
-        <section id="footers" class="v-section">
+                <div class="v-sample v-sample-col6">
 
-            <h2 class="v-title v-title-medium">Footers</h2>
+                    <ul class="ft-list ft-list-plain ft-list-wrapping">
+                        <li class="ft-list-item">Long plain text list item content here</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                    </ul>
 
-            <h3 class="v-title v-title-small">Footer Small</h3>
+                </div>
 
-            <p class="v-paragraph">Does not include space above or below, as this can be specified separately (using a Spacing class etc).</p>
+                <div class="v-sample v-sample-col6">
 
-            <div class="v-sample v-sample-col6">
+                    <ul class="ft-list ft-list-bulletted ft-list-wrapping">
+                        <li class="ft-list-item">Long plain text list item content here</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                        <li class="ft-list-item">Plain text list item content</li>
+                    </ul>
 
-                <div class="ft-footer ft-footer-small"></div>
+                </div>
 
-            </div>
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
 
-            <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+            </section>
 
-        </section>
+            <section id="spacing" class="v-section">
+
+                <h2 class="v-title v-title-medium">Spacing</h2>
+
+                <p class="v-paragraph">Velcro text styles do not include any margins to create space between them and other elements.</p>
+
+                <p class="v-paragraph">Spacing is applied using the following classes:</p>
+
+                <ul class="v-list">
+                    <li><code>ft-spc-btm-full</code> one full unit of spacing below</li>
+                    <li><code>ft-spc-btm-half</code> half unit of spacing below</li>
+                    <li><code>ft-spc-btm-qtr</code> quarter unit of spacing below</li>
+                </ul>
+
+            </section>
+
+            <section id="imageContainers" class="v-section">
+
+                <h2 class="v-title v-title-medium">Image Containers</h2>
+
+                <p class="v-paragraph">These are the standard image sizes for content positions. Images may optionally have <a href="#imageOverlays" class="v-link">overlays</a>.</p>
+
+                <p class="v-paragraph">Article size image container.</p>
+
+                <div class="v-sample v-grid-col-9">
+
+                    <div class="ft-image ft-image-article">
+                        <div class="v-mock-image v-mock-image-article">Article (600px x 338px)</div>
+                    </div>
+
+                </div>
+
+                <p class="v-paragraph">Leader size image container.</p>
+
+                <div class="v-sample v-grid-col-6">
+
+                    <div class="ft-image ft-image-leader">
+                        <div class="v-mock-image v-mock-image-leader">Primary (414px x 233px)</div>
+                    </div>
+
+                </div>
+
+                <p class="v-paragraph">Primary size image container.</p>
+
+                <div class="v-sample v-grid-col-4">
+
+                    <div class="ft-image ft-image-primary">
+                        <div class="v-mock-image v-mock-image-primary">Primary (272px x 153px)</div>
+                    </div>
+
+                </div>
+
+                <p class="v-paragraph">Secondary size image container.</p>
+
+                <div class="v-sample v-grid-col-3">
+
+                    <div class="ft-image ft-image-secondary">
+                        <div class="v-mock-image v-mock-image-secondary">Secondary (167px x 94px)</div>
+                    </div>
+
+                </div>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="imageOverlays" class="v-section">
+
+                <h2 class="v-title v-title-medium">Image Overlays</h2>
+
+                <p class="v-paragraph">Image overlays are nested within <a href="#imageContainers" class="v-link">image containers</a> and are superimposed onto the image.</p>
+
+                <p class="v-paragraph">Overlays must have three parts: container, background and content.</p>
+
+                <h2 class="v-title v-title-small">Overlay containers</h2>
+
+                <table class="v-table">
+                <thead>
+                <tr>
+                    <th class="v-table-column-title">Container</th>
+                    <th class="v-table-column-title">Description</th>
+                    <th class="v-table-column-title">CSS class</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="v-table-row-title">Top-left</td>
+                    <td class="v-paragraph">Displays at top left of container, variable width and height.</td>
+                    <td class="v-paragraph"><code>ft-overlay-topleft</code></td>
+                </tr>
+                <tr>
+                    <td class="v-table-row-title">Bottom</td>
+                    <td class="v-paragraph">Displays full-width at the bottom of the container, variable height.</td>
+                    <td class="v-paragraph"><code>ft-overlay-bottom</code></td>
+                </tr>
+                <tr>
+                    <td class="v-table-row-title">Bottom-right credit</td>
+                    <td class="v-paragraph">Displays at bottom-right of the container, with minimal padding.</td>
+                    <td class="v-paragraph"><code>ft-overlay-bottomright-credit</code></td>
+                </tr>
+                </tbody>
+                </table>
+
+                <h2 class="v-title v-title-small">Overlay backgrounds</h2>
+
+                <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+
+                <ul class="v-list">
+                    <li>Semi-transparent image backgrounds may render as opaque</li>
+                </ul>
+
+                <table class="v-table">
+                <thead>
+                <tr>
+                    <th class="v-table-column-title">Background</th>
+                    <th class="v-table-column-title">Description</th>
+                    <th class="v-table-column-title">CSS class</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="v-table-row-title">20%</td>
+                    <td class="v-paragraph">20% opacity.</td>
+                    <td class="v-paragraph"><code>ft-overlay-bg20</code></td>
+                </tr>
+                <tr>
+                    <td class="v-table-row-title">30%</td>
+                    <td class="v-paragraph">30% opacity.</td>
+                    <td class="v-paragraph"><code>ft-overlay-bg30</code></td>
+                </tr>
+                <tr>
+                    <td class="v-table-row-title">50%</td>
+                    <td class="v-paragraph">50% opacity.</td>
+                    <td class="v-paragraph"><code>ft-overlay-bg50</code></td>
+                </tr>
+                </tbody>
+                </table>
+
+                <h2 class="v-title v-title-small">Example heading and title</h2>
+
+                <p class="v-paragraph">Top-left, with 30% opaque background, containing Heading and Title.</p>
+
+                <div class="v-sample v-grid-col-4">
+
+                    <div class="ft-image ft-image-primary">
+                        <div class="v-mock-image v-mock-image-primary">Image</div>
+                        <div class="ft-overlay ft-overlay-topleft ft-overlay-bg30">
+                            <span class="ft-overlay-heading">HEADING</span>
+                            <h3 class="ft-overlay-title">Title text title text</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="v-title v-title-small">Example caption</h2>
+
+                <p class="v-paragraph">Bottom, with 50% opaque background, containing caption.</p>
+
+                <div class="v-sample v-grid-col-6">
+
+                    <div class="ft-image ft-image-leader">
+                        <div class="v-mock-image v-mock-image-leader">Image</div>
+                        <div class="ft-overlay ft-overlay-bottom ft-overlay-bg50">
+                            <p class="ft-overlay-caption">Caption text lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula nibh at lorem egestas sodales.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="v-title v-title-small">Example image credits</h2>
+
+                <p class="v-paragraph">Bottom-right credit container, with 20% opaque background, containing non-linking image credit.</p>
+
+                <div class="v-sample v-grid-col-3">
+
+                    <div class="ft-image ft-image-secondary">
+                        <div class="v-mock-image v-mock-image-secondary">Image</div>
+                        <span class="ft-overlay ft-overlay-bottomright-credit ft-overlay-bg20"><span class="ft-overlay-credit">&copy;Credit</span></span>
+                    </div>
+
+                </div>
+
+                <p class="v-paragraph">Bottom-right credit container, with 20% opaque background, containing linking image credit.</p>
+
+                <div class="v-sample v-grid-col-3">
+
+                    <div class="ft-image ft-image-secondary">
+                        <div class="v-mock-image v-mock-image-secondary">Image</div>
+                        <span class="ft-overlay ft-overlay-bottomright-credit ft-overlay-bg20"><a href="#" class="ft-overlay-credit">&copy;Credit</a></span>
+                    </div>
+
+                </div>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="badges" class="v-section">
+
+                <h2 class="v-title v-title-medium">Badges</h2>
+
+                <p class="v-paragraph">Used to denote content is NEW, for example.</p>
+
+                <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+
+                <ul class="v-list">
+                    <li>Rounded corners may render as square corners</li>
+                </ul>
+
+                <div class="v-sample v-sample-col6">
+
+                    <span class="ft-badge ft-badge-red">NEW</span>
+
+                </div>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="buttons" class="v-section">
+
+                <h2 class="v-title v-title-medium">Buttons</h2>
+
+                <p class="v-paragraph">Things that look like buttons. Can be <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> elements.</p>
+
+                <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+
+                <ul class="v-list">
+                    <li>Rounded corners may render as square corners</li>
+                    <li>Background colour gradients may render as flat colour</li>
+                </ul>
+
+                <div class="v-sample v-sample-col9">
+
+                    <button class="ft-button ft-button-small">Small</button>
+                    <button class="ft-button ft-button-medium">Medium</button>
+                    <button class="ft-button ft-button-large">Large</button>
+                    <a href="#" class="ft-button ft-button-small">Small</a>
+                    <a href="#" class="ft-button ft-button-medium">Medium</a>
+                    <a href="#" class="ft-button ft-button-large">Large</a>
+
+                </div>
+
+                <div class="v-sample v-sample-col9">
+
+                    <button class="ft-button ft-button-small ft-button-negative">Cancel</button>
+                    <button class="ft-button ft-button-medium ft-button-negative">Cancel</button>
+                    <button class="ft-button ft-button-large ft-button-negative">Cancel</button>
+                    <a href="#" class="ft-button ft-button-small ft-button-negative">Cancel</a>
+                    <a href="#" class="ft-button ft-button-medium ft-button-negative">Cancel</a>
+                    <a href="#" class="ft-button ft-button-large ft-button-negative">Cancel</a>
+
+                </div>
+
+                <div class="v-sample v-sample-col9">
+
+                    <button class="ft-button ft-button-small ft-state-disabled">Disabled</button>
+                    <button class="ft-button ft-button-medium ft-state-disabled">Disabled</button>
+                    <button class="ft-button ft-button-large ft-state-disabled">Disabled</button>
+                    <a href="#" class="ft-button ft-button-small ft-state-disabled">Disabled</a>
+                    <a href="#" class="ft-button ft-button-medium ft-state-disabled">Disabled</a>
+                    <a href="#" class="ft-button ft-button-large ft-state-disabled">Disabled</a>
+
+                </div>
+
+                <p class="v-note">The disabled style can be applied by either the ft-state-disabled class, or by the disabled HTML attribute.</p>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="dividers" class="v-section">
+
+                <h2 class="v-title v-title-medium">Dividers</h2>
+
+                <p class="v-paragraph">Can be an <code>&lt;hr&gt;</code> or a <code>&lt;div&gt;</code>.</p>
+
+                <div class="v-sample v-sample-col6">
+
+                    <hr class="ft-divider" />
+
+                </div>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="headersSmall" class="v-section">
+
+                <h2 class="v-title v-title-medium">Headers: small</h2>
+
+                <p class="v-paragraph">Content editors should ensure that the titles in these module headers should always be uppercase.</p>
+
+                <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+
+                <ul class="v-list">
+                    <li>Rounded corners may render as square corners</li>
+                    <li>Background colour may continue behind title text</li>
+                </ul>
+
+                <h3 class="v-title v-title-small">Header Small</h3>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-small"></div>
+
+                </div>
+
+                <h3 class="v-title v-title-small">Header Small with Title, left-aligned</h3>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-small ft-header-small-titleleft">
+                        <h3 class="ft-header-small-title">HEADER TITLE TEXT</h3>
+                    </div>
+
+                </div>
+
+                <h3 class="v-title v-title-small">Header Small with Title, centred</h3>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-small ft-header-small-titlecenter">
+                        <h3 class="ft-header-small-title">HEADER TITLE TEXT</h3>
+                    </div>
+
+                </div>
+
+                <h3 class="v-title v-title-small">Header Small with linking Title, left-aligned</h3>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-small ft-header-small-titleleft">
+                        <h3 class="ft-header-small-title"><a href="#" class="ft-link-stealth">HEADER TITLE TEXT</a></h3>
+                    </div>
+
+                </div>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="headersMedium" class="v-section">
+
+                <h2 class="v-title v-title-medium">Headers: medium</h2>
+
+                <p class="v-paragraph">Content editors should ensure that the titles in these module headers should always be uppercase.</p>
+
+                <p class="v-paragraph"><strong>Graceful degradation: </strong></p>
+
+                <ul class="v-list">
+                    <li>Small tabs with title may left align.</li>
+                </ul>
+
+                <h3 class="v-title v-title-small">Header Medium with Title</h3>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-medium">
+                        <h3 class="ft-header-medium-title">TITLE</h3>
+                    </div>
+
+                </div>
+
+                <h3 class="v-title v-title-small">Header Medium with Title (and tint)</h3>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-medium ft-header-medium-tint">
+                        <h3 class="ft-header-medium-title">TITLE</h3>
+                    </div>
+
+                </div>
+
+                <h3 class="v-title v-title-small">Header Medium with Small Tabs</h3>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-medium">
+                        <h3 class="ft-header-medium-title">TITLE</h3>
+                        <ul class="ft-tabs-small">
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
+                            <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <h3 class="v-title v-title-small">Header Medium with Small Tabs (and tint)</h3>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-medium ft-header-medium-tint">
+                        <h3 class="ft-header-medium-title">TITLE</h3>
+                        <ul class="ft-tabs-small">
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
+                            <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <h3 class="v-title v-title-small">Header Medium with Large Tabs</h3>
+
+                <p class="v-paragraph">Awaiting final design for when this displays at &gt;300 pixel wide.</p>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-medium ft-header-medium-tabs">
+                        <ul class="ft-tabs-large">
+                            <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
+                            <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <h3 class="v-title v-title-small">Header Medium with Large and Small Tabs</h3>
+
+                <p class="v-paragraph">Awaiting final design for when this displays at &gt;300 pixel wide.</p>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-header-medium ft-header-medium-tabs">
+                        <ul class="ft-tabs-large">
+                            <li class="ft-tab-large ft-state-selected"><a href="#" class="ft-tab-title">FIRST TAB TITLE</a></li>
+                            <li class="ft-tab-large"><a href="#" class="ft-tab-title">SECOND TAB TITLE</a></li>
+                        </ul>
+                        <ul class="ft-tabs-small">
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">First tab title</a></li>
+                            <li class="ft-tab-small ft-state-selected"><a href="#" class="ft-tab-title">Second tab title</a></li>
+                            <li class="ft-tab-small"><a href="#" class="ft-tab-title">Third tab title</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <p class="v-note">Need to show all states: selected, unselected, disabled, hover etc.</p>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+            <section id="footers" class="v-section">
+
+                <h2 class="v-title v-title-medium">Footers</h2>
+
+                <h3 class="v-title v-title-small">Footer Small</h3>
+
+                <p class="v-paragraph">Does not include space above or below, as this can be specified separately (using a Spacing class etc).</p>
+
+                <div class="v-sample v-sample-col6">
+
+                    <div class="ft-footer ft-footer-small"></div>
+
+                </div>
+
+                <a href="#nav-primary" class="v-link v-link-small v-back-to-top">Back to top</a>
+
+            </section>
+
+        </div>
 
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="page/js/google-code-prettify/prettify.js"></script>
-    <script src="page/js/google-code-prettify/lang-basic.js"></script>
-    <script src="page/js/codeSamples.js"></script>
-    <script src="page/js/init.js"></script>
+    <script src="static/js/google-code-prettify/prettify.js"></script>
+    <script src="static/js/google-code-prettify/lang-basic.js"></script>
+    <script src="static/js/codeSamples.js"></script>
+    <script src="static/js/init.js"></script>
 
 </body>
 </html>

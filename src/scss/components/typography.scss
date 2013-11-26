@@ -1,23 +1,25 @@
 /*
 	Styles for font size, colour and vertical rhythm of text on standard FT brnaded pages
 */
-$o-velcro-body-text-color: $o-colors-ft-charcoal;
-$o-velcro-link-text-color: $o-colors-ft-blue;
-$o-velcro-link-text-hover-color: $o-colors-ft-black;
-$o-velcro-title-primary-color: $o-colors-ft-black;
-$o-velcro-title-secondary-color: $o-colors-ft-warm-grey2;
-$o-velcro-title-tertiary-color: inherit !default;
-$o-velcro-byline-color: $o-colors-ft-warm-grey2;
+$o-velcro-body-text-color: $o-colors-charcoal;
+$o-velcro-link-text-color: $o-colors-blue;
+$o-velcro-link-text-hover-color: $o-colors-black;
+$o-velcro-title-primary-color: $o-colors-black;
+$o-velcro-subheading-color: $o-colors-black;
+$o-velcro-byline-color: $o-colors-warm-grey2;
 
-$o-velcro-body-font: $o-fonts-clarion-normal;
-$o-velcro-body-bold-font: $o-fonts-clarion-bold;
+$o-velcro-body-font: $o-fonts-serif;
+$o-velcro-body-bold-font: $o-fonts-serif;
 $o-velcro-title-font: $o-fonts-millerdisplay-normal;
+$o-velcro-subheading-font: $o-fonts-bentonsans-bold;
 $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 
-@mixin oVelcroFontSize($size, $lineHeight, $offset: 0) {
+@mixin oVelcroFontSize($size, $lineHeight: null, $offset: 0) {
 	font-size: $size + px;
 	// line-height: $originalLineHeight / $originalHeight;
-	line-height: $lineHeight + px;
+	@if ($lineHeight) {
+		line-height: $lineHeight + px;
+	}
 	@include oVelcroFontOffset($offset);
 }
 
@@ -38,9 +40,18 @@ $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 }
 
 @mixin oVelcroSubheading () {
-	@include oVelcroFontSize(20, 30);
-	font-family: $o-velcro-title-font;
-	color: $o-velcro-title-secondary-color;
+	@include oVelcroFontSize(14, 28);
+	font-family: $o-velcro-subheading-font;
+	color: $o-velcro-subheading-color;
+	margin-bottom: 10px;
+	font-family: BentonSans-bold, Georgia, "Times New Roman", serif;
+	color: black;
+	border-top: 1px dotted $o-colors-warm-grey2;
+	border-bottom: 1px dotted $o-colors-warm-grey2;
+
+	& + * {
+		margin-top: 0;
+	}
 }
 
 @mixin oVelcroByline () {
@@ -48,7 +59,6 @@ $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 	font-family: $o-velcro-ui-font;
 	color: $o-velcro-byline-color;
 }
-
 
 @mixin oVelcroBodyText () {
 	@include oVelcroFontSize(14, 20);
@@ -62,7 +72,8 @@ $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 }
 
 @mixin oVelcroBodyTextBold () {
-	font-family: $o-velcro-body-bold-font;
+	//font-family: $o-velcro-body-bold-font;
+	font-weight: bold;
 }
 
 @mixin oVelcroBodyTextItalic () {
@@ -97,18 +108,18 @@ $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 	list-style-type: disc;
 }
 
-@mixin oVelcroLink () {
+@mixin oVelcroBodyLink () {
 	text-decoration: none;
 	color: $o-velcro-link-text-color;
 }
 
-@mixin oVelcroLinkHover () {
+@mixin oVelcroBodyLinkHover () {
 	color: $o-velcro-link-text-hover-color;
 }
 
-@mixin ftVelcroIncludeTypographyClasses () {
+@mixin oVelcroIncludeTypographyClasses () {
 	.ft-title {
-		@include ftVelcroPrimaryTitle();
+		@include oVelcroPrimaryTitle();
 	}
 
 	// etc etc

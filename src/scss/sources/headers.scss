@@ -1,0 +1,201 @@
+/** module-header.scss */
+
+/**
+ * Module header small - general
+ */
+.ft-header-small {
+    position: relative;
+    border-radius: 4px;
+    background-color: $ftColor-Tint2;
+    height: 9px;
+    line-height: 8px;
+    font-size: 14px;
+}
+
+.ft-header-small-title {
+    display: inline-block;
+    padding:0 10px;
+    font-family: $ftFont-Benton;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 10px;
+    background-color: $ftColor-Pink;
+    color: #333;
+}
+
+.msie7 .ft-header-small-title {
+    display: inline;
+    zoom: 1;
+}
+
+.msie6 .ft-header-small-title {
+    position: static;
+    background-color: transparent;
+}
+
+.ft-header-small-titleleft {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.ft-header-small-titleleft .ft-header-small-title {
+    padding-left: 0;
+}
+
+.ft-header-small-titlecenter {
+    text-align: center;
+}
+
+/**
+ * Module header medium - general
+ */
+.ft-header-medium {
+    clear: left;
+    font-family: $ftFont-Benton;
+    overflow: hidden;
+    border-top: 4px solid $ftColor-WarmGrey1;
+    background: url($imagePath + $ftVelcro-namespaceDir + 'border-horizontal-dotted.png') bottom left repeat-x;
+}
+
+.ft-header-medium-title {
+    float: left;
+    margin: 8px 0 8px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #434343;
+}
+
+a.ft-header-medium-title:hover {
+    color: $ftColor-Blue;
+}
+
+.msie6 .ft-header-medium {
+    height: 34px;
+    overflow: visible;
+}
+
+.msie6 .ft-header-medium-title {
+    display: inline;
+}
+
+.msie7 .ft-header-medium {
+    min-height: 34px;
+}
+
+/**
+ * Module header medium variants
+ */
+.ft-header-medium-tabs {
+    border-top: 0;
+    background-color: $ftColor-Tint2;
+    background-image: none;
+}
+
+.ft-header-medium-tint {
+    background-color: $ftColor-Tint2;
+}
+
+/**
+ * Module header medium tabs general
+ */
+.ft-tabs-large {
+    background-image: none;
+}
+
+.ft-tab-large {
+    float: left;
+    margin-left: 2px;
+    border-top: 4px solid #A8A79C;
+    width: 175px;
+    text-align: center;
+    background: $ftColor-Tint2 url($imagePath + $ftVelcro-namespaceDir + 'border-horizontal-dotted.png') bottom left repeat-x;
+}
+
+.ft-tab-large:first-child {
+    margin-left: 0;
+}
+
+.msie6 .ft-tab-large {
+    margin-left: 0;
+    width: 176px;
+}
+
+.ft-tab-title {
+    display: block;
+    white-space: nowrap;
+    color: #434343;
+    text-overflow: ellipsis;
+}
+
+.ft-tab-title img {
+    vertical-align: middle;
+}
+
+a.ft-tab-title:hover {
+    color: $ftColor-Blue;
+}
+
+.ft-tabs-large .ft-tab-title {
+    font-size: 12px;
+    line-height: 34px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.ft-tabs-large .ft-state-selected {
+    border-top-color: #A7294D;
+    background: #f6e9d8;
+}
+
+.ft-tabs-large .ft-state-selected .ft-tab-title {
+    color: #333;
+    opacity: 1;
+}
+
+.ft-tabs-large .ft-state-selected .ft-tab-title:hover {
+    cursor: text;
+}
+
+/**
+ * Module header medium sub-tabs
+ */
+.ft-tabs-small {
+    padding-left: 20px;
+    background: url($imagePath + $ftVelcro-namespaceDir + 'border-horizontal-dotted.png') bottom left repeat-x;
+    overflow: hidden;
+}
+
+.ft-header-medium-title + .ft-tabs-small {
+    float: right;
+}
+
+.ft-tabs-large + .ft-tabs-small {
+    clear: left;
+    background-color: $ftColor-Tint1;
+}
+
+.msie6 .ft-tabs-small { zoom: 1; }
+
+.ft-tab-small {
+    float: left;
+    margin-right: 10px;
+}
+
+.ft-tabs-small .ft-tab-title {
+    font-size: 11px;
+    line-height: 34px;
+}
+
+.ft-tabs-small .ft-state-selected {
+    background: url($imagePath + $ftVelcro-namespaceDir + 'mod-tab-selected.gif') bottom center no-repeat;
+}
+
+.ft-tabs-small .ft-state-selected .ft-tab-title {
+    color: #000;
+}
+
+.ft-tabs-small .ft-state-selected .ft-tab-title:hover {
+    cursor: text;
+}

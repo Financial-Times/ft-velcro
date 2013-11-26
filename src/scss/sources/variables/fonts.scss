@@ -1,0 +1,21 @@
+/* Benton Regular */
+@font-face {
+  font-family: "BentonSans";
+  src: url($fontPath + $ftVelcro-namespaceDir + 'bentonsans-regular.eot');
+  src: url($fontPath + $ftVelcro-namespaceDir + 'bentonsans-regular.eot?#iefix') format("embedded-opentype"), url($fontPath + $ftVelcro-namespaceDir + 'bentonsans-regular.woff') format("woff");
+  font-style: normal;
+  font-weight: normal; }
+
+/* Benton Bold */
+@font-face {
+  font-family: "BentonSans";
+  src: url($fontPath + $ftVelcro-namespaceDir + 'bentonsans-bold.eot');
+  src: url($fontPath + $ftVelcro-namespaceDir + 'bentonsans-bold.eot?#iefix') format("embedded-opentype"), url($fontPath + $ftVelcro-namespaceDir + 'bentonsans-bold.woff') format("woff");
+  font-style: normal;
+  font-weight: bold; }
+
+/* These variables should probably be renamed to generic "ftFont-Serif" & "ftFont-SansSerif" once we have fully switched
+   page components over to use the brand web fonts. Currently for example, there is a mix of Benton & Arial */
+$ftFont-Arial: Arial, Helvetica, sans-serif;
+$ftFont-Benton: BentonSans, Helvetica, Arial, sans-serif;
+$ftFont-Georgia: Georgia, 'Times New Roman', serif;

@@ -1,0 +1,26 @@
+/** headings.scss */
+
+.ft-heading {
+    font-family: $ftFont-Benton;
+    color: #000;
+}
+
+.ft-heading a {
+    color: $ftColor-Blue;
+}
+
+.ft-heading a:hover {
+    color: #000;
+}
+
+.ft-heading-medium {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+}
+
+.ft-heading-small {
+  font-size: 14px;
+  line-height: 18px;
+}

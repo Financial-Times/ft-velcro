@@ -1,0 +1,45 @@
+/* image_containers.scss */
+
+.ft-image {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.msie7 .ft-image {
+    float: left;
+    display: inline;
+}
+
+/* image sizes */
+.ft-image-article {
+    width: 600px;
+    height: 338px;
+}
+
+.ft-image-primary {
+    width: 272px;
+    height: 153px;
+}
+
+.ft-image-secondary {
+    width: 167px;
+    height: 94px;
+}
+
+.ft-image-tertiary {
+    width: 114px;
+    height: 64px;
+}
+
+.ft-image-leader {
+    width: 414px;
+    height: 233px;
+}
+
+.ft-image-fullwidth {
+    width: 972px;
+    height: 547px;
+}

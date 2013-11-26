@@ -1,0 +1,118 @@
+/*
+	Styles for font size, colour and vertical rhythm of text on standard FT brnaded pages
+*/
+$o-velcro-body-text-color: $o-colors-ft-charcoal;
+$o-velcro-link-text-color: $o-colors-ft-blue;
+$o-velcro-link-text-hover-color: $o-colors-ft-black;
+$o-velcro-title-primary-color: $o-colors-ft-black;
+$o-velcro-title-secondary-color: $o-colors-ft-warm-grey2;
+$o-velcro-title-tertiary-color: inherit !default;
+$o-velcro-byline-color: $o-colors-ft-warm-grey2;
+
+$o-velcro-body-font: $o-fonts-clarion-normal;
+$o-velcro-body-bold-font: $o-fonts-clarion-bold;
+$o-velcro-title-font: $o-fonts-millerdisplay-normal;
+$o-velcro-ui-font: $o-fonts-bentonsans-normal;
+
+@mixin oVelcroFontSize($size, $lineHeight, $offset: 0) {
+	font-size: $size + px;
+	// line-height: $originalLineHeight / $originalHeight;
+	line-height: $lineHeight + px;
+	@include oVelcroFontOffset($offset);
+}
+
+@mixin oVelcroFontOffset ($offset) {
+	@if ($offset > 0) {
+		padding-top: $offset + px;
+		margin-bottom: -$offset + px;
+	} @else if ($offset < 0) {
+		margin-top: $offset + px;
+		padding-bottom: -$offset + px;
+	}
+}
+
+@mixin oVelcroPrimaryTitle () {
+	@include oVelcroFontSize(28, 30, -5);
+	font-family: $o-velcro-title-font;
+	color: $o-velcro-title-primary-color;
+}
+
+@mixin oVelcroSubheading () {
+	@include oVelcroFontSize(20, 30);
+	font-family: $o-velcro-title-font;
+	color: $o-velcro-title-secondary-color;
+}
+
+@mixin oVelcroByline () {
+	@include oVelcroFontSize(14, 20);
+	font-family: $o-velcro-ui-font;
+	color: $o-velcro-byline-color;
+}
+
+
+@mixin oVelcroBodyText () {
+	@include oVelcroFontSize(14, 20);
+	font-family: $o-velcro-body-font;
+	color: $o-velcro-body-text-color;
+}
+
+@mixin oVelcroBodyTextBlock () {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+@mixin oVelcroBodyTextBold () {
+	font-family: $o-velcro-body-bold-font;
+}
+
+@mixin oVelcroBodyTextItalic () {
+	font-style: italic;
+}
+
+@mixin oVelcroSmallerText () {
+	font-size: 0.75em;
+}
+
+@mixin oVelcroSuperscript () {
+	vertical-align: super;
+}
+
+@mixin oVelcroSubscript () {
+	vertical-align: sub;
+}
+
+@mixin oVelcroBodyList () {
+	list-style-position: outside;
+	padding-left: 20px;
+}
+
+
+@mixin oVelcroBodyOrderedList () {
+	@include oVelcroBodyList(); 
+	list-style-type: decimal;
+}
+
+@mixin oVelcroBodyUnorderedList () {
+	@include oVelcroBodyList(); 
+	list-style-type: disc;
+}
+
+@mixin oVelcroLink () {
+	text-decoration: none;
+	color: $o-velcro-link-text-color;
+}
+
+@mixin oVelcroLinkHover () {
+	color: $o-velcro-link-text-hover-color;
+}
+
+@mixin ftVelcroIncludeTypographyClasses () {
+	.ft-title {
+		@include ftVelcroPrimaryTitle();
+	}
+
+	// etc etc
+}
+
+
+

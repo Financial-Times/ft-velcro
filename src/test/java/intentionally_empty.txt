@@ -1,5 +1,0 @@
-The src/test/java folder is necessary to emulate the ft-cmsWeb build structure, please leave otherwise you'll get:
-
-[org.testng.internal.annotations.JDK14AnnotationFinder] [WARNING] Invalid source directory C:\Workspace\commons\qunit-sample\src\test\java ignored
-
-during the "verify" phase.

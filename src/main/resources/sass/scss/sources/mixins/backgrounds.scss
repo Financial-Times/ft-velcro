@@ -1,4 +1,0 @@
-@mixin semi-transparent-bg($op: 0.2) {
-    background-color: rgb(0, 0, 0); /* Fallback */
-    background-color: rgba(0, 0, 0, $op);
-}

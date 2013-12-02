@@ -34,16 +34,18 @@ $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 }
 
 @mixin oVelcroPrimaryTitle () {
-	@include oVelcroFontSize(28, 30, -5);
+	@include oVelcroFontSize(28, 36, -5);
 	font-family: $o-velcro-title-font;
 	color: $o-velcro-title-primary-color;
 }
 
 @mixin oVelcroSubheading () {
-	@include oVelcroFontSize(14, 28);
+	@include oVelcroFontSize(16, 32);
 	font-family: $o-velcro-subheading-font;
 	color: $o-velcro-subheading-color;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	font-family: $o-velcro-subheading-font;
+	color: $o-velcro-subheading-color;
 	border-top: 1px dotted $o-colors-warm-grey2;
 	border-bottom: 1px dotted $o-colors-warm-grey2;
 
@@ -53,20 +55,20 @@ $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 }
 
 @mixin oVelcroByline () {
-	@include oVelcroFontSize(14, 20);
+	@include oVelcroFontSize(16, 24);
 	font-family: $o-velcro-ui-font;
 	color: $o-velcro-byline-color;
 }
 
 @mixin oVelcroBodyText () {
-	@include oVelcroFontSize(14, 20);
+	@include oVelcroFontSize(16, 24);
 	font-family: $o-velcro-body-font;
 	color: $o-velcro-body-text-color;
 }
 
 @mixin oVelcroBodyTextBlock () {
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-bottom: 24px;
+	margin-top: 24px;
 }
 
 @mixin oVelcroBodyTextBold () {
@@ -88,6 +90,7 @@ $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 
 @mixin oVelcroSubscript () {
 	vertical-align: sub;
+	line-height: 16px;
 }
 
 @mixin oVelcroBodyList () {

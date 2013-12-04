@@ -118,6 +118,15 @@ $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 	color: $o-velcro-link-text-hover-color;
 }
 
+@mixin oVelcroHeadingLink () {
+	text-decoration: none;
+	color: $o-velcro-title-primary-color:
+}
+
+@mixin oVelcroHeadingLinkHover () {
+	color: $o-velcro-link-text-color;
+}
+
 @mixin oVelcroIncludeTypographyClasses () {
 	.ft-title {
 		@include oVelcroPrimaryTitle();

@@ -2,7 +2,7 @@
     "name": "ft-velcro-module",
     "ignore": [],
     "dependencies": {
-    	"fonts-module": "http://git.svc.ft.com:9080/git/origami/fonts-module.git#0.4.x",
+    	"fonts-module": "http://git.svc.ft.com:9080/git/origami/fonts-module.git#0.5.x",
         "colors-module": "https://github.com/Financial-Times/colors-module.git#0.2.x"
     },
     "devDependencies": {

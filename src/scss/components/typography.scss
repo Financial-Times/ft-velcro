@@ -120,7 +120,7 @@ $o-velcro-ui-font: $o-fonts-bentonsans-normal;
 
 @mixin oVelcroHeadingLink () {
 	text-decoration: none;
-	color: $o-velcro-title-primary-color:
+	color: $o-velcro-title-primary-color;
 }
 
 @mixin oVelcroHeadingLinkHover () {
